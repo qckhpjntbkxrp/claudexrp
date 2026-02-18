@@ -1,0 +1,69 @@
+# XRPL Trading Bot Configuration
+# All parameters are configurable - no magic numbers in code.
+
+network:
+  # "testnet" or "mainnet"
+  mode: "testnet"
+  testnet_url: "https://s.altnet.rippletest.net:51234/"
+  mainnet_url: "https://s2.ripple.com:51234/"
+
+# Trading pairs: XRP vs issued tokens.
+# Add new pairs here - no code changes needed.
+pairs:
+  - currency: "USD"
+    issuer: "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"    # Bitstamp
+    # Grid parameters per pair
+    grid:
+      # Number of buy orders below mid price
+      buy_levels: 3
+      # Number of sell orders above mid price
+      sell_levels: 3
+      # Spacing between grid levels as fraction of mid price (0.02 = 2%)
+      level_spacing: 0.02
+      # XRP amount per grid order
+      order_size_xrp: 20.0
+      # Minimum spread from mid price to place first order (0.005 = 0.5%)
+      min_spread: 0.005
+      # Maximum age of offers in seconds before refresh
+      offer_expiration_seconds: 3600
+      # Minimum profit per round-trip in fraction (0.003 = 0.3%)
+      min_profit_fraction: 0.003
+  - currency: "EUR"
+    issuer: "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq"    # GateHub
+    grid:
+      buy_levels: 3
+      sell_levels: 3
+      level_spacing: 0.02
+      order_size_xrp: 20.0
+      min_spread: 0.005
+      offer_expiration_seconds: 3600
+      min_profit_fraction: 0.003
+
+# Global trading parameters
+trading:
+  # Main loop interval in seconds
+  loop_interval_seconds: 30
+  # How far the mid price must move (fraction) before grid is refreshed
+  price_drift_threshold: 0.01
+  # Maximum fraction of available XRP to commit to all grids combined
+  max_xrp_allocation_fraction: 0.60
+  # Minimum XRP to keep free (above reserves) as safety buffer
+  min_free_xrp_buffer: 50.0
+
+# Safety
+safety:
+  # If available XRP drops below this, cancel all offers and stop trading
+  emergency_xrp_threshold: 20.0
+  # Maximum number of consecutive errors before pausing
+  max_consecutive_errors: 5
+  # Pause duration after max errors (seconds)
+  error_pause_seconds: 300
+
+# State persistence
+state:
+  file_path: "bot_state.json"
+
+# Telegram notifications
+telegram:
+  enabled: false
+  # TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID come from .env
