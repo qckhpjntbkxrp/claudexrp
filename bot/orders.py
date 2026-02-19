@@ -2,6 +2,13 @@
 
 Handles creating, cancelling, and tracking offers on the XRPL ledger.
 All offers use tfPassive flag and Expiration for safety.
+
+CRITICAL XRPL semantics for OfferCreate:
+  taker_gets = what WE (the creator) PROVIDE to others
+  taker_pays = what WE (the creator) WANT to receive
+
+  BUY token (pay XRP):  taker_gets=XRP,   taker_pays=token
+  SELL token (get XRP):  taker_gets=token, taker_pays=XRP
 """
 
 import logging
@@ -19,15 +26,19 @@ from bot.utils import ripple_expiration, xrp_to_drops
 
 logger = logging.getLogger(__name__)
 
-# tfPassive: offer won't immediately cross existing offers
+# tfPassive: offer won't immediately cross offers at exactly the same price.
+# Note: tfPassive DOES still consume offers that cross it (better price).
 TF_PASSIVE: int = 65536
 
 
 @dataclass
 class PlacedOffer:
-    """Record of an offer we placed on the ledger."""
+    """Record of an offer we placed on the ledger.
 
-    sequence: int           # Offer sequence (for cancel/replace)
+    sequence=0 means the offer was immediately consumed (no resting order).
+    """
+
+    sequence: int           # Offer sequence (for cancel/replace), 0=immediately filled
     side: str               # "buy" or "sell"
     price: Decimal          # XRP per token
     xrp_amount: Decimal     # XRP amount
@@ -77,18 +88,17 @@ def classify_offer(
 ) -> str | None:
     """Classify a ledger offer as 'buy' or 'sell' for a given pair.
 
-    Buy: we pay XRP (taker_gets=XRP), we get token (taker_pays=token)
-    Wait -- from AccountOffers perspective:
-      - taker_gets = what the taker gets = what WE are offering
-      - taker_pays = what the taker pays = what WE want
+    In AccountOffers response:
+      taker_gets = what the taker gets = what WE are offering
+      taker_pays = what the taker pays = what WE want
 
     So for a BUY (we buy token with XRP):
-      - taker_gets = XRP (we offer XRP)
-      - taker_pays = token (we want token)
+      taker_gets = XRP (string, drops) -- we offer XRP
+      taker_pays = token (dict)        -- we want token
 
     For a SELL (we sell token for XRP):
-      - taker_gets = token (we offer token)
-      - taker_pays = XRP (we want XRP)
+      taker_gets = token (dict)        -- we offer token
+      taker_pays = XRP (string, drops) -- we want XRP
 
     Args:
         offer: Offer dict from AccountOffers.
@@ -126,7 +136,7 @@ def place_buy_offer(
     """Place a passive buy offer: pay XRP, receive token.
 
     Uses tfPassive so the offer sits on the book and waits to be taken,
-    rather than immediately crossing existing offers.
+    rather than immediately crossing existing offers at the same price.
 
     Args:
         client: Connected XRPL client.
@@ -138,7 +148,7 @@ def place_buy_offer(
         expiration_seconds: Offer TTL in seconds.
 
     Returns:
-        PlacedOffer on success, None on failure.
+        PlacedOffer on success (sequence=0 if immediately filled), None on failure.
     """
     price = xrp_amount / token_amount if token_amount > 0 else Decimal("0")
     logger.info(
@@ -146,14 +156,17 @@ def place_buy_offer(
         xrp_amount, token_amount, currency, price, currency,
     )
 
+    # BUY token with XRP:
+    #   taker_gets = what WE provide = XRP (drops string)
+    #   taker_pays = what WE want    = token (IssuedCurrencyAmount)
     tx = OfferCreate(
         account=wallet.address,
-        taker_gets=IssuedCurrencyAmount(
+        taker_gets=xrp_to_drops(xrp_amount),
+        taker_pays=IssuedCurrencyAmount(
             currency=currency,
             issuer=issuer,
             value=str(token_amount),
         ),
-        taker_pays=xrp_to_drops(xrp_amount),
         flags=TF_PASSIVE,
         expiration=ripple_expiration(expiration_seconds),
     )
@@ -162,20 +175,20 @@ def place_buy_offer(
         resp = submit_and_wait(tx, client, wallet)
         result = resp.result.get("meta", {}).get("TransactionResult", "")
         if result == "tesSUCCESS":
-            seq = resp.result.get("Sequence", 0)
-            # Get the actual offer sequence from the created offer node
             offer_seq = _extract_offer_sequence(resp.result)
             if offer_seq is None:
-                offer_seq = seq
-            logger.info("BUY offer placed, sequence=%d", offer_seq)
+                # No CreatedNode → offer was immediately consumed (crossed the book).
+                logger.info("BUY offer immediately filled (no resting order created)")
+                return PlacedOffer(
+                    sequence=0, side="buy", price=price,
+                    xrp_amount=xrp_amount, token_amount=token_amount,
+                    currency=currency, issuer=issuer,
+                )
+            logger.info("BUY offer resting on book, sequence=%d", offer_seq)
             return PlacedOffer(
-                sequence=offer_seq,
-                side="buy",
-                price=price,
-                xrp_amount=xrp_amount,
-                token_amount=token_amount,
-                currency=currency,
-                issuer=issuer,
+                sequence=offer_seq, side="buy", price=price,
+                xrp_amount=xrp_amount, token_amount=token_amount,
+                currency=currency, issuer=issuer,
             )
         logger.warning("BUY offer failed: %s", result)
     except Exception:
@@ -204,7 +217,7 @@ def place_sell_offer(
         expiration_seconds: Offer TTL in seconds.
 
     Returns:
-        PlacedOffer on success, None on failure.
+        PlacedOffer on success (sequence=0 if immediately filled), None on failure.
     """
     price = xrp_amount / token_amount if token_amount > 0 else Decimal("0")
     logger.info(
@@ -212,14 +225,17 @@ def place_sell_offer(
         token_amount, currency, xrp_amount, price, currency,
     )
 
+    # SELL token for XRP:
+    #   taker_gets = what WE provide = token (IssuedCurrencyAmount)
+    #   taker_pays = what WE want    = XRP (drops string)
     tx = OfferCreate(
         account=wallet.address,
-        taker_gets=xrp_to_drops(xrp_amount),
-        taker_pays=IssuedCurrencyAmount(
+        taker_gets=IssuedCurrencyAmount(
             currency=currency,
             issuer=issuer,
             value=str(token_amount),
         ),
+        taker_pays=xrp_to_drops(xrp_amount),
         flags=TF_PASSIVE,
         expiration=ripple_expiration(expiration_seconds),
     )
@@ -228,19 +244,19 @@ def place_sell_offer(
         resp = submit_and_wait(tx, client, wallet)
         result = resp.result.get("meta", {}).get("TransactionResult", "")
         if result == "tesSUCCESS":
-            seq = resp.result.get("Sequence", 0)
             offer_seq = _extract_offer_sequence(resp.result)
             if offer_seq is None:
-                offer_seq = seq
-            logger.info("SELL offer placed, sequence=%d", offer_seq)
+                logger.info("SELL offer immediately filled (no resting order created)")
+                return PlacedOffer(
+                    sequence=0, side="sell", price=price,
+                    xrp_amount=xrp_amount, token_amount=token_amount,
+                    currency=currency, issuer=issuer,
+                )
+            logger.info("SELL offer resting on book, sequence=%d", offer_seq)
             return PlacedOffer(
-                sequence=offer_seq,
-                side="sell",
-                price=price,
-                xrp_amount=xrp_amount,
-                token_amount=token_amount,
-                currency=currency,
-                issuer=issuer,
+                sequence=offer_seq, side="sell", price=price,
+                xrp_amount=xrp_amount, token_amount=token_amount,
+                currency=currency, issuer=issuer,
             )
         logger.warning("SELL offer failed: %s", result)
     except Exception:
@@ -313,12 +329,13 @@ def _extract_offer_sequence(tx_result: dict[str, Any]) -> int | None:
     """Extract the offer sequence from a transaction result's metadata.
 
     Looks through AffectedNodes for the CreatedNode of type Offer.
+    Returns None if no offer was created (= offer was immediately consumed).
 
     Args:
         tx_result: Transaction result dict.
 
     Returns:
-        Offer sequence number or None if not found.
+        Offer sequence number or None if offer was fully consumed.
     """
     meta = tx_result.get("meta", {})
     if isinstance(meta, str):

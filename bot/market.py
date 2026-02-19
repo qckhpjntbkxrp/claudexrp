@@ -139,6 +139,13 @@ def fetch_orderbook(
     if snap.asks and snap.bids:
         snap.best_ask = snap.asks[0].price
         snap.best_bid = snap.bids[0].price
+        # Sanity check: best_bid must be < best_ask (uncrossed book)
+        if snap.best_bid >= snap.best_ask:
+            logger.warning(
+                "%s orderbook crossed: bid=%.6f >= ask=%.6f, skipping",
+                currency, snap.best_bid, snap.best_ask,
+            )
+            return snap
         if snap.best_ask > 0:
             snap.mid_price = (snap.best_bid + snap.best_ask) / 2
             snap.spread_fraction = (snap.best_ask - snap.best_bid) / snap.mid_price

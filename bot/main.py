@@ -36,15 +36,34 @@ def _handle_signal(signum: int, frame: Any) -> None:
     _shutdown_requested = True
 
 
-def setup_logging() -> None:
-    """Configure logging with timestamps and levels."""
+def setup_logging(log_to_file: bool = True) -> None:
+    """Configure logging with timestamps and levels.
+
+    Logs to both stdout and a rotating file for mainnet auditability.
+
+    Args:
+        log_to_file: Whether to also log to bot.log file.
+    """
+    handlers: list[logging.Handler] = [
+        logging.StreamHandler(sys.stdout),
+    ]
+
+    if log_to_file:
+        from logging.handlers import RotatingFileHandler
+        file_handler = RotatingFileHandler(
+            "bot.log", maxBytes=10 * 1024 * 1024, backupCount=5,
+        )
+        file_handler.setFormatter(logging.Formatter(
+            "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S",
+        ))
+        handlers.append(file_handler)
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
-        handlers=[
-            logging.StreamHandler(sys.stdout),
-        ],
+        handlers=handlers,
     )
     # Reduce noise from urllib3
     logging.getLogger("urllib3").setLevel(logging.WARNING)
@@ -85,6 +104,19 @@ def initialize_bot(config: dict[str, Any]) -> tuple:
     """
     # Create XRPL client
     client = create_client(config)
+
+    # Validate connection by querying server info
+    try:
+        from xrpl.models import ServerInfo
+        resp = client.request(ServerInfo())
+        server_state = resp.result.get("info", {}).get("server_state", "unknown")
+        ledger_seq = resp.result.get("info", {}).get("validated_ledger", {}).get("seq", 0)
+        logger.info("XRPL node connected: state=%s, ledger=%d", server_state, ledger_seq)
+        if server_state not in ("full", "proposing", "validating"):
+            logger.warning("Server state '%s' may not be fully synced!", server_state)
+    except Exception:
+        logger.exception("Failed to connect to XRPL node - check URL and network")
+        raise
 
     # Load or create wallet
     wallet = load_wallet(config, client)

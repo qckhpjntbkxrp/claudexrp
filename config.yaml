@@ -1,35 +1,35 @@
 # XRPL Trading Bot Configuration
 # All parameters are configurable - no magic numbers in code.
+#
+# MAINNET CHECKLIST before switching mode to "mainnet":
+#   1. Set XRPL_SECRET in .env (your wallet seed/secret)
+#   2. Ensure wallet has enough XRP (recommended: 100+ XRP)
+#   3. Review order_size_xrp per pair (default 20 XRP per level)
+#   4. Optionally set up Telegram (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID in .env)
+#   5. Run once on testnet first to verify behavior
 
 network:
   # "testnet" or "mainnet"
-  mode: "testnet"
+  mode: "mainnet"
   testnet_url: "https://s.altnet.rippletest.net:51234/"
   mainnet_url: "https://s2.ripple.com:51234/"
 
 # Trading pairs: XRP vs issued tokens.
 # Add new pairs here - no code changes needed.
+# Each pair gets its own trustline (costs ~0.2 XRP reserve per trustline).
 pairs:
   - currency: "USD"
-    issuer: "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"    # Bitstamp
-    # Grid parameters per pair
+    issuer: "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"    # Bitstamp USD
     grid:
-      # Number of buy orders below mid price
-      buy_levels: 3
-      # Number of sell orders above mid price
-      sell_levels: 3
-      # Spacing between grid levels as fraction of mid price (0.02 = 2%)
-      level_spacing: 0.02
-      # XRP amount per grid order
-      order_size_xrp: 20.0
-      # Minimum spread from mid price to place first order (0.005 = 0.5%)
-      min_spread: 0.005
-      # Maximum age of offers in seconds before refresh
-      offer_expiration_seconds: 3600
-      # Minimum profit per round-trip in fraction (0.003 = 0.3%)
-      min_profit_fraction: 0.003
+      buy_levels: 3             # 3 buy orders below mid price
+      sell_levels: 3            # 3 sell orders above mid price
+      level_spacing: 0.02       # 2% between grid levels
+      order_size_xrp: 20.0      # 20 XRP per order
+      min_spread: 0.005         # First order at least 0.5% from mid
+      offer_expiration_seconds: 3600  # Offers expire after 1 hour (crash safety)
+      min_profit_fraction: 0.003      # Only sell if 0.3%+ profit over avg buy
   - currency: "EUR"
-    issuer: "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq"    # GateHub
+    issuer: "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq"    # GateHub EUR
     grid:
       buy_levels: 3
       sell_levels: 3
@@ -41,29 +41,31 @@ pairs:
 
 # Global trading parameters
 trading:
-  # Main loop interval in seconds
+  # Main loop interval in seconds (how often the bot checks/adjusts)
   loop_interval_seconds: 30
-  # How far the mid price must move (fraction) before grid is refreshed
-  price_drift_threshold: 0.01
+  # Grid only refreshes when mid price drifts more than this fraction
+  price_drift_threshold: 0.01   # 1%
   # Maximum fraction of available XRP to commit to all grids combined
   max_xrp_allocation_fraction: 0.60
-  # Minimum XRP to keep free (above reserves) as safety buffer
+  # Minimum XRP to keep free above reserves (safety buffer)
   min_free_xrp_buffer: 50.0
 
 # Safety
 safety:
-  # If available XRP drops below this, cancel all offers and stop trading
+  # If available XRP drops below this, cancel ALL offers and stop trading
   emergency_xrp_threshold: 20.0
-  # Maximum number of consecutive errors before pausing
+  # Maximum consecutive errors before long pause
   max_consecutive_errors: 5
-  # Pause duration after max errors (seconds)
+  # Pause duration after hitting max errors (seconds)
   error_pause_seconds: 300
 
-# State persistence
+# State persistence (survives restarts)
 state:
   file_path: "bot_state.json"
 
-# Telegram notifications
+# Telegram notifications (optional but recommended for mainnet)
 telegram:
   enabled: false
-  # TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID come from .env
+  # Set tokens in .env:
+  #   TELEGRAM_BOT_TOKEN=123456:ABC...
+  #   TELEGRAM_CHAT_ID=123456789

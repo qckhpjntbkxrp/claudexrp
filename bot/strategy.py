@@ -56,6 +56,7 @@ class PairContext:
     issuer: str
     grid_config: dict[str, Any]
     pair_state: PairState
+    reserve_inc: Decimal = Decimal("0.2")   # Per-object reserve cost
     orderbook: OrderbookSnapshot | None = None
     token_balance: Decimal = Decimal("0")
     our_buy_offers: list[dict[str, Any]] = field(default_factory=list)
@@ -187,6 +188,36 @@ def detect_fills(
     return filled_buys, filled_sells
 
 
+def _process_immediate_fill(
+    result: PlacedOffer,
+    pair_state: PairState,
+    notifier: TelegramNotifier,
+) -> PairState:
+    """Process an offer that was immediately filled (sequence=0).
+
+    Updates P&L tracking right away instead of waiting for next cycle.
+
+    Args:
+        result: The PlacedOffer with sequence=0.
+        pair_state: Current pair state.
+        notifier: Telegram notifier.
+
+    Returns:
+        Updated pair state.
+    """
+    offer_dict = {
+        "sequence": 0,
+        "price": str(result.price),
+        "xrp_amount": str(result.xrp_amount),
+        "token_amount": str(result.token_amount),
+    }
+    if result.side == "buy":
+        pair_state = update_pnl_from_fills(pair_state, [offer_dict], [], notifier)
+    else:
+        pair_state = update_pnl_from_fills(pair_state, [], [offer_dict], notifier)
+    return pair_state
+
+
 def update_pnl_from_fills(
     pair_state: PairState,
     filled_buys: list[dict[str, Any]],
@@ -277,7 +308,7 @@ def place_grid(
     """Place a new grid of buy and sell orders for one pair.
 
     Cancels existing offers first, then places new ones at computed levels.
-    Respects XRP budget constraints.
+    Respects XRP budget constraints and accounts for reserve costs.
 
     Args:
         client: Connected XRPL client.
@@ -305,19 +336,31 @@ def place_grid(
     # Compute grid levels
     levels = compute_grid_levels(mid_price, grid_config)
 
-    # Place buy orders (limited by XRP budget)
+    buy_levels = [lv for lv in levels if lv.side == "buy"]
+    sell_levels = [lv for lv in levels if lv.side == "sell"]
+
+    # Reserve cost: each resting offer costs reserve_inc XRP in account reserve.
+    # Subtract estimated reserve cost from XRP budget so we don't overcommit.
+    total_planned_offers = len(buy_levels) + len(sell_levels)
+    reserve_cost = ctx.reserve_inc * total_planned_offers
+    effective_budget = max(Decimal("0"), max_xrp_per_pair - reserve_cost)
+
+    logger.info(
+        "%s: budget=%.2f XRP, reserve_cost=%.2f XRP (%d offers * %.1f), effective=%.2f XRP",
+        ctx.currency, max_xrp_per_pair, reserve_cost,
+        total_planned_offers, ctx.reserve_inc, effective_budget,
+    )
+
+    # Place buy orders (limited by effective XRP budget)
     xrp_committed = Decimal("0")
     new_buys: list[dict[str, Any]] = []
     new_sells: list[dict[str, Any]] = []
 
-    buy_levels = [l for l in levels if l.side == "buy"]
-    sell_levels = [l for l in levels if l.side == "sell"]
-
     for level in buy_levels:
-        if xrp_committed + level.xrp_amount > max_xrp_per_pair:
+        if xrp_committed + level.xrp_amount > effective_budget:
             logger.info(
                 "XRP budget exhausted for %s buys (committed=%.2f, max=%.2f)",
-                ctx.currency, xrp_committed, max_xrp_per_pair,
+                ctx.currency, xrp_committed, effective_budget,
             )
             break
 
@@ -328,13 +371,18 @@ def place_grid(
             expiration,
         )
         if result:
-            xrp_committed += level.xrp_amount
-            new_buys.append({
-                "sequence": result.sequence,
-                "price": str(result.price),
-                "xrp_amount": str(result.xrp_amount),
-                "token_amount": str(result.token_amount),
-            })
+            if result.sequence == 0:
+                # Immediately filled -- update P&L now, don't track as active
+                pair_state = _process_immediate_fill(result, pair_state, ctx.notifier
+                    if hasattr(ctx, 'notifier') else TelegramNotifier({}))
+            else:
+                xrp_committed += level.xrp_amount
+                new_buys.append({
+                    "sequence": result.sequence,
+                    "price": str(result.price),
+                    "xrp_amount": str(result.xrp_amount),
+                    "token_amount": str(result.token_amount),
+                })
 
     # Place sell orders (limited by token inventory)
     token_available = ctx.token_balance
@@ -367,13 +415,18 @@ def place_grid(
             expiration,
         )
         if result:
-            token_available -= sell_token_amount
-            new_sells.append({
-                "sequence": result.sequence,
-                "price": str(result.price),
-                "xrp_amount": str(result.xrp_amount),
-                "token_amount": str(result.token_amount),
-            })
+            if result.sequence == 0:
+                pair_state = _process_immediate_fill(result, pair_state, ctx.notifier
+                    if hasattr(ctx, 'notifier') else TelegramNotifier({}))
+                token_available -= sell_token_amount
+            else:
+                token_available -= sell_token_amount
+                new_sells.append({
+                    "sequence": result.sequence,
+                    "price": str(result.price),
+                    "xrp_amount": str(result.xrp_amount),
+                    "token_amount": str(result.token_amount),
+                })
 
     pair_state.active_buy_offers = new_buys
     pair_state.active_sell_offers = new_sells
@@ -535,6 +588,7 @@ def run_strategy_cycle(
                 issuer=issuer,
                 grid_config=grid_config,
                 pair_state=pair_state,
+                reserve_inc=balance.reserve_inc,
                 orderbook=orderbook,
                 token_balance=token_balance,
             )
