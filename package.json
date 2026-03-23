@@ -1,0 +1,40 @@
+{
+  "name": "xrpl-x402",
+  "version": "0.1.0",
+  "description": "x402 Payment Gateway for XRPL — AI agents pay for APIs with XRP micropayments",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./middleware": "./dist/middleware/index.js",
+    "./client": "./dist/client/index.js",
+    "./mcp": "./dist/mcp/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/demo/server.ts",
+    "demo": "tsx src/demo/server.ts",
+    "mcp": "tsx src/mcp/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["xrpl", "x402", "ai-agent", "micropayments", "mcp", "payment-gateway"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "express": "^4.21.0",
+    "uuid": "^11.1.0",
+    "xrpl": "^4.6.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

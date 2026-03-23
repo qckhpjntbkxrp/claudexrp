@@ -1,0 +1,270 @@
+openapi: 3.1.0
+info:
+  title: XRPL x402 Payment Gateway
+  version: 0.1.0
+  description: |
+    HTTP payment gateway implementing the x402 protocol on the XRP Ledger.
+    AI agents pay for API calls with XRP micropayments using standard HTTP headers.
+
+    ## How it works
+    1. Agent calls a protected endpoint
+    2. Server returns `402 Payment Required` with payment details in JSON body and headers
+    3. Agent submits an XRPL payment (using the client SDK or MCP tools)
+    4. Agent retries the original request with `X-Payment-Tx-Hash` header
+    5. Server verifies the payment on-ledger and returns the requested data
+
+    ## Quick Start
+    ```bash
+    # 1. Get payment instructions
+    curl http://localhost:3000/api/price/XRP
+    # Returns 402 with payment details
+
+    # 2. After paying, retry with tx hash
+    curl -H "X-Payment-Tx-Hash: <hash>" http://localhost:3000/api/price/XRP
+    # Returns the data
+    ```
+
+servers:
+  - url: http://localhost:3000
+    description: Local demo server (XRPL Testnet)
+
+paths:
+  /api/health:
+    get:
+      operationId: getHealth
+      summary: Health check (free)
+      description: Returns service status and available endpoints with their costs. No payment required.
+      responses:
+        "200":
+          description: Service status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  service:
+                    type: string
+                    example: x402-xrpl-demo
+                  network:
+                    type: string
+                    example: "xrpl:testnet"
+                  merchantAddress:
+                    type: string
+                    example: "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+                  endpoints:
+                    type: object
+
+  /api/price/{token}:
+    get:
+      operationId: getTokenPrice
+      summary: Get token price (0.001 XRP)
+      description: Returns real-time price data for the specified token. Costs 0.001 XRP per call.
+      parameters:
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [XRP, BTC, ETH, SOL, RLUSD]
+          description: Token symbol
+        - name: X-Payment-Tx-Hash
+          in: header
+          required: false
+          schema:
+            type: string
+            pattern: "^[A-Fa-f0-9]{64}$"
+          description: XRPL transaction hash proving payment
+        - name: X-Payment-Invoice-Id
+          in: header
+          required: false
+          schema:
+            type: string
+            format: uuid
+          description: Invoice ID from the 402 response (for stricter verification)
+      responses:
+        "200":
+          description: Token price data
+          headers:
+            X-Payment-Verified:
+              schema:
+                type: string
+                example: "true"
+            X-Payment-Tx-Hash:
+              schema:
+                type: string
+            X-Payment-Amount:
+              schema:
+                type: string
+            X-Payment-Source:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  price:
+                    type: string
+                  currency:
+                    type: string
+                    example: USD
+                  timestamp:
+                    type: string
+                    format: date-time
+        "402":
+          description: Payment required
+          headers:
+            X-Payment-Amount:
+              schema:
+                type: string
+                example: "0.001"
+            X-Payment-Destination:
+              schema:
+                type: string
+                example: "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+            X-Payment-Network:
+              schema:
+                type: string
+                example: "xrpl:testnet"
+            X-Payment-Invoice-Id:
+              schema:
+                type: string
+                format: uuid
+            X-Payment-Expiry:
+              schema:
+                type: string
+                format: date-time
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaymentRequired"
+
+  /api/analysis:
+    post:
+      operationId: getAnalysis
+      summary: Get market analysis (0.01 XRP)
+      description: Returns AI-powered market analysis for a token. Costs 0.01 XRP per call.
+      parameters:
+        - name: X-Payment-Tx-Hash
+          in: header
+          required: false
+          schema:
+            type: string
+        - name: X-Payment-Invoice-Id
+          in: header
+          required: false
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  default: XRP
+      responses:
+        "200":
+          description: Market analysis
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  analysis:
+                    type: object
+                    properties:
+                      trend:
+                        type: string
+                        enum: [bullish, bearish]
+                      confidence:
+                        type: string
+                      signals:
+                        type: array
+                        items:
+                          type: string
+                      summary:
+                        type: string
+                  timestamp:
+                    type: string
+                    format: date-time
+        "402":
+          description: Payment required
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaymentRequired"
+
+components:
+  schemas:
+    PaymentRequired:
+      type: object
+      properties:
+        status:
+          type: integer
+          example: 402
+        type:
+          type: string
+          example: x402-payment-required
+        payment:
+          type: object
+          properties:
+            network:
+              type: string
+              example: "xrpl:testnet"
+            destination:
+              type: string
+              description: XRPL address to send payment to
+            amount:
+              type: string
+              description: Amount in XRP
+            currency:
+              type: string
+              example: XRP
+            invoiceId:
+              type: string
+              format: uuid
+              description: Include this in your XRPL payment's InvoiceID field
+            expiry:
+              type: string
+              format: date-time
+            resource:
+              type: string
+              description: The resource being paid for
+            description:
+              type: string
+        instructions:
+          type: object
+          properties:
+            step1:
+              type: string
+            step2:
+              type: string
+            step3:
+              type: string
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: object
+          required: [code, message, suggestion]
+          properties:
+            code:
+              type: string
+              description: Machine-readable error code
+            message:
+              type: string
+              description: Human-readable error message
+            suggestion:
+              type: string
+              description: Actionable suggestion for how to fix the error (agents use this to self-correct)
