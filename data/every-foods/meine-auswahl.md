@@ -5,13 +5,65 @@ das README bleibt die neutrale Datenbasis. Stand: 17 Gerichte, alle im Protein B
 
 ## Mein Profil
 
-*(noch auszufüllen)*
-
+- **Allergien / Unverträglichkeiten:** keine — alle Gerichte bleiben in Auswahl
+- **Schärfe:** keine Einschränkung
+- **Rezeptanpassung:** **ohne Kümmel, Kreuzkümmel und Koriander** in allen Gerichten
+  (siehe nächster Abschnitt) — die Gerichte bleiben in der Liste und werden lediglich
+  ohne diese Gewürze ausgeführt
 - **Ziel:** —
 - **Protein pro Tag:** —
-- **Allergien / Unverträglichkeiten:** —
-- **Mag ich nicht:** —
-- **Schärfe:** —
+
+## Rezeptanpassung: ohne Kümmel, Kreuzkümmel, Koriander
+
+**12 der 17 Gerichte** sind betroffen und werden ohne die genannten Gewürze ausgeführt.
+
+| Gericht | zu streichen | Position | Hinweis |
+|---|---|---|---|
+| [Umami Rice](dishes/umami-rice.md) | Korianderblatt | direkt | — |
+| [Bami Goreng](dishes/bami-goreng.md) | Koriander | direkt | — |
+| [Teriyaki Wok](dishes/teriyaki-wok.md) | Koriander | direkt | — |
+| [Nasi Goreng](dishes/nasi-goreng.md) | Kreuzkümmel, Koriander | direkt | — |
+| [Paprika Thai Ragout](dishes/paprika-thai-ragout.md) | Kreuzkümmel, Koriander | in der Thai-Paste | Paste muss neu formuliert werden; Boonian Crumbles mit „Gewürze“ |
+| [Chili sin Carne](dishes/chili-sin-carne.md) | Kreuzkümmel, Korianderblatt | direkt | — |
+| [Better Butter Chicken](dishes/better-butter-chicken.md) | Kreuzkümmel, Koriander (gemahlen) | direkt | — |
+| [Smoky Lentil Stew](dishes/smoky-lentil-stew.md) | Kreuzkümmel, Koriander | direkt | Boonian Crumbles enthalten undeklarierte „Gewürze“ |
+| [Dal Delight](dishes/dal-delight.md) | Kreuzkümmel, Koriander, Korianderblätter | direkt | — |
+| [Tikka Masala](dishes/tikka-masala.md) | Kreuzkümmel, Koriander, Korianderblatt | direkt | — |
+| [Peanut Noodles](dishes/peanut-noodles.md) | Kreuzkümmel, Koriander | direkt | — |
+| [Edamame Zen](dishes/edamame-zen.md) | Koriander | direkt | — |
+
+**5 Gerichte sind bereits frei davon** — keine Anpassung nötig:
+
+| Gericht | Protein |
+|---|---:|
+| [Peas & Love](dishes/peas-and-love.md) | 22,0 g |
+| [Creamy Paprika Pasta](dishes/creamy-paprika-pasta.md) | 21,2 g |
+| [Green Forest Bowl](dishes/green-forest-bowl.md) | 20,25 g |
+| [Brilliant Bolognese](dishes/brilliant-bolognese.md) | 20,0 g |
+| [Sesame Fried Rice](dishes/sesame-fried-rice.md) | 19,6 g |
+
+### Wichtig für die Umsetzung
+
+- **Kümmel (Caraway) kommt in keinem einzigen Gericht vor.** Betroffen sind nur
+  Kreuzkümmel (Cumin) und Koriander — trotz ähnlichem Namen zwei andere Gewürze.
+- **Koriander erscheint in zwei Formen**, die kulinarisch sehr verschieden sind:
+  **Korianderblatt** (frisches Kraut, der „seifige" Geschmack) bei Chili sin Carne,
+  Dal Delight, Tikka Masala und Umami Rice — und **Koriandersamen/gemahlen**
+  (warm-zitrusartig) bei den übrigen. Falls nur eine der beiden Formen stört, lässt
+  sich die Liste entsprechend halbieren.
+- **Paprika Thai Ragout ist der schwierigste Fall:** dort stecken beide Gewürze in der
+  **Thai-Paste**, einer zusammengesetzten Zutat. Weglassen heisst hier, die Paste neu
+  zu formulieren, nicht nur eine Zutat auszulassen.
+- **Zwei Gerichte enthalten undeklarierte „Gewürze"** in den Boonian Crumbles
+  (Smoky Lentil Stew, Paprika Thai Ragout). Ob dort Kreuzkümmel oder Koriander
+  enthalten ist, geht aus der Deklaration nicht hervor — beim Hersteller nachfragen.
+- **Geschmackliche Folgen:** bei Tikka Masala, Dal Delight und Better Butter Chicken
+  sind Kreuzkümmel und Koriander tragende Bestandteile des Currygewürz-Profils, nicht
+  Beiwerk. Ohne sie verändert sich der Charakter deutlich; Ersatzrichtung wären
+  Kardamom, Fenchel und Zimt, die in diesen Gerichten ohnehin vorkommen.
+
+*Die Gerichte-Files unter `dishes/` bleiben unverändert — sie dokumentieren das
+Produkt, wie every Foods es deklariert. Die Anpassung steht bewusst nur hier.*
 
 ## Meine Bewertung
 
