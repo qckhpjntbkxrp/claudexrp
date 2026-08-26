@@ -65,6 +65,13 @@ das README bleibt die neutrale Datenbasis. Stand: 17 Gerichte, alle im Protein B
 *Die Gerichte-Files unter `dishes/` bleiben unverändert — sie dokumentieren das
 Produkt, wie every Foods es deklariert. Die Anpassung steht bewusst nur hier.*
 
+## Nachbau-Rezepte
+
+Für jedes Gericht liegt unter [`rezepte/`](rezepte/README.md) eine Zutatenliste mit
+Grammangaben pro Portion, abgestimmt auf die Nährwerte des Originals und mit
+Lidl-Produktvorschlägen. Alle Rezepte sind bereits ohne Kümmel, Kreuzkümmel und
+Koriander gerechnet.
+
 ## Meine Bewertung
 
 | Gericht | Protein | kcal | Bewertung | Schon probiert | Notiz |

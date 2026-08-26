@@ -1,0 +1,15 @@
+dish: green-forest-bowl
+# Portion 450 g. Enthält von Haus aus weder Kreuzkümmel noch Koriander.
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [dinkel_gegart, baerlauchpesto, champignons, kuerbiskerne, erbsen_tk, salz]
+zutaten:
+  dinkel_gegart: 127      # deklariert 33 %, hier 28 %
+  baerlauchpesto: 52      # deklariert 15 %, hier 13 %
+  champignons: 19      # deklariert 14 %, hier 8 %
+  gruener_spargel: 50
+  zucchini: 45
+  brechbohnen: 30
+  erbsen_tk: 8
+  kuerbiskerne: 19
+  salz: 2
+  wasser: 98

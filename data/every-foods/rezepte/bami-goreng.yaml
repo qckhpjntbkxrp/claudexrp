@@ -1,0 +1,20 @@
+dish: bami-goreng
+# Portion 450 g. Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [bandnudeln_gegart, paprika_rot, planted_pulled, sojasauce, sonnenblumenoel, salz, karotten, tomatenmark]
+zutaten:
+  bandnudeln_gegart: 153      # deklariert 35 %, hier 35 %
+  paprika_rot: 75
+  planted_pulled: 61      # deklariert 13 %, hier 13 %
+  mu_err_pilze: 25
+  karotten: 49
+  pak_choi: 21
+  zwiebeln: 18
+  sojasauce: 15
+  fruehlingszwiebeln: 8
+  sonnenblumenoel: 6
+  tomatenmark: 10
+  essig: 2.5
+  knoblauch: 2.5
+  gewuerze: 2
+  staerke: 2

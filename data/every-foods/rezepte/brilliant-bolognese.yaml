@@ -1,0 +1,21 @@
+dish: brilliant-bolognese
+# Portion 500 g. Enthält von Haus aus weder Kreuzkümmel noch Koriander.
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [bandnudeln_gegart, linsen_gekocht, olivenoel, salz, tomatenmark, tomatensaft, karotten, pastinaken, zwiebeln, auberginen]
+zutaten:
+  bandnudeln_gegart: 223.5      # deklariert 30 % = 150 g, s. rezepte/README.md
+  tomaten_stueckig: 53      # deklariert 17 %, hier 12 %
+  linsen_gekocht: 16      # deklariert 12 %, hier 5 %
+  karotten: 58
+  pastinaken: 14
+  zwiebeln: 24
+  auberginen: 5.5
+  tomatensaft: 35      # deklariert 3 %, hier 6 %
+  tomatenmark: 53      # deklariert 3 %, hier 9 %
+  olivenoel: 7.5
+  gemuesefond: 3.5
+  basilikum: 1.5
+  knoblauch: 1
+  staerke: 1
+  gewuerze: 1
+  salz: 2.5

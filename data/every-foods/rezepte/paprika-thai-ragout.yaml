@@ -1,0 +1,21 @@
+dish: paprika-thai-ragout
+# Portion 500 g. Kreuzkümmel und Koriander aus der Thai-Paste gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [bandnudeln_gegart, boonian_crumbles, sojabohnenkerne, karotten, rapsoel, salz, apfelsaftkonzentrat, sojasauce]
+zutaten:
+  bandnudeln_gegart: 162      # deklariert 30 %, hier 32 %
+  boonian_crumbles: 51      # deklariert 12 %, hier 9 %
+  karotten: 149      # deklariert 12 %, hier 28 %
+  paprika_rot: 40      # deklariert 8 %, hier 8 %
+  sojabohnenkerne: 12      # deklariert 7 %, hier 4 %
+  zucchini: 35      # deklariert 7 %, hier 7 %
+  sojasauce: 9      # deklariert 1,5 %, hier 2 %
+  tomatenmark: 5      # deklariert 1 %, hier 1 %
+  gewuerze: 3      # Thai-Paste ohne Kreuzkümmel/Koriander
+  rapsoel: 6
+  zitronengras: 3
+  apfelsaftkonzentrat: 1
+  staerke: 3
+  basilikum: 3
+  knoblauch: 2
+  wasser: 16      # deklariert 17 %, hier 4 %

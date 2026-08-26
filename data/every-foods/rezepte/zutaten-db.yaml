@@ -1,0 +1,109 @@
+# Zutaten-Referenz für die Nachbau-Rezepte.
+#
+# nutri: [kcal, Eiweiss, KH, Zucker, Fett, ges.FS, Ballaststoffe, Salz] je 100 g
+#        Quelle: Standard-Lebensmitteltabellen (BLS/USDA-Grössenordnung),
+#        NICHT von der Lidl-Packung abgelesen.
+# lidl:  vorgeschlagenes Lidl-Österreich-Produkt bzw. Eigenmarke.
+#        Sortiment nicht verifizierbar (kein Netzzugriff) — im Markt gegenprüfen.
+
+# ---------- Basis: Nudeln, Reis, Getreide (Werte GEGART) ----------
+bandnudeln_gegart:      {nutri: [140, 5.8, 26.0, 0.6, 1.0, 0.2, 1.6, 0.02], lidl: "Combino Bandnudeln/Tagliatelle (trocken, 1:2,5 gegart)"}
+muschelnudeln_gegart:   {nutri: [140, 5.8, 26.0, 0.6, 1.0, 0.2, 1.6, 0.02], lidl: "Combino Conchiglie"}
+mie_nudeln_gegart:      {nutri: [138, 4.6, 25.5, 0.5, 1.5, 0.3, 1.4, 0.30], lidl: "Vitasia Mie-Nudeln"}
+basmatireis_gegart:     {nutri: [130, 2.7, 28.0, 0.1, 0.3, 0.1, 0.6, 0.01], lidl: "Vitasia Basmati Reis"}
+wildreis_gegart:        {nutri: [101, 4.0, 21.0, 0.7, 0.3, 0.1, 1.8, 0.01], lidl: "Golden Sun Wildreis-Mischung"}
+vollkornreis_gegart:    {nutri: [111, 2.6, 23.0, 0.4, 0.9, 0.2, 1.8, 0.01], lidl: "Golden Sun Naturreis"}
+roter_reis_gegart:      {nutri: [115, 3.0, 23.0, 0.4, 0.9, 0.2, 2.0, 0.01], lidl: "Golden Sun Roter Reis (ersatzweise Naturreis)"}
+dinkel_gegart:          {nutri: [127, 5.5, 26.0, 0.6, 0.9, 0.2, 3.8, 0.01], lidl: "Belbake/Golden Sun Dinkel (Kochbeutel)"}
+
+# ---------- Proteinquellen ----------
+planted_pulled:         {nutri: [160, 24.0, 2.0, 0.5, 6.5, 0.6, 3.0, 1.20], lidl: "Vemondo Vegane Pulled Pieces / Sojaschnetzel rehydriert"}
+boonian_crumbles:       {nutri: [155, 21.0, 3.0, 0.6, 6.5, 0.6, 5.0, 1.10], lidl: "Vemondo Vegan Hack (Soja)"}
+sojabohnenkerne:        {nutri: [122, 11.0, 9.0, 2.0, 5.0, 0.7, 5.0, 0.01], lidl: "Vitasia Edamame TK (geschält)"}
+kidneybohnen_gegart:    {nutri: [ 90, 6.0, 13.0, 0.8, 0.4, 0.1, 6.0, 0.55], lidl: "Freshona Kidneybohnen (Dose)"}
+schwarze_bohnen_gegart: {nutri: [ 91, 6.0, 13.0, 0.4, 0.4, 0.1, 6.5, 0.35], lidl: "Freshona Schwarze Bohnen (Dose)"}
+linsen_gegart:          {nutri: [ 90, 6.0, 12.0, 0.8, 0.5, 0.1, 4.5, 0.30], lidl: "Freshona Linsen (Dose)"}
+kichererbsen_gegart:    {nutri: [110, 6.0, 14.0, 0.9, 2.2, 0.3, 5.0, 0.50], lidl: "Freshona Kichererbsen (Dose)"}
+erbsen_tk:              {nutri: [ 81, 5.4, 11.0, 3.5, 0.4, 0.1, 5.0, 0.01], lidl: "Freshona Erbsen TK"}
+
+# ---------- Gemüse ----------
+karotten:               {nutri: [ 41, 0.9,  8.0, 4.7, 0.2, 0.0, 2.8, 0.07], lidl: "Karotten lose"}
+brokkoli:               {nutri: [ 34, 2.8,  5.0, 1.7, 0.4, 0.1, 2.6, 0.03], lidl: "Freshona Brokkoli TK"}
+romanesco:              {nutri: [ 30, 2.5,  4.0, 2.0, 0.3, 0.1, 2.5, 0.03], lidl: "Romanesco frisch"}
+blumenkohl:             {nutri: [ 25, 1.9,  3.0, 1.9, 0.3, 0.1, 2.0, 0.03], lidl: "Freshona Blumenkohl TK"}
+pak_choi:               {nutri: [ 13, 1.5,  1.2, 1.2, 0.2, 0.0, 1.0, 0.16], lidl: "Pak Choi frisch (ersatzweise Chinakohl)"}
+wirsing:                {nutri: [ 27, 2.0,  4.0, 2.3, 0.1, 0.0, 3.0, 0.03], lidl: "Wirsing frisch"}
+blattspinat_tk:         {nutri: [ 23, 2.9,  1.4, 0.4, 0.4, 0.1, 2.2, 0.20], lidl: "Freshona Blattspinat TK"}
+zucchini:               {nutri: [ 17, 1.2,  2.0, 1.7, 0.3, 0.1, 1.0, 0.02], lidl: "Zucchini lose"}
+paprika_rot:            {nutri: [ 31, 1.0,  6.0, 4.2, 0.3, 0.1, 2.1, 0.01], lidl: "Paprika rot lose"}
+paprika_gelb:           {nutri: [ 27, 1.0,  5.4, 3.9, 0.2, 0.0, 2.0, 0.01], lidl: "Paprika gelb lose"}
+gruener_spargel:        {nutri: [ 22, 2.4,  2.0, 1.9, 0.2, 0.0, 2.1, 0.01], lidl: "Grüner Spargel (Saison/TK)"}
+brechbohnen:            {nutri: [ 31, 1.8,  4.0, 1.4, 0.2, 0.0, 3.0, 0.01], lidl: "Freshona Fisolen TK"}
+erbsenschoten:          {nutri: [ 42, 2.8,  7.0, 4.0, 0.2, 0.0, 2.6, 0.01], lidl: "Zuckerschoten frisch/TK"}
+champignons:            {nutri: [ 22, 3.1,  0.4, 0.2, 0.3, 0.1, 1.0, 0.01], lidl: "Champignons frisch"}
+mu_err_pilze:           {nutri: [ 25, 1.0,  1.5, 0.2, 0.1, 0.0, 5.0, 0.02], lidl: "Vitasia Mu-Err Pilze getrocknet (eingeweicht)"}
+kartoffeln_gegart:      {nutri: [ 77, 2.0, 17.0, 0.8, 0.1, 0.0, 2.2, 0.01], lidl: "Speisekartoffeln lose"}
+kartoffeln_frittiert:   {nutri: [150, 2.2, 22.0, 0.5, 6.0, 0.6, 2.5, 0.30], lidl: "Freshona/McCain Backofen-Kartoffelwürfel TK"}
+suesskartoffel_frittiert: {nutri: [180, 1.8, 26.0, 6.0, 7.0, 0.7, 3.2, 0.30], lidl: "Freshona Süsskartoffel-Würfel TK"}
+wasserkastanien:        {nutri: [ 97, 1.4, 21.0, 4.8, 0.1, 0.0, 3.0, 0.02], lidl: "Vitasia Wasserkastanien (Dose)"}
+zuckermais:             {nutri: [ 86, 3.2, 19.0, 3.2, 1.2, 0.2, 2.7, 0.30], lidl: "Freshona Mais (Dose)"}
+zwiebeln:               {nutri: [ 40, 1.1,  9.0, 4.2, 0.1, 0.0, 1.7, 0.01], lidl: "Zwiebeln lose"}
+fruehlingszwiebeln:     {nutri: [ 32, 1.8,  7.0, 2.3, 0.2, 0.0, 2.6, 0.02], lidl: "Frühlingszwiebeln Bund"}
+lauch:                  {nutri: [ 61, 1.5, 14.0, 3.9, 0.3, 0.0, 1.8, 0.05], lidl: "Lauch lose"}
+knoblauch:              {nutri: [149, 6.4, 33.0, 1.0, 0.5, 0.1, 2.1, 0.04], lidl: "Knoblauch lose"}
+ingwer:                 {nutri: [ 80, 1.8, 18.0, 1.7, 0.8, 0.2, 2.0, 0.03], lidl: "Ingwer lose"}
+tomaten_stueckig:       {nutri: [ 18, 0.9,  3.5, 3.2, 0.2, 0.0, 1.2, 0.02], lidl: "Baresa Tomaten stückig (Dose)"}
+tomatensaft:            {nutri: [ 17, 0.8,  3.5, 3.0, 0.1, 0.0, 0.5, 0.30], lidl: "Solevita Tomatensaft"}
+tomatenmark:            {nutri: [ 82, 4.3, 12.0, 9.0, 0.5, 0.1, 4.0, 0.20], lidl: "Baresa Tomatenmark 2-fach konzentriert"}
+getrocknete_tomaten:    {nutri: [200, 5.0, 23.0, 15.0, 9.0, 1.3, 6.0, 1.50], lidl: "Freshona getrocknete Tomaten in Öl (abgetropft)"}
+
+# ---------- Fette, Nüsse, Saaten ----------
+olivenoel:              {nutri: [900, 0.0,  0.0, 0.0,100.0,14.0, 0.0, 0.00], lidl: "Primadonna Natives Olivenöl extra"}
+rapsoel:                {nutri: [900, 0.0,  0.0, 0.0,100.0, 7.0, 0.0, 0.00], lidl: "Vita D'Or Rapsöl"}
+sonnenblumenoel:        {nutri: [900, 0.0,  0.0, 0.0,100.0,11.0, 0.0, 0.00], lidl: "Vita D'Or Sonnenblumenöl"}
+sesamoel:               {nutri: [900, 0.0,  0.0, 0.0,100.0,15.0, 0.0, 0.00], lidl: "Vitasia Sesamöl"}
+kokosmilch:             {nutri: [197, 2.0,  3.0, 2.5, 20.0,18.0, 1.0, 0.05], lidl: "Vitasia Kokosmilch"}
+kokosflocken:           {nutri: [660, 6.9,  6.4, 6.4, 65.0,57.0,16.0, 0.04], lidl: "Alesto Kokosraspeln"}
+erdnuesse:              {nutri: [567,26.0, 16.0, 4.0, 49.0, 7.0, 8.5, 0.02], lidl: "Alesto Erdnüsse geröstet, ungesalzen"}
+erdnussmus:             {nutri: [588,25.0, 20.0, 6.0, 50.0,10.0, 6.0, 0.05], lidl: "Alesto Erdnussmus (100 % Erdnüsse)"}
+kuerbiskerne:           {nutri: [559,30.0, 11.0, 1.4, 49.0, 8.7, 6.0, 0.02], lidl: "Alesto Kürbiskerne"}
+sonnenblumenkerne:      {nutri: [584,21.0, 20.0, 2.6, 51.0, 4.5, 8.6, 0.02], lidl: "Alesto Sonnenblumenkerne"}
+mandeln:                {nutri: [579,21.0, 22.0, 4.4, 50.0, 3.8,12.5, 0.00], lidl: "Alesto Mandeln"}
+pistazien:              {nutri: [560,20.0, 28.0, 7.7, 45.0, 5.6,10.0, 0.02], lidl: "Alesto Pistazienkerne"}
+
+# ---------- Würzung, Saucen, Bindung ----------
+sojasauce:              {nutri: [ 53, 8.0,  4.9, 1.7, 0.1, 0.0, 0.8,16.00], lidl: "Vitasia Sojasauce"}
+miso_pulver:            {nutri: [199,12.0, 25.0, 6.2, 6.0, 1.0, 5.4,12.00], lidl: "Vitasia Miso-Paste (ersatzweise)"}
+worcestersauce:         {nutri: [ 78, 0.0, 19.0,17.0, 0.0, 0.0, 0.0, 8.00], lidl: "Kania Worcestersauce (vegan prüfen)"}
+balsamico:              {nutri: [ 88, 0.5, 17.0,15.0, 0.0, 0.0, 0.0, 0.10], lidl: "Kania Aceto Balsamico di Modena"}
+essig:                  {nutri: [ 20, 0.0,  0.5, 0.4, 0.0, 0.0, 0.0, 0.01], lidl: "Kania Branntweinessig"}
+agavendicksaft:         {nutri: [310, 0.0, 76.0,68.0, 0.0, 0.0, 0.0, 0.05], lidl: "Kania Agavendicksaft"}
+apfelsaftkonzentrat:    {nutri: [290, 0.4, 71.0,68.0, 0.0, 0.0, 0.0, 0.03], lidl: "Solevita Apfelsaft eingekocht (ersatzweise)"}
+dattelsaftkonzentrat:   {nutri: [300, 0.5, 73.0,70.0, 0.1, 0.0, 1.0, 0.05], lidl: "Dattelsirup (ersatzweise Alesto Datteln püriert)"}
+kandierter_ingwer:      {nutri: [350, 0.3, 85.0,80.0, 0.2, 0.0, 1.0, 0.02], lidl: "Alesto Ingwer kandiert"}
+zitronensaft:           {nutri: [ 22, 0.4,  6.9, 2.5, 0.2, 0.0, 0.3, 0.00], lidl: "Solevita Zitronensaft"}
+staerke:                {nutri: [350, 0.5, 85.0, 0.0, 0.1, 0.0, 0.9, 0.01], lidl: "Belbake Speisestärke / Kartoffelstärke"}
+weizenmehl:             {nutri: [340,10.0, 70.0, 1.0, 1.0, 0.2, 3.0, 0.01], lidl: "Belbake Weizenmehl"}
+baerlauchpesto:         {nutri: [500, 8.0,  6.0, 2.0, 50.0, 7.0, 4.0, 2.00], lidl: "Baresa Pesto (Basilikum) + Bärlauch frisch"}
+basilikum:              {nutri: [ 23, 3.2,  1.0, 0.3, 0.6, 0.0, 1.6, 0.01], lidl: "Basilikum Topf"}
+petersilie:             {nutri: [ 36, 3.0,  3.0, 0.9, 0.8, 0.1, 3.3, 0.06], lidl: "Petersilie Bund"}
+minze:                  {nutri: [ 44, 3.3,  4.0, 0.0, 0.7, 0.2, 6.8, 0.03], lidl: "Minze Topf"}
+zitronengras:           {nutri: [ 99, 1.8, 25.0, 0.0, 0.5, 0.1, 1.0, 0.01], lidl: "Vitasia Zitronengras (TK/Paste)"}
+schnittlauch:           {nutri: [ 30, 3.3,  1.8, 1.9, 0.7, 0.1, 2.5, 0.01], lidl: "Schnittlauch Topf"}
+steinpilzpulver:        {nutri: [350,20.0, 40.0, 2.0, 3.0, 0.5,25.0, 0.05], lidl: "Getrocknete Steinpilze gemahlen"}
+gemuesefond:            {nutri: [ 10, 0.3,  1.5, 0.8, 0.2, 0.0, 0.1, 1.50], lidl: "Kania Gemüsebrühe (angerührt)"}
+salz:                   {nutri: [  0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0,100.0], lidl: "Kania Meersalz"}
+gewuerze:               {nutri: [300,10.0, 40.0, 3.0, 8.0, 1.0,25.0, 0.10], lidl: "Kania Gewürze (Paprika, Kurkuma, Pfeffer, Chili …)"}
+wasser:                 {nutri: [  0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.00], lidl: "—"}
+
+# ---------- Nachträge ----------
+pastinaken:             {nutri: [ 75, 1.2, 15.0, 4.8, 0.3, 0.1, 4.9, 0.03], lidl: "Pastinaken lose (Saison)"}
+auberginen:             {nutri: [ 25, 1.0,  3.0, 2.4, 0.2, 0.0, 3.0, 0.01], lidl: "Melanzani lose"}
+leinfaser:              {nutri: [200, 6.0, 10.0, 0.0, 5.0, 0.5,60.0, 0.02], lidl: "Belbake Leinsamen geschrotet"}
+suesskartoffel:         {nutri: [ 86, 1.6, 20.0, 4.2, 0.1, 0.0, 3.0, 0.02], lidl: "Süsskartoffeln lose"}
+# Hülsenfrüchte "gegart (Wasser, ...)" wie in der every-Deklaration: aus Trockenware
+# gekocht statt Konserve — mehr Protein und Ballaststoffe als die Dosenvariante.
+linsen_gekocht:         {nutri: [116, 9.0, 12.0, 1.0, 0.4, 0.1, 7.9, 0.01], lidl: "Golden Sun Linsen trocken, gekocht"}
+kidneybohnen_gekocht:   {nutri: [127, 8.7, 15.0, 0.6, 0.5, 0.1, 7.4, 0.01], lidl: "Golden Sun Kidneybohnen trocken, gekocht"}
+schwarze_bohnen_gekocht: {nutri: [132, 8.9, 16.0, 0.3, 0.5, 0.1, 8.7, 0.01], lidl: "Schwarze Bohnen trocken, gekocht"}
+kichererbsen_gekocht:   {nutri: [164, 8.9, 19.0, 3.0, 2.6, 0.3, 7.6, 0.01], lidl: "Golden Sun Kichererbsen trocken, gekocht"}

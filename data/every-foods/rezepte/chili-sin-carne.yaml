@@ -1,0 +1,23 @@
+dish: chili-sin-carne
+# Portion 450 g. Kreuzkümmel und Korianderblatt gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [planted_pulled, kartoffeln_frittiert, kidneybohnen_gekocht, schwarze_bohnen_gekocht, olivenoel, salz, agavendicksaft, zuckermais, tomatenmark]
+zutaten:
+  kartoffeln_frittiert: 38      # deklariert 15 %, hier 8 %
+  tomaten_stueckig: 67.5      # deklariert 15 %, hier 15 %
+  planted_pulled: 48      # deklariert 11 %, hier 11 %
+  kidneybohnen_gekocht: 50      # deklariert 10 %, hier 11 %
+  schwarze_bohnen_gekocht: 46      # deklariert 10 %, hier 10 %
+  paprika_gelb: 35
+  paprika_rot: 35
+  zuckermais: 14
+  zwiebeln: 20
+  tomatenmark: 35      # deklariert 4 %, hier 7 %
+  tomatensaft: 9      # deklariert 2 %, hier 2 %
+  olivenoel: 6.5
+  agavendicksaft: 9
+  knoblauch: 3
+  gewuerze: 3
+  staerke: 2
+  salz: 3
+  wasser: 26

@@ -1,0 +1,22 @@
+dish: tikka-masala
+# Portion 450 g. Kreuzkümmel und Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [basmatireis_gegart, planted_pulled, kokosmilch, paprika_rot, rapsoel, salz, wildreis_gegart]
+zutaten:
+  basmatireis_gegart: 100      # deklariert 22 %, hier 22 %
+  paprika_rot: 98      # deklariert 14 %, hier 18 %
+  planted_pulled: 65      # deklariert 13 %, hier 14 %
+  kokosmilch: 56
+  tomaten_stueckig: 29
+  pak_choi: 29      # Choi Sum, 9 %
+  zwiebeln: 18
+  wildreis_gegart: 19      # deklariert 4 %, hier 4 %
+  erbsen_tk: 11
+  tomatensaft: 7.5
+  rapsoel: 3
+  zitronensaft: 2.5
+  knoblauch: 2.5
+  ingwer: 2.5
+  staerke: 2.5
+  gewuerze: 2.5
+  salz: 2

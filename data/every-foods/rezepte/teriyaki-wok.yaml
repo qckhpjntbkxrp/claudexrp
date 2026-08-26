@@ -1,0 +1,25 @@
+dish: teriyaki-wok
+# Portion 500 g. Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [mie_nudeln_gegart, sojabohnenkerne, planted_pulled, sonnenblumenoel, kandierter_ingwer, agavendicksaft, sojasauce]
+zutaten:
+  mie_nudeln_gegart: 152      # deklariert 24 %, hier 28 %
+  sojabohnenkerne: 21
+  pak_choi: 60      # Choisum
+  mu_err_pilze: 40      # deklariert 8 %, hier 8 %
+  planted_pulled: 55      # deklariert 8 %, hier 10 %
+  paprika_gelb: 35
+  paprika_rot: 35
+  zwiebeln: 25
+  sojasauce: 10
+  sonnenblumenoel: 9
+  kandierter_ingwer: 3.5
+  worcestersauce: 6
+  agavendicksaft: 3.5
+  tomatenmark: 5
+  gemuesefond: 5
+  staerke: 4
+  knoblauch: 3
+  steinpilzpulver: 2
+  gewuerze: 2
+  wasser: 24

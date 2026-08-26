@@ -1,0 +1,33 @@
+dish: smoky-lentil-stew
+# Portion 450 g. Kreuzkümmel und Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [linsen_gekocht, kichererbsen_gekocht, boonian_crumbles, brokkoli, paprika_rot, olivenoel, salz, blumenkohl]
+zutaten:
+  linsen_gekocht: 93.5      # deklariert 17 %, hier 20 %
+  paprika_rot: 44      # deklariert 13 %, hier 7 %
+  brokkoli: 18      # deklariert 13 %, hier 7 %
+  boonian_crumbles: 59      # deklariert 12 %, hier 10 %
+  kichererbsen_gekocht: 14
+  tomaten_stueckig: 34
+  kartoffeln_gegart: 29
+  blumenkohl: 8
+  tomatenmark: 12
+  olivenoel: 4
+  balsamico: 6
+  petersilie: 4
+  weizenmehl: 4
+  apfelsaftkonzentrat: 3
+  staerke: 3
+  gewuerze: 3
+  knoblauch: 2
+  salz: 1.5
+  wasser: 108
+
+# ABWEICHUNG (bewusst, strukturell): Ballaststoffe -30 %.
+#   22,05 g Ballaststoffe bei nur 374 kcal und 10,35 g Fett sind aus den
+#   deklarierten Zutaten mit Standard-Nährwerten nicht darstellbar: 22 g
+#   Ballaststoffe brauchen rund 200 g Hülsenfrüchte (~300 kcal), zusammen mit
+#   10 g Fett (90 kcal) bliebe für die deklarierten 117 g Gemüse keine Energie
+#   mehr. Vermutlich liefern die Boonian Crumbles mehr Ballaststoffe als hier
+#   angesetzt, oder resistente Stärke wird mitgezählt.
+#   Dieses Rezept trifft kcal, Eiweiss, KH, Zucker, Fett und Salz.

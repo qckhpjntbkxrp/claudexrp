@@ -1,0 +1,18 @@
+dish: creamy-paprika-pasta
+# Portion 450 g. Enthält von Haus aus weder Kreuzkümmel noch Koriander.
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [bandnudeln_gegart, kokosmilch, planted_pulled, paprika_rot, salz, tomatenmark, sojasauce]
+zutaten:
+  bandnudeln_gegart: 118      # deklariert 27 %, hier 26 %
+  paprika_rot: 122      # deklariert 20 %, hier 30 %
+  kokosmilch: 58
+  planted_pulled: 40
+  tomaten_stueckig: 38
+  zwiebeln: 24
+  sojasauce: 9
+  tomatenmark: 14
+  staerke: 3
+  knoblauch: 3
+  gewuerze: 3
+  salz: 1
+  wasser: 17

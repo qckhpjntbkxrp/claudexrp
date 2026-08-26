@@ -1,0 +1,23 @@
+dish: peanut-noodles
+# Portion 450 g. Kreuzkümmel und Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [bandnudeln_gegart, erdnuesse, erdnussmus, paprika_rot, karotten, olivenoel, salz, apfelsaftkonzentrat]
+zutaten:
+  bandnudeln_gegart: 93      # deklariert 22 %, hier 20 %
+  paprika_rot: 20      # deklariert 15 %, hier 8 %
+  karotten: 16      # deklariert 12 %, hier 7 %
+  erbsenschoten: 45      # deklariert 10 %, hier 10 %
+  champignons: 40
+  erdnuesse: 32      # zusammen mit Erdnussmus 8 %
+  erdnussmus: 4.5
+  fruehlingszwiebeln: 20
+  sojasauce: 14
+  zitronengras: 6
+  apfelsaftkonzentrat: 9
+  olivenoel: 2.5
+  schnittlauch: 4
+  staerke: 3
+  knoblauch: 2
+  gewuerze: 2
+  salz: 1
+  wasser: 136

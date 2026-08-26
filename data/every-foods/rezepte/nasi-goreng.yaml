@@ -1,0 +1,21 @@
+dish: nasi-goreng
+# Portion 450 g. Kreuzkümmel und Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [basmatireis_gegart, planted_pulled, kokosflocken, sonnenblumenoel, sojasauce, salz, erbsen_tk]
+zutaten:
+  basmatireis_gegart: 104      # deklariert 33 %, hier 24 %
+  planted_pulled: 64      # deklariert 13 %, hier 14 %
+  karotten: 45
+  erbsen_tk: 72
+  wirsing: 30
+  wasserkastanien: 25
+  mu_err_pilze: 25
+  lauch: 20
+  sojasauce: 10
+  sonnenblumenoel: 10
+  kokosflocken: 6
+  knoblauch: 3
+  staerke: 3
+  gewuerze: 3
+  salz: 1
+  wasser: 29

@@ -9,8 +9,11 @@ werden die Daten per Copy-Paste aus dem Browser eingepflegt.
 ```
 data/every-foods/
 ├── README.md            ← diese Datei: Index, Konventionen, Vergleichstabelle
-└── dishes/
-    └── <slug>.md        ← ein File pro Gericht, YAML-Frontmatter + Fliesstext
+├── dishes/
+│   └── <slug>.md        ← ein File pro Gericht, YAML-Frontmatter + Fliesstext
+├── rezepte/             ← Nachbau-Rezepte mit Grammangaben und Lidl-Produkten
+├── tools/               ← check_claims.py, check_recipe.py, tune_recipe.py
+└── meine-auswahl.md     ← persönliche Arbeitskopie (Personalisierung)
 ```
 
 Jedes Gericht hat **YAML-Frontmatter** (maschinenlesbar: Nährwerte, Tags, Allergene)

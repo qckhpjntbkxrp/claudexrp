@@ -1,0 +1,20 @@
+dish: umami-rice
+# Portion 450 g. Korianderblatt gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [basmatireis_gegart, planted_pulled, brokkoli, sojabohnenkerne, wildreis_gegart, kandierter_ingwer, salz, sojasauce]
+zutaten:
+  basmatireis_gegart: 96      # deklariert 27 %, hier 22 %
+  brokkoli: 136.5      # deklariert 21 %, hier 28 %
+  planted_pulled: 52      # deklariert 13 %, hier 12 %
+  paprika_rot: 26      # deklariert 8 %, hier 7 %
+  wildreis_gegart: 49      # deklariert 7 %, hier 10 %
+  karotten: 22
+  sojabohnenkerne: 40
+  sojasauce: 8
+  kandierter_ingwer: 7
+  ingwer: 2.5
+  minze: 2.5
+  zitronengras: 2.5
+  staerke: 2.5
+  zitronensaft: 2.5
+  salz: 1

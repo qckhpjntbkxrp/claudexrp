@@ -1,0 +1,20 @@
+dish: better-butter-chicken
+# Portion 500 g. Kreuzkümmel und Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [planted_pulled, kokosmilch, basmatireis_gegart, kartoffeln_gegart, salz, kandierter_ingwer, sonnenblumenoel]
+zutaten:
+  basmatireis_gegart: 54      # deklariert 22 %, hier 15 %
+  tomaten_stueckig: 75      # deklariert 15 %, hier 15 %
+  blumenkohl: 60
+  planted_pulled: 67      # deklariert 13 %, hier 14 %
+  kokosmilch: 58
+  kartoffeln_gegart: 110.5
+  pak_choi: 30
+  tomatenmark: 15      # deklariert 3 %, hier 3 %
+  kandierter_ingwer: 3
+  staerke: 3
+  knoblauch: 3
+  gewuerze: 2
+  sonnenblumenoel: 1
+  salz: 2.5
+  wasser: 16

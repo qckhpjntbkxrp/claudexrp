@@ -1,0 +1,17 @@
+dish: edamame-zen
+# Portion 450 g. Koriander gestrichen (Personalisierung).
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [bandnudeln_gegart, sojabohnenkerne, wildreis_gegart, kandierter_ingwer, sojasauce, lauch, karotten]
+zutaten:
+  bandnudeln_gegart: 92      # deklariert 27 %, hier 21 %
+  karotten: 113
+  pak_choi: 42
+  sojabohnenkerne: 78      # deklariert 12 %, hier 18 %
+  wildreis_gegart: 88      # deklariert 10 %, hier 18 %
+  lauch: 6
+  sojasauce: 16
+  kandierter_ingwer: 5
+  minze: 2.5
+  ingwer: 2.5
+  staerke: 2.5
+  zitronengras: 2.5

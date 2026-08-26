@@ -1,0 +1,28 @@
+dish: sesame-fried-rice
+# Portion 400 g. Enthält von Haus aus weder Kreuzkümmel noch Koriander.
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [roter_reis_gegart, vollkornreis_gegart, mandeln, pistazien, kuerbiskerne, sonnenblumenkerne, sesamoel, rapsoel, salz, dattelsaftkonzentrat]
+zutaten:
+  roter_reis_gegart: 157      # deklariert 31 %, hier 37 %
+  vollkornreis_gegart: 74      # deklariert 14 %, hier 17 %
+  brokkoli: 27      # deklariert 11 %, hier 8 %
+  zucchini: 17      # deklariert 7 %, hier 5 %
+  suesskartoffel: 14      # deklariert 6 %, hier 4 %
+  karotten: 12
+  zwiebeln: 7.5
+  sojabohnenkerne: 8.5
+  mandeln: 16
+  sojasauce: 6
+  sonnenblumenkerne: 5
+  kuerbiskerne: 6
+  pistazien: 18
+  rapsoel: 4
+  fruehlingszwiebeln: 3.5
+  sesamoel: 7
+  dattelsaftkonzentrat: 9
+  miso_pulver: 1.5
+  olivenoel: 1.5
+  ingwer: 1.5
+  steinpilzpulver: 1
+  leinfaser: 1
+  salz: 2

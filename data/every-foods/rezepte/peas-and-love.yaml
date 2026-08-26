@@ -1,0 +1,18 @@
+dish: peas-and-love
+# Portion 500 g. Enthält von Haus aus weder Kreuzkümmel noch Koriander.
+# Deklarierte Prozentwerte von every Foods als Kommentar.
+levers: [muschelnudeln_gegart, erbsen_tk, kuerbiskerne, olivenoel, getrocknete_tomaten, salz, romanesco]
+zutaten:
+  muschelnudeln_gegart: 187      # deklariert 31 %, hier 37 %
+  erbsen_tk: 51      # deklariert 15 %, hier 10 %
+  romanesco: 32
+  wirsing: 45
+  brokkoli: 45
+  getrocknete_tomaten: 23      # deklariert 4 %, hier 5 %
+  kuerbiskerne: 12
+  basilikum: 15      # deklariert 3 %, hier 3 %
+  olivenoel: 8
+  zitronensaft: 5
+  knoblauch: 3
+  salz: 2
+  wasser: 72
