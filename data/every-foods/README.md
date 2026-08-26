@@ -12,6 +12,7 @@ data/every-foods/
 ├── dishes/
 │   └── <slug>.md        ← ein File pro Gericht, YAML-Frontmatter + Fliesstext
 ├── rezepte/             ← Nachbau-Rezepte mit Grammangaben und Lidl-Produkten
+├── monatsplan/          ← Abgleich mit dem Lagerplan, Monatsliste für 2 Personen
 ├── tools/               ← check_claims.py, check_recipe.py, tune_recipe.py
 └── meine-auswahl.md     ← persönliche Arbeitskopie (Personalisierung)
 ```
