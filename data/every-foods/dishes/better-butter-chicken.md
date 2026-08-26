@@ -31,7 +31,7 @@ tags:
   - nicht scharf
   - ohne Paprika
 allergens: [Soja]
-in_protein_bundle: unbekannt
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

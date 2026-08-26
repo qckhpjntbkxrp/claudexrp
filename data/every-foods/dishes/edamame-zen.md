@@ -38,7 +38,7 @@ tags:
   - ohne Paprika
 allergens: [Soja, Gluten (Hartweizen, Weizen)]
 contains_planted_pulled: false
-in_protein_bundle: vermutlich nein
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

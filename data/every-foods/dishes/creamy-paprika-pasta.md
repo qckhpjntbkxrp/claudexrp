@@ -33,7 +33,7 @@ tags:
   - ohne Koriander
 allergens: [Gluten (Hartweizen, Weizen), Soja]
 contains_planted_pulled: true
-in_protein_bundle: vermutlich nein
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen (Zutatenliste dort auf Englisch)
 captured: 2026-08-26
 ---
@@ -101,5 +101,6 @@ sind, häufig umrühren.
   Portionsgrösse 450 g ist daraus ablesbar.
 - **Badges stimmen exakt mit der Tabelle.**
 - **Protein 21,2 g bei 446 kcal = 19,0 % Energie** → „Proteinquelle", knapp unter
-  der Schwelle. Für das Bundle (ø 23 g) eher zu wenig.
+  der Schwelle — und damit unter dem beworbenen Bundle-Schnitt von ø 23 g, obwohl
+  das Gericht laut Bundle-Liste dazugehört.
 - Preis noch offen.

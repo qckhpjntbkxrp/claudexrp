@@ -36,7 +36,7 @@ tags:
 allergens: [Soja, Mandel, Pistazie, Sesam, Gluten (Weizen)]
 contains_planted_pulled: false
 protein_source: Sojabohnen, Nüsse und Saaten, Reis
-in_protein_bundle: nein
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen (Zutatenliste dort auf Englisch)
 captured: 2026-08-26
 ---
@@ -99,7 +99,8 @@ sind, häufig umrühren.
 - **Erstes Gericht ganz ohne Protein-Claim** — und das ist korrekt: 19,6 g × 4 / 748 =
   **10,5 % der Energie aus Protein**, unter der 12-%-Schwelle für „Proteinquelle".
   Mit 2,6 g Protein/100 kcal das schwächste Profil der Sammlung, weit hinter
-  Umami Rice (6,6). **Nicht Teil des Protein Bundles.**
+  Umami Rice (6,6). **Trotzdem laut Bundle-Liste Teil des Protein Bundles** — das
+  einzige Bundle-Gericht, das die Schwelle für „Proteinquelle" nicht erreicht.
 - **Erstes Gericht, das „Source of Fiber" direkt über die g/100-g-Schwelle erfüllt**
   (3,1 g ≥ 3 g). Alle anderen stützen sich auf die Alternativschwelle pro 100 kcal.
 - **Allergenreichstes Gericht der Sammlung:** Soja, **Mandel**, **Pistazie**,

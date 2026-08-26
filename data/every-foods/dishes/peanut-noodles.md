@@ -36,7 +36,7 @@ tags:
 allergens: [Erdnuss, Gluten (Weizen), Soja]
 contains_planted_pulled: false
 protein_source: Erdnüsse (8 %), Nudeln, Erbsenschoten
-in_protein_bundle: vermutlich nein
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---
@@ -109,5 +109,5 @@ regelmässig umrühren.
   (0,6 g/100 g) — Erdnussfett ist überwiegend ungesättigt.
 - **Badges stimmen mit der Tabelle** (nur Rundung).
 - **20,25 g Protein bei 491 kcal** = 16,5 % Energie, 4,1 g/100 kcal. Unter dem
-  Bundle-Schnitt von 23 g — vermutlich nicht im Protein Bundle.
+  Bundle-Schnitt von 23 g, obwohl das Gericht laut Bundle-Liste dazugehört.
 - Preis noch offen.

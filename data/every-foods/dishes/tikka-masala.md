@@ -33,7 +33,7 @@ tags:
 allergens: [Soja]
 contains_planted_pulled: true
 protein_source: planted.pulled, Erbsen
-in_protein_bundle: ja (bestätigt)
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

@@ -1,3 +1,52 @@
+# Meine every-Auswahl
+
+**Persönliche Arbeitskopie** von [README.md](README.md) — hier wird personalisiert,
+das README bleibt die neutrale Datenbasis. Stand: 17 Gerichte, alle im Protein Bundle.
+
+## Mein Profil
+
+*(noch auszufüllen)*
+
+- **Ziel:** —
+- **Protein pro Tag:** —
+- **Allergien / Unverträglichkeiten:** —
+- **Mag ich nicht:** —
+- **Schärfe:** —
+
+## Meine Bewertung
+
+| Gericht | Protein | kcal | Bewertung | Schon probiert | Notiz |
+|---|---:|---:|:---:|:---:|---|
+| [Umami Rice](dishes/umami-rice.md) | 27,9 g | 424 | | | |
+| [Teriyaki Wok](dishes/teriyaki-wok.md) | 27,0 g | 520 | | | |
+| [Bami Goreng](dishes/bami-goreng.md) | 27,0 g | 468 | | | |
+| [Nasi Goreng](dishes/nasi-goreng.md) | 25,7 g | 527 | | | |
+| [Paprika Thai Ragout](dishes/paprika-thai-ragout.md) | 25,0 g | 510 | | | |
+| [Chili sin Carne](dishes/chili-sin-carne.md) | 24,75 g | 446 | | | |
+| [Better Butter Chicken](dishes/better-butter-chicken.md) | 24,0 g | 470 | | | |
+| [Dal Delight](dishes/dal-delight.md) | 23,85 g | 491 | | | |
+| [Smoky Lentil Stew](dishes/smoky-lentil-stew.md) | 23,85 g | 374 | | | |
+| [Tikka Masala](dishes/tikka-masala.md) | 23,4 g | 491 | | | |
+| [Peas & Love](dishes/peas-and-love.md) | 22,0 g | 545 | | | |
+| [Creamy Paprika Pasta](dishes/creamy-paprika-pasta.md) | 21,2 g | 446 | | | |
+| [Peanut Noodles](dishes/peanut-noodles.md) | 20,25 g | 491 | | | |
+| [Edamame Zen](dishes/edamame-zen.md) | 20,25 g | 423 | | | |
+| [Green Forest Bowl](dishes/green-forest-bowl.md) | 20,25 g | 599 | | | |
+| [Brilliant Bolognese](dishes/brilliant-bolognese.md) | 20,0 g | 520 | | | |
+| [Sesame Fried Rice](dishes/sesame-fried-rice.md) | 19,6 g | 748 | | | |
+
+## Meine Box
+
+*(Auswahl für die nächste Bestellung — Boxgrössen: 12, 16 oder 20 Gerichte)*
+
+1. —
+
+---
+
+Ab hier folgt unverändert der Inhalt von `README.md` als Referenz.
+
+---
+
 # every Foods — Gerichte-Datenbank
 
 Manuell übertragene Produktdaten von [everyfoods.ch](https://everyfoods.ch).

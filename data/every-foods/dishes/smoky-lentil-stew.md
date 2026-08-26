@@ -38,7 +38,7 @@ tags:
 allergens: [Soja, Gluten (Weizen)]
 contains_planted_pulled: false
 protein_source: Boonian Crumbles (Sojaeiweiss), Linsen, Kichererbsen
-in_protein_bundle: sehr wahrscheinlich ja
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

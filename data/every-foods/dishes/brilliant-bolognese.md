@@ -36,7 +36,7 @@ tags:
   - ohne Kreuzkümmel
   - ohne Koriander
 allergens: [Gluten (Hartweizen)]
-in_protein_bundle: vermutlich nein
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

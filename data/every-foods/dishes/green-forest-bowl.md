@@ -40,7 +40,7 @@ tags:
 allergens: [Gluten (Dinkelweizen)]
 contains_planted_pulled: false
 protein_source: Dinkel, Kürbiskerne, Erbsen
-in_protein_bundle: vermutlich nein
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---
@@ -103,7 +103,8 @@ siehe Notes.*
   15 % Anteil (Kürbiskerne + Olivenöl). Trägt trotzdem zu Recht „arm an gesättigten
   Fettsäuren" (1,3 g/100 g) — pflanzliche Öle.
 - **Schwächstes Protein-Profil der Sammlung:** 20,25 g bei 599 kcal = **3,4 g/100 kcal**
-  und 13,5 % Energie aus Protein. Für das Bundle (ø 23 g) zu wenig.
+  und 13,5 % Energie aus Protein — der niedrigste Protein-Anteil unter den
+  Bundle-Gerichten und deutlich unter dem beworbenen Schnitt von ø 23 g.
 - **„ohne Knoblauch" ist fragwürdig:** das Gericht enthält **Bärlauchpesto mit 15 %
   Anteil**, Bärlauch ist *Allium ursinum* — die Produktseite selbst überschreibt den
   Hauptzutaten-Eintrag mit **„Wild garlic"**. Wer Knoblauch meidet, sollte hier

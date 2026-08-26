@@ -37,7 +37,7 @@ tags:
   - ohne Kreuzkümmel
   - ohne Paprika
 allergens: [Soja, Gluten (Weizen)]
-in_protein_bundle: sehr wahrscheinlich ja
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---
@@ -95,7 +95,7 @@ sind, häufig umrühren.
 - **Bestes Protein-Profil der Sammlung:** 27,9 g Eiweiss bei nur 424 kcal =
   **6,6 g/100 kcal** und **26,3 % der Energie aus Protein** — mit Abstand Platz 1 in
   beiden Kennzahlen. Gleichzeitig das **fettärmste** (5,9 g) und **kalorienärmste**
-  Gericht bisher. Bei ø 23 g Bundle-Anspruch praktisch sicher Teil des Protein Bundles.
+  Gericht bisher — das stärkste Protein-Profil des gesamten Bundles.
 - **„ohne Paprika" ist hier schlicht falsch:** die Zutatenliste deklariert
   **rote Paprika mit 8 %** als vierte Zutat, dazu gemahlene Paprika im planted.pulled —
   und die **Produktbeschreibung nennt Paprika selbst** („trifft auf Brokkoli, Paprika,

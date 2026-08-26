@@ -33,7 +33,7 @@ tags:
 allergens: [Gluten (Weizen), Soja]
 contains_planted_pulled: true
 protein_source: planted.pulled (8 %), Sojabohnenkerne, Mie-Nudeln
-in_protein_bundle: möglich
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

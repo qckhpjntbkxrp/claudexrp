@@ -40,7 +40,7 @@ tags_broken:
 allergens: []
 contains_planted_pulled: false
 protein_source: Linsen, Kidney-Bohnen, schwarze Bohnen
-in_protein_bundle: möglich
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

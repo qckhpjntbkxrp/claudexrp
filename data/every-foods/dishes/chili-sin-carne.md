@@ -35,7 +35,7 @@ tags:
   - sehr scharf
   - ohne Gluten*
 allergens: [Soja, Senf]
-in_protein_bundle: sehr wahrscheinlich ja
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---
@@ -93,10 +93,9 @@ regelmässig umrühren.
 - **Bundle-Treffer bestätigt:** Diese exakte Nährwertkombination (24,8 g Protein /
   446 kcal / 49,5 g KH / 13,1 g Fett) tauchte bereits als Fragment in den
   Websuchergebnissen zur **Protein-Bundle-Seite** auf. Das Gericht ist damit
-  praktisch sicher Teil des Bundles.
-- **Ein zweites Bundle-Fragment ist noch nicht zugeordnet:** 23,4 g Protein /
-  491 kcal / 51,3 g KH / 19,4 g Fett. Passt zu keinem der bisher erfassten Gerichte —
-  hilfreich zum Abgleich, wenn weitere Gerichte dazukommen.
+  bereits vor der Bestätigung durch die Bundle-Liste belegt.
+- **Das zweite Bundle-Fragment** (23,4 g / 491 kcal / 51,3 g KH / 19,4 g Fett) gehört
+  zu **Tikka Masala**.
 - **Badges stimmen mit der Tabelle** (nur Rundung: 24,8 vs. 24,75; 13,1 vs. 13,05).
 - **Tag „Wenig Kohlenhydrate" ist irreführend:** 49,5 g KH pro Portion sind absolut
   gesehen nicht wenig — der Wert bezieht sich offenbar auf die 100-g-Basis (11,0 g),

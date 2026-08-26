@@ -34,7 +34,7 @@ tags:
   - ohne Paprika
 allergens: [Soja, Gluten (Weizen)]
 allergen_traces: [Krebstiere, Eier, Fisch, Milch, Sellerie, Senf, Weichtiere]
-in_protein_bundle: unbekannt
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

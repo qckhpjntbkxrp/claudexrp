@@ -34,7 +34,7 @@ tags:
   - High Protein
   - sehr scharf
 allergens: [Gluten (Hartweizen, Weizen), Soja]
-in_protein_bundle: unbekannt
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---

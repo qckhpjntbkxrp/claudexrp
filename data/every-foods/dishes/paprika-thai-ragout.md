@@ -34,7 +34,7 @@ allergens: [Gluten (Weizen), Soja]
 allergen_traces: [Erdnuss]
 contains_planted_pulled: false
 protein_source: Boonian Crumbles (Sojaeiweiss), Sojabohnenkerne, Nudeln
-in_protein_bundle: sehr wahrscheinlich ja
+in_protein_bundle: ja
 source: Produktseite everyfoods.ch, manuell übertragen
 captured: 2026-08-26
 ---
@@ -106,7 +106,7 @@ regelmässig umrühren.
   Smoky Lentil Stew hat bei gleicher Zutat den Claim gesetzt. Gleiche Zutat, gegenteilige
   Auszeichnung: ein Fehler bei Smoky Lentil Stew, kein bewusster Grenzfall.
 - **25,0 g Protein** bei 510 kcal (19,6 % Energie, knapp unter der High-Protein-Schwelle).
-  Über dem Bundle-Schnitt von 23 g — sehr wahrscheinlich Teil des Protein Bundles.
+  Über dem beworbenen Bundle-Schnitt von 23 g.
 - **Zweitsalzärmstes Gericht:** 2,4 g pro Portion, nur Smoky Lentil Stew liegt tiefer
   (2,25 g). Beide setzen auf Boonian Crumbles statt planted.pulled.
 - **Kein „Source of Fiber"-Tag, obwohl das Gericht den Claim erfüllen würde**
