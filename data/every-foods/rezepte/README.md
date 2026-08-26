@@ -146,9 +146,7 @@ Fertige Listen für dieses Szenario:
 | Datei | Zweck |
 |---|---|
 | [einkauf-8x4.md](einkauf-8x4.md) | 8 Gerichte × 4 Portionen, nach Ladenbereich, mit Preisen |
-| [einkauf-8x4-ios.txt](einkauf-8x4-ios.txt) | dieselbe Liste als reiner Text — eine Zeile je Position, für iOS Erinnerungen und Notizen |
-| [einkauf-8x4-notiz.txt](einkauf-8x4-notiz.txt) | für iOS Notizen: Checkliste **plus** Rechenblock, der Schätzung und Ist gegenüberstellt |
-| [einkauf-8x4-notiz-punkt.txt](einkauf-8x4-notiz-punkt.txt) | dasselbe mit Dezimalpunkt statt Komma, falls Math Notes das Komma nicht frisst |
+| [einkauf-8x4-liste.txt](einkauf-8x4-liste.txt) | reine Einkaufsliste als Text, nach Ladenbereich gruppiert — für iOS Notizen |
 | [einkauf-7x4.md](einkauf-7x4.md) | vorratsarme Variante ohne Dal Delight |
 
 Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert und kommt auf
@@ -158,44 +156,22 @@ den Einkauf auf **87,39 €** (2,73 € je Mahlzeit, Vorrat 35,29 €).
 
 ### Liste auf dem iPhone
 
-`einkauf-8x4-ios.txt` ist bewusst **ohne Aufzählungszeichen, Überschriften und
-Markdown** — eine Position je Zeile, sortiert nach Ladenbereich:
+`einkauf-8x4-liste.txt` ist reiner Text ohne Markdown: Gruppenüberschriften in
+Grossbuchstaben, darunter eine Position je Zeile mit der zu kaufenden Menge.
+Die Reihenfolge folgt dem Weg durch die Filiale — Gemüse zuerst, **Tiefkühl zuletzt**,
+damit nichts antaut.
 
-- **Erinnerungen:** Text kopieren, in einer Liste ins Titelfeld einfügen. iOS fragt
-  *„Als mehrere Erinnerungen einfügen?"* — bestätigen, dann wird jede Zeile ein
-  eigener Eintrag mit Häkchen.
-- **Notizen:** Text in eine neue Notiz einfügen, alles markieren, dann
-  *Format → Checkliste*. Jede Zeile wird ein abhakbarer Punkt.
+**Notizen:** Text einfügen, dann nur die Positionszeilen markieren und
+*Format → Checkliste* wählen. Die Überschriften bleiben normaler Text und trennen
+die Abschnitte sauber.
 
-**Mit Rechnen:** `einkauf-8x4-notiz.txt` hängt unter die Checkliste einen Rechenblock,
-der Schätzung und Ist direkt gegenüberstellt:
+**Erinnerungen:** beim Einfügen fragt iOS *„Als mehrere Erinnerungen einfügen?"* —
+dann würden auch die Überschriften eigene Einträge. Für Erinnerungen die
+Überschriftenzeilen vorher löschen.
 
-```
-Paprika = 5,24          ← überschreiben mit dem echten Preis
-Karotten = 2,38
-…
-Ist = Paprika + Karotten + …      ← Summe der eingetragenen Werte
-Schaetzung = 87,39                ← feste Referenz, nicht anfassen
-Differenz = Ist - Schaetzung
-ProMahlzeit = Ist / 32
-ProMahlzeitGeschaetzt = Schaetzung / 32
-ErsparnisGegenBundle = 320 - Ist
-```
-
-Math Notes (ab iOS 18) rechnet alles neu, sobald ein Wert überschrieben wird.
-`Differenz` zeigt sofort, wie weit die Schätzung danebenlag — solange nichts geändert
-wurde, steht dort 0. `Schaetzung` ist bewusst eine fertige Zahl statt einer
-Additionskette, damit die Referenz beim Korrigieren stehen bleibt.
-
-Die Checklisten-Zeilen tragen den Schätzwert als `ca. 5,24` mit, damit man im Markt
-sieht, ob der Regalpreis in der Grössenordnung liegt.
-
-Nur den oberen Teil als Checkliste formatieren — im Rechenblock würde die
-Checklisten-Formatierung das Rechnen stören.
-
-Überschriften würden in Erinnerungen als eigene Einträge landen — deshalb sind keine
-drin. Die Reihenfolge folgt trotzdem dem Weg durch den Markt: Gemüse, Tiefkühl,
-Kühlregal, Trockenware, Öle, Würzen.
+Preise stehen bewusst nicht drin: die echten Werte kommen nach dem Einkauf vom
+Kassenbon in der Lidl-Plus-App (siehe [echte-preise.md](echte-preise.md)) und werden
+in `preise-lidl.yaml` nachgetragen.
 
 Ab dem zweiten Durchgang zählen nur noch die verbrauchten Zutaten: **rund 1,60–1,75 €
 je Portion**, unabhängig vom Umfang.

@@ -112,7 +112,7 @@ Kocharbeit entspricht das einem impliziten Stundenlohn von 22–34 €.
 Kostenoptimierte Auswahl für **8 Gerichte × 4 Portionen = 32 Mahlzeiten**,
 Einkauf 87,39 € (2,73 € je Mahlzeit) — Liste in
 [rezepte/einkauf-8x4.md](rezepte/einkauf-8x4.md), als Text fürs iPhone in
-[rezepte/einkauf-8x4-ios.txt](rezepte/einkauf-8x4-ios.txt):
+[rezepte/einkauf-8x4-liste.txt](rezepte/einkauf-8x4-liste.txt):
 
 Umami Rice · Bami Goreng · Nasi Goreng · Better Butter Chicken · Dal Delight ·
 Tikka Masala · Creamy Paprika Pasta · Edamame Zen
