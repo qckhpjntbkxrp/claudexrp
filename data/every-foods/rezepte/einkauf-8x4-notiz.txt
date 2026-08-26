@@ -1,0 +1,87 @@
+Paprika rot lose - 3x 500 g = 1,5 kg
+Karotten lose - 2x 1 kg
+Zwiebeln lose - 1x 1,5 kg
+Knoblauch lose - 1x 150 g
+Ingwer lose - 1x 200 g
+Lauch lose - 1x 500 g
+Frühlingszwiebeln Bund - 1x 100 g
+Pak Choi frisch - 2x 300 g
+Wirsing frisch - 1x 800 g
+Speisekartoffeln lose - 1x 2 kg
+Minze Topf - 1x 50 g
+Freshona Erbsen TK - 1x 1 kg
+Freshona Brokkoli TK - 1x 750 g
+Freshona Blumenkohl TK - 1x 750 g
+Freshona Blattspinat TK - 1x 450 g
+Vitasia Edamame TK - 1x 500 g
+Freshona Süsskartoffel-Würfel TK - 1x 600 g
+Vemondo Vegane Pulled Pieces - 8x 180 g = 1,4 kg
+Combino Bandnudeln - 2x 500 g = 1 kg
+Vitasia Basmati Reis - 1x 1 kg
+Golden Sun Wildreis-Mischung - 1x 500 g
+Golden Sun Linsen trocken - 1x 500 g
+Golden Sun Kidneybohnen trocken - 1x 500 g
+Baresa Tomaten stückig - 2x 400 g
+Baresa Tomatenmark 2-fach konzentriert - 1x 200 g
+Solevita Tomatensaft - 1x 1 kg
+Vitasia Wasserkastanien - 1x 140 g
+Vitasia Kokosmilch - 3x 400 g = 1,2 kg
+Vitasia Mu-Err Pilze getrocknet - 1x 50 g
+Belbake Speisestärke - 1x 400 g
+Vita D'Or Rapsöl - 1x 1 kg
+Vita D'Or Sonnenblumenöl - 1x 1 kg
+Alesto Kokosraspeln - 1x 200 g
+Vitasia Sojasauce - 2x 150 g
+Kania Branntweinessig - 1x 1 kg
+Alesto Ingwer kandiert - 1x 200 g
+Solevita Zitronensaft - 1x 200 g
+Vitasia Zitronengras - 1x 100 g
+Kania Meersalz - 1x 500 g
+Kania Gewürze - 2x 50 g
+
+
+PREISE  (Schaetzwerte - beim Einkauf mit echten Preisen ueberschreiben)
+
+Paprika = 5,24
+Karotten = 2,38
+Zwiebeln = 1,94
+Knoblauch = 1,19
+Ingwer = 1,00
+Lauch = 1,25
+Fruehlingszwiebeln = 0,59
+PakChoi = 2,39
+Wirsing = 1,59
+Kartoffeln = 2,38
+Minze = 1,20
+Erbsen = 1,49
+Brokkoli = 1,49
+Blumenkohl = 1,72
+Spinat = 0,90
+Edamame = 2,99
+Suesskartoffel = 2,09
+Vemondo = 18,72
+Nudeln = 1,98
+Basmati = 2,99
+Wildreis = 2,50
+Linsen = 1,79
+Kidneybohnen = 1,60
+TomatenDose = 1,58
+Tomatenmark = 0,60
+Tomatensaft = 1,20
+Wasserkastanien = 0,63
+Kokosmilch = 4,48
+MuErrPilze = 1,60
+Staerke = 0,79
+Rapsoel = 2,49
+Sonnenblumenoel = 2,19
+Kokosraspeln = 1,00
+Sojasauce = 2,58
+Essig = 0,99
+IngwerKandiert = 1,98
+Zitronensaft = 0,44
+Zitronengras = 1,20
+Salz = 0,25
+Gewuerze = 2,00
+
+Summe = Paprika + Karotten + Zwiebeln + Knoblauch + Ingwer + Lauch + Fruehlingszwiebeln + PakChoi + Wirsing + Kartoffeln + Minze + Erbsen + Brokkoli + Blumenkohl + Spinat + Edamame + Suesskartoffel + Vemondo + Nudeln + Basmati + Wildreis + Linsen + Kidneybohnen + TomatenDose + Tomatenmark + Tomatensaft + Wasserkastanien + Kokosmilch + MuErrPilze + Staerke + Rapsoel + Sonnenblumenoel + Kokosraspeln + Sojasauce + Essig + IngwerKandiert + Zitronensaft + Zitronengras + Salz + Gewuerze
+ProMahlzeit = Summe / 32

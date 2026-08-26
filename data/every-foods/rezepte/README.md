@@ -147,6 +147,7 @@ Fertige Listen für dieses Szenario:
 |---|---|
 | [einkauf-8x4.md](einkauf-8x4.md) | 8 Gerichte × 4 Portionen, nach Ladenbereich, mit Preisen |
 | [einkauf-8x4-ios.txt](einkauf-8x4-ios.txt) | dieselbe Liste als reiner Text — eine Zeile je Position, für iOS Erinnerungen und Notizen |
+| [einkauf-8x4-notiz.txt](einkauf-8x4-notiz.txt) | für iOS Notizen: Checkliste **plus** Rechenblock mit Variablen und Summe |
 | [einkauf-7x4.md](einkauf-7x4.md) | vorratsarme Variante ohne Dal Delight |
 
 Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert und kommt auf
@@ -165,6 +166,13 @@ Markdown** — eine Position je Zeile, sortiert nach Ladenbereich:
 - **Notizen:** Text in eine neue Notiz einfügen, alles markieren, dann
   *Format → Checkliste*. Jede Zeile wird ein abhakbarer Punkt.
 
+**Mit Rechnen:** `einkauf-8x4-notiz.txt` hängt unter die Checkliste einen Block im
+Format `Paprika = 5,24`, eine `Summe = …`-Zeile über alle 40 Variablen und
+`ProMahlzeit = Summe / 32`. Math Notes (ab iOS 18) rechnet das automatisch neu, sobald
+ein Wert überschrieben wird. Die vorbelegten Zahlen sind die Schätzwerte — beim
+Einkauf durch echte ersetzen. Nur den oberen Teil als Checkliste formatieren; im
+Rechenblock würde die Checklisten-Formatierung das Rechnen stören.
+
 Überschriften würden in Erinnerungen als eigene Einträge landen — deshalb sind keine
 drin. Die Reihenfolge folgt trotzdem dem Weg durch den Markt: Gemüse, Tiefkühl,
 Kühlregal, Trockenware, Öle, Würzen.
@@ -176,6 +184,10 @@ Fair bleibt der Vergleich nur mit dem Aufwand: 16 Gerichte kochen, portionieren 
 einfrieren dauert realistisch 4–6 Stunden. Die Ersparnis entspricht damit einem
 impliziten Stundenlohn von **22–34 €**. Nicht eingerechnet sind Energie, Gefrierdosen
 und der Umstand, dass every schockgefrostet liefert.
+
+Wege zu **echten Lidl-Österreich-Preisen** stehen in
+[echte-preise.md](echte-preise.md) — kurz: der digitale Kassenbon in der Lidl-Plus-App
+ist die einzige Quelle, die das Dauersortiment abdeckt.
 
 **Die Preise sind Schätzungen**, nicht von lidl.at abgerufen — dieselbe Einschränkung
 wie bei den Produktnamen. Eine Zeile in `preise-lidl.yaml` korrigieren, Skript neu
