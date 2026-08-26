@@ -30,6 +30,8 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Edamame Zen](dishes/edamame-zen.md) | 450 g | 423 | 20,3 g | 67,1 g | 5,4 g | 0,9 g | 11,3 g | 2,7 g | 19,1 % | Proteinquelle |
 | [Creamy Paprika Pasta](dishes/creamy-paprika-pasta.md) | 450 g | 446 | 21,2 g | 50,4 g | 15,8 g | 11,3 g | 8,6 g | 2,8 g | 19,0 % | Proteinquelle |
 | [Smoky Lentil Stew](dishes/smoky-lentil-stew.md) | 450 g | **374** | 23,9 g | 34,7 g | 10,4 g | 0,9 g | **22,1 g** | **2,3 g** | 25,5 % | High Protein |
+| [Dal Delight](dishes/dal-delight.md) | 450 g | 491 | 23,9 g | 53,6 g | 16,7 g | **11,7 g** | 16,2 g | 3,4 g | 19,4 % | Proteinquelle |
+| [Tikka Masala](dishes/tikka-masala.md) | 450 g | 491 | 23,4 g | 51,3 g | 19,4 g | 10,8 g | 8,6 g | 3,1 g | 19,1 % | Proteinquelle |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -37,7 +39,7 @@ normalisieren.
 
 ## Status
 
-- **9** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
+- **11** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
@@ -62,10 +64,14 @@ Gesamtenergie. Für die Bundle-Frage zählt die **absolute Proteinmenge**.
 Bundle-Seite auf):
 
 - Chili sin Carne — 24,8 g / 446 kcal / 49,5 g KH / 13,1 g Fett
+- Tikka Masala — 23,4 g / 491 kcal / 51,3 g KH / 19,4 g Fett
 
-**Noch nicht zugeordnetes Bundle-Fragment:** 23,4 g Protein / 491 kcal / 51,3 g KH /
-19,4 g Fett. Passt zu keinem bisher erfassten Gericht — beim Einpflegen neuer
-Gerichte gegenprüfen.
+Beide Fragmente aus der Bundle-Seite sind damit zugeordnet; weitere liegen nicht vor.
+
+**Tikka Masala widerlegt die Label-Heuristik endgültig:** es trägt „Proteinquelle"
+(19,1 % Energie aus Protein) und ist trotzdem nachweislich im Bundle. Für die
+Zugehörigkeit zählt allein die **absolute Proteinmenge** — 23,4 g entsprechen exakt
+dem beworbenen Schnitt von ø 23 g.
 
 ## Konventionen
 
@@ -88,8 +94,12 @@ Gerichte gegenprüfen.
   ist „ohne Zwiebeln" getaggt und führt **Zwiebelpulver direkt in der Zutatenliste**.
   Die Filter-Logik ist generell fehlerhaft, nicht nur bei Unterzutaten.
 - **Nährwert-Badges gegen die Tabelle rechnen** (`100-g-Wert × Portion/100`). Bisher
-  zwei echte Fehler statt Rundung: Bami Goreng und Brilliant Bolognese beim Protein,
-  **Smoky Lentil Stew bei den Kalorien** (Badge 384, Tabelle 374).
+  vier echte Fehler statt Rundung in 11 Gerichten: Bami Goreng und Brilliant Bolognese
+  beim Protein, Smoky Lentil Stew bei den Kalorien (384 statt 374), **Dal Delight beim
+  Fett** (18 statt 16,65 g).
+- **Kaputte Tags in `tags_broken`** ablegen, nicht in `tags`: Dal Delight zeigt im
+  Filter-UI die unübersetzten Platzhalter „ohne Recipe without Gluten" und
+  „ohne Recipe without Soy".
 - **Spurenhinweise** in `allergen_traces` erfassen, getrennt von `allergens`.
 - **Portionsgrösse** in `portion_g` festhalten — sie variiert je Gericht (bisher
   450 g und 500 g) und verzerrt Portionsvergleiche.
