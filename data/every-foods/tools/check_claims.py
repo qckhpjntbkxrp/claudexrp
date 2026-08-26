@@ -19,6 +19,9 @@ CLAIMS = {
                                      "≥ 20 % der Energie aus Protein"),
     "Source of Fiber":              (lambda p, kcal: p["fiber_g"] >= 3 or p["fiber_g"] / kcal * 100 >= 1.5,
                                      "≥ 3 g/100 g oder ≥ 1,5 g/100 kcal"),
+    # deutsche Variante desselben Claims, taucht ab Peanut Noodles auf
+    "Ballaststoffquelle":           (lambda p, kcal: p["fiber_g"] >= 3 or p["fiber_g"] / kcal * 100 >= 1.5,
+                                     "≥ 3 g/100 g oder ≥ 1,5 g/100 kcal"),
     "Hoher Ballaststoffgehalt":     (lambda p, kcal: p["fiber_g"] >= 6 or p["fiber_g"] / kcal * 100 >= 3,
                                      "≥ 6 g/100 g oder ≥ 3 g/100 kcal"),
     "fettarm":                      (lambda p, kcal: p["fat_g"] <= 3,

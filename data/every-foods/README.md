@@ -35,6 +35,7 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Teriyaki Wok](dishes/teriyaki-wok.md) | 500 g | 520 | 27,0 g | 64,0 g | 16,5 g | 2,0 g | 10,0 g | 3,4 g | 20,8 % | High Protein |
 | [Green Forest Bowl](dishes/green-forest-bowl.md) | 450 g | **599** | 20,3 g | 44,1 g | **36,0 g** | 5,9 g | 9,5 g | 2,8 g | 13,5 % | Proteinquelle |
 | [Paprika Thai Ragout](dishes/paprika-thai-ragout.md) | 500 g | 510 | 25,0 g | 66,5 g | 13,0 g | 1,0 g | 13,0 g | 2,4 g | 19,6 % | Proteinquelle |
+| [Peanut Noodles](dishes/peanut-noodles.md) | 450 g | 491 | 20,3 g | 48,2 g | 23,4 g | 2,7 g | 8,1 g | 3,4 g | 16,5 % | Proteinquelle |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -42,7 +43,7 @@ normalisieren.
 
 ## Status
 
-- **14** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
+- **15** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
@@ -88,7 +89,7 @@ prüft sie gegen die erfassten Nährwerte:
 
 ```
 $ python3 data/every-foods/tools/check_claims.py
-62 Claims in 14 Gerichten geprüft.
+67 Claims in 15 Gerichten geprüft.
 Alle regulierten Nährwertclaims erfüllen ihre Schwellenwerte.
 ```
 
@@ -99,7 +100,7 @@ gut zu wissen, wenn man Ballaststoffe pro Portion vergleicht.
 
 **Nicht regulierte Filter-Tags — unzuverlässig.** „ohne Zwiebeln", „ohne Paprika",
 „nicht scharf", „ohne Zuckerzusatz" und „Wenig Kohlenhydrate" (letzteres kein
-zugelassener EU-Claim) widersprechen bei **5 von 14 Gerichten** der eigenen
+zugelassener EU-Claim) widersprechen bei **6 von 15 Gerichten** der eigenen
 Zutatenliste. Siehe Konventionen unten.
 
 Kurz: was der Gesetzgeber prüft, stimmt. Was das Marketing selbst vergibt, nicht.
@@ -148,7 +149,11 @@ Kurz: was der Gesetzgeber prüft, stimmt. Was das Marketing selbst vergibt, nich
 - **Abschnitts-Überschriften** normalisieren: `## Zutaten` = vollständige Deklaration,
   `## Hauptzutaten` = die hervorgehobenen Komponenten. Auf den Produktseiten sind
   diese beiden Labels nicht konsistent vergeben.
-- **Allergene** aus den GROSSGESCHRIEBENEN Zutaten ableiten.
+- **Allergene** aus den GROSSGESCHRIEBENEN Zutaten ableiten. Erdnuss kommt sowohl
+  als Zutat (Peanut Noodles, 8 %) wie als Spur (Paprika Thai Ragout) vor.
+- **Tag-Synonyme:** dieselbe Aussage taucht in beiden Sprachen auf („Source of Fiber"
+  / „Ballaststoffquelle"). Beim Erweitern von `check_claims.py` beide Schreibweisen
+  eintragen.
 - **`in_protein_bundle`:** `ja` / `nein` / `unbekannt`.
 - **Slug** = Handle aus der Produkt-URL (`/products/<slug>`).
 
