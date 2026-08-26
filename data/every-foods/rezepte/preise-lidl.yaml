@@ -1,0 +1,99 @@
+# GESCHÄTZTE Lidl-Österreich-Preise. NICHT verifiziert — lidl.at ist aus dieser
+# Umgebung nicht erreichbar. Werte sind Erfahrungswerte für Eigenmarken und
+# Aktionsware; im Markt gegenprüfen und hier korrigieren.
+#
+# eur_kg:      Preis je kg (bzw. je Liter) des GEKAUFTEN Produkts
+# kauf_faktor: Gramm Einkauf je Gramm im Rezept.
+#              < 1 bei Trockenware, die im Rezept gegart vorliegt (Nudeln, Reis,
+#              Hülsenfrüchte), > 1 bei Putz- und Schälverlust.
+# packung_g:   übliche Packungsgrösse, für die Einkaufsliste
+
+bandnudeln_gegart:       {eur_kg: 1.98, kauf_faktor: 0.40, packung_g: 500}
+muschelnudeln_gegart:    {eur_kg: 1.98, kauf_faktor: 0.40, packung_g: 500}
+mie_nudeln_gegart:       {eur_kg: 4.50, kauf_faktor: 0.40, packung_g: 250}
+basmatireis_gegart:      {eur_kg: 2.99, kauf_faktor: 0.36, packung_g: 1000}
+vollkornreis_gegart:     {eur_kg: 2.49, kauf_faktor: 0.36, packung_g: 1000}
+roter_reis_gegart:       {eur_kg: 5.99, kauf_faktor: 0.36, packung_g: 500}
+wildreis_gegart:         {eur_kg: 4.99, kauf_faktor: 0.33, packung_g: 500}
+dinkel_gegart:           {eur_kg: 3.29, kauf_faktor: 0.40, packung_g: 500}
+
+planted_pulled:          {eur_kg: 13.00, kauf_faktor: 1.0, packung_g: 180}
+boonian_crumbles:        {eur_kg: 12.00, kauf_faktor: 1.0, packung_g: 200}
+sojabohnenkerne:         {eur_kg: 5.98, kauf_faktor: 1.0, packung_g: 500}
+linsen_gekocht:          {eur_kg: 3.58, kauf_faktor: 0.40, packung_g: 500}
+kidneybohnen_gekocht:    {eur_kg: 3.20, kauf_faktor: 0.42, packung_g: 500}
+schwarze_bohnen_gekocht: {eur_kg: 3.60, kauf_faktor: 0.42, packung_g: 500}
+kichererbsen_gekocht:    {eur_kg: 2.99, kauf_faktor: 0.40, packung_g: 500}
+
+karotten:                {eur_kg: 1.19, kauf_faktor: 1.10, packung_g: 1000}
+brokkoli:                {eur_kg: 1.99, kauf_faktor: 1.00, packung_g: 750}
+romanesco:               {eur_kg: 3.49, kauf_faktor: 1.30, packung_g: 700}
+blumenkohl:              {eur_kg: 2.29, kauf_faktor: 1.00, packung_g: 750}
+pak_choi:                {eur_kg: 3.99, kauf_faktor: 1.15, packung_g: 300}
+wirsing:                 {eur_kg: 1.99, kauf_faktor: 1.20, packung_g: 800}
+blattspinat_tk:          {eur_kg: 1.99, kauf_faktor: 1.00, packung_g: 450}
+zucchini:                {eur_kg: 2.49, kauf_faktor: 1.05, packung_g: 400}
+paprika_rot:             {eur_kg: 3.49, kauf_faktor: 1.15, packung_g: 500}
+paprika_gelb:            {eur_kg: 3.49, kauf_faktor: 1.15, packung_g: 500}
+gruener_spargel:         {eur_kg: 6.99, kauf_faktor: 1.10, packung_g: 400}
+brechbohnen:             {eur_kg: 2.19, kauf_faktor: 1.00, packung_g: 750}
+erbsen_tk:               {eur_kg: 1.49, kauf_faktor: 1.00, packung_g: 1000}
+erbsenschoten:           {eur_kg: 7.99, kauf_faktor: 1.05, packung_g: 200}
+champignons:             {eur_kg: 4.99, kauf_faktor: 1.05, packung_g: 250}
+mu_err_pilze:            {eur_kg: 32.00, kauf_faktor: 0.12, packung_g: 50}
+kartoffeln_gegart:       {eur_kg: 1.19, kauf_faktor: 1.20, packung_g: 2000}
+kartoffeln_frittiert:    {eur_kg: 2.19, kauf_faktor: 1.00, packung_g: 750}
+suesskartoffel:          {eur_kg: 2.99, kauf_faktor: 1.20, packung_g: 1000}
+suesskartoffel_frittiert: {eur_kg: 3.49, kauf_faktor: 1.00, packung_g: 600}
+wasserkastanien:         {eur_kg: 4.50, kauf_faktor: 1.00, packung_g: 140}
+zuckermais:              {eur_kg: 2.60, kauf_faktor: 1.00, packung_g: 285}
+zwiebeln:                {eur_kg: 1.29, kauf_faktor: 1.15, packung_g: 1500}
+fruehlingszwiebeln:      {eur_kg: 5.90, kauf_faktor: 1.15, packung_g: 100}
+lauch:                   {eur_kg: 2.49, kauf_faktor: 1.30, packung_g: 500}
+knoblauch:               {eur_kg: 7.90, kauf_faktor: 1.15, packung_g: 150}
+ingwer:                  {eur_kg: 4.99, kauf_faktor: 1.20, packung_g: 200}
+pastinaken:              {eur_kg: 2.99, kauf_faktor: 1.15, packung_g: 500}
+auberginen:              {eur_kg: 2.99, kauf_faktor: 1.05, packung_g: 400}
+
+tomaten_stueckig:        {eur_kg: 1.98, kauf_faktor: 1.00, packung_g: 400}
+tomatenmark:             {eur_kg: 3.00, kauf_faktor: 1.00, packung_g: 200}
+tomatensaft:             {eur_kg: 1.20, kauf_faktor: 1.00, packung_g: 1000}
+getrocknete_tomaten:     {eur_kg: 7.10, kauf_faktor: 1.00, packung_g: 280}
+kokosmilch:              {eur_kg: 3.73, kauf_faktor: 1.00, packung_g: 400}
+kokosflocken:            {eur_kg: 4.98, kauf_faktor: 1.00, packung_g: 200}
+
+olivenoel:               {eur_kg: 9.49, kauf_faktor: 1.00, packung_g: 1000}
+rapsoel:                 {eur_kg: 2.49, kauf_faktor: 1.00, packung_g: 1000}
+sonnenblumenoel:         {eur_kg: 2.19, kauf_faktor: 1.00, packung_g: 1000}
+sesamoel:                {eur_kg: 11.96, kauf_faktor: 1.00, packung_g: 250}
+erdnuesse:               {eur_kg: 7.98, kauf_faktor: 1.00, packung_g: 500}
+erdnussmus:              {eur_kg: 8.54, kauf_faktor: 1.00, packung_g: 350}
+kuerbiskerne:            {eur_kg: 12.45, kauf_faktor: 1.00, packung_g: 200}
+sonnenblumenkerne:       {eur_kg: 6.45, kauf_faktor: 1.00, packung_g: 200}
+mandeln:                 {eur_kg: 12.45, kauf_faktor: 1.00, packung_g: 200}
+pistazien:               {eur_kg: 19.95, kauf_faktor: 1.00, packung_g: 200}
+baerlauchpesto:          {eur_kg: 9.42, kauf_faktor: 1.00, packung_g: 190}
+
+sojasauce:               {eur_kg: 8.60, kauf_faktor: 1.00, packung_g: 150}
+miso_pulver:             {eur_kg: 15.00, kauf_faktor: 1.00, packung_g: 300}
+worcestersauce:          {eur_kg: 5.90, kauf_faktor: 1.00, packung_g: 150}
+balsamico:               {eur_kg: 2.99, kauf_faktor: 1.00, packung_g: 500}
+essig:                   {eur_kg: 0.99, kauf_faktor: 1.00, packung_g: 1000}
+agavendicksaft:          {eur_kg: 5.98, kauf_faktor: 1.00, packung_g: 250}
+apfelsaftkonzentrat:     {eur_kg: 7.90, kauf_faktor: 1.00, packung_g: 250}
+dattelsaftkonzentrat:    {eur_kg: 7.90, kauf_faktor: 1.00, packung_g: 250}
+kandierter_ingwer:       {eur_kg: 9.90, kauf_faktor: 1.00, packung_g: 200}
+zitronensaft:            {eur_kg: 2.20, kauf_faktor: 1.00, packung_g: 200}
+zitronengras:            {eur_kg: 12.00, kauf_faktor: 1.00, packung_g: 100}
+steinpilzpulver:         {eur_kg: 60.00, kauf_faktor: 1.00, packung_g: 30}
+gemuesefond:             {eur_kg: 0.30, kauf_faktor: 1.00, packung_g: 1000}
+staerke:                 {eur_kg: 1.98, kauf_faktor: 1.00, packung_g: 400}
+weizenmehl:              {eur_kg: 0.89, kauf_faktor: 1.00, packung_g: 1000}
+leinfaser:               {eur_kg: 3.20, kauf_faktor: 1.00, packung_g: 250}
+salz:                    {eur_kg: 0.50, kauf_faktor: 1.00, packung_g: 500}
+gewuerze:                {eur_kg: 20.00, kauf_faktor: 1.00, packung_g: 50}
+basilikum:               {eur_kg: 24.00, kauf_faktor: 1.00, packung_g: 50}
+minze:                   {eur_kg: 24.00, kauf_faktor: 1.00, packung_g: 50}
+petersilie:              {eur_kg: 20.00, kauf_faktor: 1.00, packung_g: 50}
+schnittlauch:            {eur_kg: 24.00, kauf_faktor: 1.00, packung_g: 50}
+wasser:                  {eur_kg: 0.00, kauf_faktor: 1.00, packung_g: 1000}

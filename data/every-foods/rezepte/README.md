@@ -55,6 +55,30 @@ Beides ist in der jeweiligen Rezeptdatei dokumentiert. Es sind keine Rechenfehle
 sondern Hinweise darauf, dass die every-Deklaration mehr Ballaststoffe bzw. Protein
 ausweist, als die genannten Zutaten nach Standardwerten hergeben.
 
+## Kosten
+
+`preise-lidl.yaml` hält je Zutat den geschätzten Kilopreis, die übliche
+Packungsgrösse und einen **Kauffaktor** — Gramm Einkaufsware je Gramm im Rezept.
+Der Faktor rechnet Trockenware hoch (157 g gekochte Nudeln = 63 g Trockennudeln,
+Faktor 0,40) und Putzverlust ein (Lauch 1,30).
+
+```bash
+python3 data/every-foods/tools/kosten.py            # Kosten je Gericht
+python3 data/every-foods/tools/kosten.py --liste    # Einkaufsliste in Packungen
+```
+
+Stand der Schätzung: **ø 1,59 € Zutatenkosten je Portion**, Spanne 0,82 €
+(Brilliant Bolognese) bis 2,27 € (Teriyaki Wok). Alle 17 Gerichte je einmal:
+**27,02 €**.
+
+Der erste Einkauf kostet mehr, weil Packungen ganz gekauft werden: **rund 153 €**,
+davon **126 € Vorrat**, der für weitere Durchgänge reicht. Ab dem zweiten Durchgang
+zählen nur noch die verbrauchten Zutaten.
+
+**Die Preise sind Schätzungen**, nicht von lidl.at abgerufen — dieselbe Einschränkung
+wie bei den Produktnamen. Eine Zeile in `preise-lidl.yaml` korrigieren, Skript neu
+laufen lassen.
+
 ## Personalisierung
 
 Alle Rezepte sind **ohne Kümmel, Kreuzkümmel und Koriander** ausgeführt (siehe

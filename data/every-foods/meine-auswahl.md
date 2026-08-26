@@ -72,6 +72,9 @@ Grammangaben pro Portion, abgestimmt auf die Nährwerte des Originals und mit
 Lidl-Produktvorschlägen. Alle Rezepte sind bereits ohne Kümmel, Kreuzkümmel und
 Koriander gerechnet.
 
+Zutatenkosten laut Schätzung: **ø 1,59 € je Portion** (0,82–2,27 €), alle 17 Gerichte
+je einmal 27,02 €. Erster Einkauf in ganzen Packungen rund 153 €, davon 126 € Vorrat.
+
 ## Meine Bewertung
 
 | Gericht | Protein | kcal | Bewertung | Schon probiert | Notiz |
