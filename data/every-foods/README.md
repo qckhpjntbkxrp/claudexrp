@@ -37,32 +37,51 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Paprika Thai Ragout](dishes/paprika-thai-ragout.md) | 500 g | 510 | 25,0 g | 66,5 g | 13,0 g | 1,0 g | 13,0 g | 2,4 g | 19,6 % | Proteinquelle |
 | [Peanut Noodles](dishes/peanut-noodles.md) | 450 g | 491 | 20,3 g | 48,2 g | 23,4 g | 2,7 g | 8,1 g | 3,4 g | 16,5 % | Proteinquelle |
 | [Peas & Love](dishes/peas-and-love.md) | 500 g | 545 | 22,0 g | 67,0 g | 18,5 g | 3,0 g | 11,5 g | 2,8 g | 16,1 % | Proteinquelle |
+| [Sesame Fried Rice](dishes/sesame-fried-rice.md) | 400 g | **748** | 19,6 g | 80,8 g | 35,6 g | 4,8 g | 12,4 g | 3,0 g | **10,5 %** | *(kein Claim)* |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
-Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
+Portionsgrösse variiert (400 g / 450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
 normalisieren.
 
 ## Status
 
-- **16** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
+- **17** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, offizielle Bundle-Liste
 
-### Die Sammlung passt zum beworbenen Bundle-Profil
+### Zur Bundle-Zuordnung
 
-Das Protein Bundle wirbt mit **ø 23 g Protein und ø 11 g Ballaststoffen pro Gericht**.
-Die 16 erfassten Gerichte ergeben:
+Das Protein Bundle wirbt mit **ø 23 g Protein und ø 11 g Ballaststoffen pro Gericht**
+bei 12, 16 oder 20 Gerichten pro Box.
 
-| Kennzahl | Sammlung (n = 16) | Bundle-Werbung |
-|---|---:|---:|
-| Protein pro Portion | **ø 23,5 g** (Median 23,9) | ø 23 g |
-| Ballaststoffe pro Portion | **ø 11,7 g** | ø 11 g |
-| Energie pro Portion | ø 484 kcal | „unter 500 kcal" |
+Bei 16 erfassten Gerichten trafen Schnitt und Anzahl das beworbene Profil genau. Mit
+dem 17. Gericht ist klar, dass die Sammlung **das allgemeine Sortiment abbildet, nicht
+die Bundle-Auswahl** — die Übereinstimmung war ein Artefakt des Zwischenstands.
+Aktuell: ø 23,3 g Protein, ø 11,7 g Ballaststoffe, ø 500 kcal über 17 Gerichte.
 
-Beide beworbenen Mittelwerte werden getroffen, und die Anzahl stimmt exakt. Das ist
-**konsistent damit, dass dies die 16 Bundle-Gerichte sind** — ein Beweis ist es nicht,
-da ein ähnlicher Schnitt auch bei anderer Auswahl entstehen könnte. Belegt sind
-bislang zwei Einzelgerichte (Chili sin Carne, Tikka Masala) über Nährwertfragmente
-der Bundle-Seite.
+**Belegte Bundle-Gerichte** (Nährwerte tauchen in den Suchergebnissen zur Bundle-Seite
+auf):
+
+- Chili sin Carne — 24,8 g / 446 kcal / 49,5 g KH / 13,1 g Fett
+- Tikka Masala — 23,4 g / 491 kcal / 51,3 g KH / 19,4 g Fett
+
+**Sicher ausgeschlossen:** Sesame Fried Rice trägt als einziges Gericht **gar keinen
+Protein-Claim** (10,5 % der Energie, unter der 12-%-Schwelle) und kann in einem
+Protein-Bundle nicht enthalten sein.
+
+**Das Label taugt nicht als Filter.** „Proteinquelle" und „High Protein" sind
+EU-Nährwertclaims auf Basis des **Energieanteils**, nicht der absoluten Menge:
+
+| Claim | Bedingung |
+|---|---|
+| Proteinquelle | ≥ 12 % der Energie aus Protein |
+| High Protein | ≥ 20 % der Energie aus Protein |
+
+Die Rechnung (`Protein_g × 4 / kcal`) geht bei allen erfassten Gerichten auf. Deshalb
+trägt **Nasi Goreng mit 25,7 g Protein nur „Proteinquelle"** (19,5 %), während
+**Better Butter Chicken mit 24,0 g „High Protein"** trägt (20,4 %): das fettreichere
+Gericht hat mehr Gesamtenergie. Bestätigt wird das durch **Tikka Masala** — als
+„Proteinquelle" ausgezeichnet und trotzdem nachweislich im Bundle. Für die
+Bundle-Frage zählt die **absolute Proteinmenge**.
 
 **Rangliste nach Protein pro Portion:**
 
@@ -84,48 +103,18 @@ der Bundle-Seite.
 | 13 | Green Forest Bowl | 20,3 g | 599 | 13,5 % |
 | 13 | Peanut Noodles | 20,3 g | 491 | 16,5 % |
 | 16 | Brilliant Bolognese | 20,0 g | 520 | 15,4 % |
+| 17 | Sesame Fried Rice | 19,6 g | 748 | 10,5 % |
 
-10 von 16 Gerichten erreichen die beworbenen 23 g; der Schnitt hält, weil die
-Spitzenreiter die schwächeren ausgleichen.
+Die 10 Gerichte ab 23 g liefern im Schnitt **25,3 g** — eine Bundle-Auswahl daraus
+läge über dem beworbenen Wert.
 
 **Bestes Protein pro Kalorie:** Umami Rice (6,6 g/100 kcal) und Smoky Lentil Stew
-(6,4 g/100 kcal bei nur 374 kcal). **Schwächstes:** Green Forest Bowl (3,4 g/100 kcal
-bei 599 kcal).
+(6,4 g/100 kcal bei nur 374 kcal). **Schwächstes:** Sesame Fried Rice
+(2,6 g/100 kcal bei 748 kcal).
 
 **Salz ist die Schwachstelle der Reihe:** ø 3,1 g pro Portion, Spanne 2,25–3,92 g.
-Ein einziges Gericht deckt damit im Schnitt **61 % der WHO-Tagesempfehlung** (5 g);
-zwei Gerichte am Tag überschreiten sie zuverlässig.
-
-### Hinweis zur Bundle-Zuordnung
-
-Das Protein Bundle wirbt mit **ø 23 g Protein pro Gericht**.
-
-**Das Label taugt nicht als Filter.** „Proteinquelle" und „High Protein" sind
-EU-Nährwertclaims auf Basis des **Energieanteils**, nicht der absoluten Menge:
-
-| Claim | Bedingung |
-|---|---|
-| Proteinquelle | ≥ 12 % der Energie aus Protein |
-| High Protein | ≥ 20 % der Energie aus Protein |
-
-Die Rechnung (`Protein_g × 4 / kcal`) geht bei allen erfassten Gerichten exakt auf —
-siehe Spalte in der Vergleichstabelle. Deshalb trägt **Nasi Goreng mit 25,7 g Protein
-nur „Proteinquelle"** (19,5 %, knapp unter der Schwelle), während **Better Butter
-Chicken mit 24,0 g „High Protein"** trägt (20,4 %): das fettreichere Gericht hat mehr
-Gesamtenergie. Für die Bundle-Frage zählt die **absolute Proteinmenge**.
-
-**Bestätigte Bundle-Gerichte** (Nährwerte tauchen in den Suchergebnissen zur
-Bundle-Seite auf):
-
-- Chili sin Carne — 24,8 g / 446 kcal / 49,5 g KH / 13,1 g Fett
-- Tikka Masala — 23,4 g / 491 kcal / 51,3 g KH / 19,4 g Fett
-
-Beide Fragmente aus der Bundle-Seite sind damit zugeordnet; weitere liegen nicht vor.
-
-**Tikka Masala widerlegt die Label-Heuristik endgültig:** es trägt „Proteinquelle"
-(19,1 % Energie aus Protein) und ist trotzdem nachweislich im Bundle. Für die
-Zugehörigkeit zählt allein die **absolute Proteinmenge** — 23,4 g entsprechen exakt
-dem beworbenen Schnitt von ø 23 g.
+Ein einziges Gericht deckt im Schnitt **61 % der WHO-Tagesempfehlung** (5 g); zwei
+Gerichte am Tag überschreiten sie zuverlässig.
 
 ## Datenqualität: regulierte Claims vs. Marketing-Tags
 
@@ -139,7 +128,7 @@ prüft sie gegen die erfassten Nährwerte:
 
 ```
 $ python3 data/every-foods/tools/check_claims.py
-67 Claims in 15 Gerichten geprüft.
+74 Claims in 17 Gerichten geprüft.
 Alle regulierten Nährwertclaims erfüllen ihre Schwellenwerte.
 ```
 
@@ -150,7 +139,7 @@ gut zu wissen, wenn man Ballaststoffe pro Portion vergleicht.
 
 **Nicht regulierte Filter-Tags — unzuverlässig.** „ohne Zwiebeln", „ohne Paprika",
 „nicht scharf", „ohne Zuckerzusatz" und „Wenig Kohlenhydrate" (letzteres kein
-zugelassener EU-Claim) widersprechen bei **6 von 15 Gerichten** der eigenen
+zugelassener EU-Claim) widersprechen bei **7 von 17 Gerichten** der eigenen
 Zutatenliste. Siehe Konventionen unten.
 
 Kurz: was der Gesetzgeber prüft, stimmt. Was das Marketing selbst vergibt, nicht.
