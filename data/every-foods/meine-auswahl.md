@@ -75,6 +75,10 @@ Koriander gerechnet.
 Zutatenkosten laut Schätzung: **ø 1,59 € je Portion** (0,82–2,27 €), alle 17 Gerichte
 je einmal 27,02 €. Erster Einkauf in ganzen Packungen rund 153 €, davon 126 € Vorrat.
 
+**Gegen das Bundle** (16 Gerichte à 10,— = 160,—): Nachbau derselben 16 Gerichte
+kostet **25,37 €** — Ersparnis **134,63 € je Box**, Faktor 6,3. Bei 4–6 Stunden
+Kocharbeit entspricht das einem impliziten Stundenlohn von 22–34 €.
+
 ## Meine Bewertung
 
 | Gericht | Protein | kcal | Bewertung | Schon probiert | Notiz |

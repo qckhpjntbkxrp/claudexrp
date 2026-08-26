@@ -75,6 +75,23 @@ Der erste Einkauf kostet mehr, weil Packungen ganz gekauft werden: **rund 153 �
 davon **126 € Vorrat**, der für weitere Durchgänge reicht. Ab dem zweiten Durchgang
 zählen nur noch die verbrauchten Zutaten.
 
+### Vergleich mit dem Bundle
+
+Annahme: 16er-Box zu **10,— je Gericht = 160,— je Box**.
+
+| | Kosten | ø je Gericht | €/100 g Protein |
+|---|---:|---:|---:|
+| every Protein Bundle, 16 Gerichte | 160,00 € | 10,00 € | 42,51 € |
+| Nachbau, dieselben 16 Gerichte | 25,37 € | 1,59 € | 6,74 € |
+
+**Ersparnis 134,63 € je Box, Faktor 6,3.** Selbst der erste Einkauf in ganzen
+Packungen (152,98 €, inkl. 126 € Vorrat) liegt unter dem Preis einer einzigen Box.
+
+Fair bleibt der Vergleich nur mit dem Aufwand: 16 Gerichte kochen, portionieren und
+einfrieren dauert realistisch 4–6 Stunden. Die Ersparnis entspricht damit einem
+impliziten Stundenlohn von **22–34 €**. Nicht eingerechnet sind Energie, Gefrierdosen
+und der Umstand, dass every schockgefrostet liefert.
+
 **Die Preise sind Schätzungen**, nicht von lidl.at abgerufen — dieselbe Einschränkung
 wie bei den Produktnamen. Eine Zeile in `preise-lidl.yaml` korrigieren, Skript neu
 laufen lassen.
