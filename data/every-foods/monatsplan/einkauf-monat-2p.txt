@@ -1,176 +1,179 @@
-MONATS-EINKAUF  2 PERSONEN
-Lagerplan (vegetarisch, 2P/Monat) + 8 every-Gerichte a 6 Portionen = 48 Mahlzeiten
+MONATS-EINKAUF  2 PERSONEN  (Österreich)
+Lagerplan vegetarisch + 8 every-Gerichte à 6 Portionen = 48 Mahlzeiten
+Erwartete Kosten: 368,52-693,97 EUR pro Monat
+dazu anteilig Quartals- und Halbjahresposten: 19,50-38,03 EUR
+Summe im Schnitt: 388,02-732,00 EUR
 
 == JEDEN MONAT ==
 
-TROCKENWARE - HUELSENFRUECHTE
-Berglinsen - 600 g   [every: 37 %]
-Rote Linsen - 800 g
-Kichererbsen trocken - 800 g
-Kefen / Erbsen TK - 1 kg   [every: 50 %]
+TROCKENWARE - HÜLSENFRÜCHTE
+Berglinsen - 600 g - 1,80-3,30 EUR  [every: 37 %]
+Rote Linsen - 800 g - 2,40-4,00 EUR
+Kichererbsen trocken - 800 g - 2,00-3,60 EUR
+Zuckererbsen/Erbsen TK - 1 kg - 1,50-2,80 EUR  [every: 50 %]
 
 TROCKENWARE - GETREIDE
-Haferflocken - 1,5 kg
-Vollkornreis - 1,1 kg   [Plan 1 kg reicht nicht - every braucht 107 %]
-Quinoa - 500 g
-Vollkornpasta - 1,5 kg   [every: 58 %]
-Vollkornmehl - 1 kg
+Haferflocken - 1,5 kg - 1,80-3,60 EUR
+Vollkornreis - 1,1 kg - 2,36-4,08 EUR  [Plan 1 kg reicht nicht, every braucht 107 %]
+Quinoa - 500 g - 3,00-4,75 EUR
+Vollkornpasta - 1,5 kg - 2,70-4,80 EUR  [every: 58 %]
+Vollkornmehl - 1 kg - 1,00-2,00 EUR
 
-NUESSE & SAMEN
-Baumnuesse - 300 g
-Mandeln - 300 g
-Kuerbiskerne - 300 g
-Sonnenblumenkerne - 200 g
-Hanfsamen geschaelt - 200 g
-Leinsamen ganz - 300 g
-Sesam / Tahini - 400 g
-Kokosraspeln - 36 g
+NÜSSE & SAMEN
+Walnüsse - 300 g - 3,00-5,10 EUR
+Mandeln - 300 g - 3,30-5,10 EUR
+Kürbiskerne - 300 g - 3,30-5,10 EUR
+Sonnenblumenkerne - 200 g - 1,00-1,70 EUR
+Hanfsamen geschält - 200 g - 3,00-4,60 EUR
+Leinsamen ganz - 300 g - 0,90-1,65 EUR
+Sesam / Tahini - 400 g - 3,20-6,00 EUR
+Kokosraspeln - 36 g - 0,14-0,31 EUR
 
-KUEHLREGAL - PROTEIN
-Tofu natur - 1,2 kg
-Tofu geraeuchert - 800 g
-Tempeh - 800 g
-Seitan - 400 g
-Huettenkaese / Skyr - 2 kg
-Eier - 54 Stk
-Halloumi / Feta - 800 g
-Vemondo Pulled Pieces (oder Rauchtofu/Tempeh aus dem Plan) - 2,1 kg
+KÜHLREGAL - PROTEIN
+Tofu natur - 1,2 kg - 8,40-14,40 EUR
+Tofu geräuchert - 800 g - 7,20-12,00 EUR
+Tempeh - 800 g - 9,60-15,20 EUR
+Seitan - 400 g - 4,00-6,80 EUR
+Hüttenkäse / Skyr - 2 kg - 8,00-15,00 EUR
+Eier - 54 Stk - 16,20-31,32 EUR
+Halloumi / Feta - 800 g - 7,20-12,00 EUR
+Veganes Pulled/Sojaschnetzel (oder Rauchtofu aus dem Plan) - 2,1 kg - 25,13-39,79 EUR
 
-KUEHLREGAL - FERMENTIERTES
-Sauerkraut roh - 1 kg
-Kimchi - 800 g
-Kefir - 4 l
-Naturjoghurt - 2 kg
-Rohmilchkaese (Bergkaese, Gruyere) - 1 kg
+KÜHLREGAL - FERMENTIERTES
+Sauerkraut roh (nicht pasteurisiert) - 1 kg - 3,00-6,50 EUR
+Kimchi - 800 g - 6,40-12,00 EUR
+Kefir - 4 l - 6,00-10,40 EUR
+Naturjoghurt - 2 kg - 3,60-6,40 EUR
+Bergkäse (Rohmilch) - 1 kg - 12,00-21,00 EUR
 
-OBST & GEMUESE - DUNKELGRUEN
-Spinat - 1,5 kg
-Federkohl / Gruenkohl - 1,5 kg
-Nuesslisalat - 800 g
-Mangold - 1 kg
-Rucola - 400 g
-Petersilie - 300 g   [every: 10 %]
-Pak Choi (oder Wirz aus dem Plan) - 842 g
+GEMÜSE - DUNKELGRÜN
+Spinat - 1,5 kg - 6,00-12,75 EUR
+Grünkohl - 1,5 kg - 4,50-9,75 EUR
+Vogerlsalat - 800 g - 8,00-15,20 EUR
+Mangold - 1 kg - 3,00-6,50 EUR
+Rucola - 400 g - 3,20-6,00 EUR
+Petersilie - 300 g - 3,00-6,00 EUR  [every: 10 %]
+Pak Choi (oder Wirsing aus dem Plan) - 842 g - 3,37-6,73 EUR
 
-OBST & GEMUESE - KOHL
-Broccoli - 1,6 kg
-Blumenkohl - 1,2 kg   [every: 30 %]
-Rosenkohl - 1 kg
-Weiss- / Rotkohl - 1,5 kg
-Wirz - 1 kg   [every: 22 %]
-Kohlrabi - 800 g
-Radieschen - 400 g
-Peperoni rot - 2,2 kg
+GEMÜSE - KOHL
+Brokkoli - 1,6 kg - 4,00-7,68 EUR
+Karfiol - 1,2 kg - 2,40-5,04 EUR  [every: 30 %]
+Kohlsprossen - 1 kg - 3,00-6,00 EUR
+Weiß-/Rotkraut - 1,5 kg - 1,80-3,90 EUR
+Wirsing - 1 kg - 1,80-3,20 EUR  [every: 22 %]
+Kohlrabi - 800 g - 1,60-3,36 EUR
+Radieschen - 400 g - 1,60-3,20 EUR
+Paprika rot - 2,2 kg - 6,64-12,18 EUR
 
-OBST & GEMUESE - WURZEL & LAGER
-Ruebli - 3 kg   [every: 54 %]
-Randen - 1,5 kg
-Pastinaken - 1 kg
-Sellerieknolle - 1 kg
-Kartoffeln festkochend - 4 kg   [every: 20 %]
-Suesskartoffeln - 1 kg   [every: 29 %]
-Kuerbis - 2 kg
+GEMÜSE - WURZEL & LAGER
+Karotten - 3 kg - 3,00-6,60 EUR  [every: 54 %]
+Rote Rüben - 1,5 kg - 2,70-4,80 EUR
+Pastinaken - 1 kg - 3,00-5,50 EUR
+Knollensellerie (Zeller) - 1 kg - 2,00-3,80 EUR
+Erdäpfel festkochend - 4 kg - 4,00-8,80 EUR  [every: 20 %]
+Süßkartoffeln - 1 kg - 2,50-4,50 EUR  [every: 29 %]
+Kürbis - 2 kg - 3,00-6,40 EUR
 
-OBST & GEMUESE - AROMATEN
-Zwiebeln - 2 kg   [every: 28 %]
-Knoblauch - 8 Stk   [every nutzt davon]
-Lauch - 1,5 kg   [every: 14 %]
-Schalotten - 500 g   [every: 11 %]
-Ingwer - 300 g   [every: 26 %]
-Kurkuma frisch - 200 g
+GEMÜSE - AROMATEN
+Zwiebeln - 2 kg - 2,00-4,40 EUR  [every: 28 %]
+Knoblauch - 8 Stk - 3,20-7,60 EUR  [every nutzt davon]
+Lauch - 1,5 kg - 3,00-5,40 EUR  [every: 14 %]
+Schalotten - 500 g - 2,00-3,75 EUR  [every: 11 %]
+Ingwer - 300 g - 1,20-2,55 EUR  [every: 26 %]
+Kurkuma frisch - 200 g - 2,00-3,80 EUR
 
-OBST & GEMUESE - FRUECHTE
-Beeren TK gemischt - 2 kg
-Beeren frisch - 1,5 kg
-Aepfel - 4 kg
-Birnen - 1,5 kg
-Zitrusfruechte - 3 kg   [every: 2 %]
-Bananen - 2 kg
-Steinobst saisonal - 2 kg
-Trauben - 1 kg
+OBST
+Beeren TK gemischt - 2 kg - 8,00-15,00 EUR
+Beeren frisch - 1,5 kg - 12,00-25,50 EUR
+Äpfel - 4 kg - 6,00-12,80 EUR
+Birnen - 1,5 kg - 3,00-5,70 EUR
+Zitrusfrüchte - 3 kg - 5,40-10,80 EUR  [every: 2 %]
+Bananen - 2 kg - 2,60-4,40 EUR
+Steinobst (Marillen, Zwetschken, Kirschen) - 2 kg - 5,00-11,00 EUR
+Trauben - 1 kg - 2,50-4,80 EUR
 
 PILZE
-Champignons - 600 g
-Austernpilze - 400 g
-Shiitake frisch - 400 g
-Kraeuterseitlinge - 400 g
+Champignons - 600 g - 2,40-4,50 EUR
+Austernpilze - 400 g - 4,00-7,60 EUR
+Shiitake frisch - 400 g - 6,00-10,40 EUR
+Kräuterseitlinge - 400 g - 4,80-8,40 EUR
 
-OELE & FETTE
-Olivenoel extra vergine - 1 l   [every nutzt davon]
-Leinoel - 250 ml
-Butter - 800 g
+ÖLE & FETTE
+Olivenöl nativ extra - 1 l - 8,00-15,00 EUR  [every nutzt davon]
+Leinöl - 250 ml - 3,00-5,25 EUR
+Butter - 800 g - 6,40-10,80 EUR
 
-WUERZE & KONSERVEN
-Tomaten gehackt (Dose) - 8 Stk   [every nutzt davon]
-Tomatenmark - 400 g   [every: 58 %]
-Kokosmilch - 4 Stk   [every nutzt davon]
-Dunkle Schokolade 70%+ - 400 g
-Wasserkastanien (Dose) - 150 g
-Speisestaerke - 132 g
-Tomatensaft - 117 g
-Ingwer kandiert - 90 g
-Zitronengras (Paste/TK) - 30 g
+WÜRZE & KONSERVEN
+Tomaten gehackt (Dose) - 8 Stk - 5,60-10,00 EUR  [every nutzt davon]
+Tomatenmark - 400 g - 1,20-2,20 EUR  [every: 58 %]
+Kokosmilch - 4 Stk - 5,20-9,20 EUR  [every nutzt davon]
+Dunkle Schokolade 70 %+ - 400 g - 4,80-8,40 EUR
+Wasserkastanien (Dose) - 150 g - 0,60-1,12 EUR
+Speisestärke - 132 g - 0,20-0,42 EUR
+Tomatensaft - 117 g - 0,12-0,23 EUR
+Ingwer kandiert - 90 g - 0,72-1,35 EUR
+Zitronengras (Paste/TK) - 30 g - 0,30-0,63 EUR
 
-TIEFKUEHL
-Spinat TK - 1 kg   [every: 15 %]
-Broccoli TK - 1 kg   [every: 82 %]
-Huelsenfruechte vorgekocht (Eigenproduktion) - 2 kg
-Vollkornbrot in Scheiben - 1,5 kg
-Gemuesebruehe / Pesto in Eiswuerfeln - 500 g
-Edamame TK - 708 g
+TIEFKÜHL
+Spinat TK - 1 kg - 2,00-3,20 EUR  [every: 15 %]
+Brokkoli TK - 1 kg - 2,00-3,20 EUR  [every: 82 %]
+Hülsenfrüchte vorgekocht (Eigenproduktion) - 2 kg - 0,00-0,00 EUR
+Vollkornbrot in Scheiben - 1,5 kg - 4,50-9,75 EUR
+Gemüsebrühe / Pesto in Eiswürfeln - 500 g - 0,00-0,00 EUR
+Edamame TK - 708 g - 3,54-6,02 EUR
 
 DROGERIE / APOTHEKE
-Algenoel (EPA/DHA) - 60 Kaps
-Vitamin D3 (vegan, Flechte) - 60 Kaps
+Algenöl (EPA/DHA) - 60 Kaps - 15,00-36,00 EUR
+Vitamin D3 (vegan, Flechte) - 60 Kaps - 3,00-9,60 EUR
 
 
-== NICHT JEDEN MONAT (Quartal / Halbjahr - Gebindegroesse) ==
+== NICHT JEDEN MONAT (Gebinde für Quartal/Halbjahr) ==
 
-TROCKENWARE - HUELSENFRUECHTE
-Belugalinsen - 400 g
-Weisse Bohnen - 400 g
-Kidneybohnen - 400 g   [every: 63 %]
-Schwarze Bohnen - 400 g
+TROCKENWARE - HÜLSENFRÜCHTE
+Belugalinsen - 400 g - 2,40-3,80 EUR  [Quartal, pro Monat 0,80-1,27]
+Weiße Bohnen - 400 g - 1,20-1,80 EUR  [Quartal, pro Monat 0,40-0,60]
+Kidneybohnen - 400 g - 1,20-1,80 EUR  [Quartal, pro Monat 0,40-0,60]  [every: 63 %]
+Schwarze Bohnen - 400 g - 1,28-2,00 EUR  [Quartal, pro Monat 0,43-0,67]
 
 TROCKENWARE - GETREIDE
-Hirse - 500 g
-Buchweizen - 500 g
-Polenta / Maisgriess - 500 g
-Bulgur - 500 g
+Hirse - 500 g - 1,50-2,50 EUR  [Quartal, pro Monat 0,50-0,83]
+Buchweizen - 500 g - 2,00-3,25 EUR  [Quartal, pro Monat 0,67-1,08]
+Polenta / Maisgrieß - 500 g - 0,90-1,60 EUR  [Quartal, pro Monat 0,30-0,53]
+Bulgur - 500 g - 1,25-2,10 EUR  [Quartal, pro Monat 0,42-0,70]
 
-NUESSE & SAMEN
-Haselnuesse - 200 g
-Cashews - 200 g
-Paranuesse - 100 g
+NÜSSE & SAMEN
+Haselnüsse - 200 g - 2,40-3,80 EUR  [Quartal, pro Monat 0,80-1,27]
+Cashews - 200 g - 2,20-3,40 EUR  [Quartal, pro Monat 0,73-1,13]
+Paranüsse - 100 g - 1,50-2,30 EUR  [Halbjahr, pro Monat 0,25-0,38]
 
-KUEHLREGAL - FERMENTIERTES
-Miso hell/dunkel - 400 g
+KÜHLREGAL - FERMENTIERTES
+Miso hell/dunkel - 400 g - 4,80-8,40 EUR  [Quartal, pro Monat 1,60-2,80]
 
 PILZE
-Shiitake getrocknet (UV) - 100 g   [every: 36 %]
-Steinpilze getrocknet - 50 g
+Shiitake getrocknet (UV) - 100 g - 6,00-12,00 EUR  [Quartal, pro Monat 2,00-4,00]  [every: 36 %]
+Steinpilze getrocknet - 50 g - 5,00-10,00 EUR  [Halbjahr, pro Monat 0,83-1,67]
 
-OELE & FETTE
-Rapsoel HOLL - 500 ml   [every nutzt davon]
+ÖLE & FETTE
+Rapsöl (hitzestabil) - 500 ml - 1,00-1,90 EUR  [Quartal, pro Monat 0,33-0,63]  [every nutzt davon]
 
-WUERZE & KONSERVEN
-Jodiertes Salz - 500 g   [every: 13 %]
-Schwarzer Pfeffer ganz - 100 g
-Kurkuma gemahlen - 100 g
-Kreuzkuemmel - 80 g
-Koriandersamen - 80 g
-Paprika edelsuess/geraeuchert - 100 g   [every: 84 %]
-Zimt (Ceylon) - 60 g
-Fenchelsamen - 60 g
-Senfkoerner - 80 g
-Getrocknete Kraeuter (Oregano, Thymian, Rosmarin, Lorbeer) - 200 g
-Chiliflocken - 50 g
-Sojasauce / Tamari - 500 ml   [every nutzt davon]
-Apfelessig - 750 ml   [every nutzt davon]
-Balsamico - 500 ml
-Senf - 200 g
-Hefeflocken - 200 g
-Nori-Blaetter - 50 g
-Wakame getrocknet - 50 g
-Gruentee - 200 g
-Sprossensamen (Alfalfa, Broccoli, Linsen) - 300 g
+WÜRZE & KONSERVEN
+Jodsalz - 500 g - 0,20-0,60 EUR  [Halbjahr, pro Monat 0,03-0,10]  [every: 13 %]
+Schwarzer Pfeffer ganz - 100 g - 1,50-3,20 EUR  [Halbjahr, pro Monat 0,25-0,53]
+Kurkuma gemahlen - 100 g - 0,80-2,10 EUR  [Quartal, pro Monat 0,27-0,70]
+Kreuzkümmel - 80 g - 0,80-1,68 EUR  [Halbjahr, pro Monat 0,13-0,28]
+Koriandersamen - 80 g - 0,80-1,68 EUR  [Halbjahr, pro Monat 0,13-0,28]
+Paprikapulver edelsüß/geräuchert - 100 g - 0,80-1,90 EUR  [Halbjahr, pro Monat 0,13-0,32]  [every: 84 %]
+Zimt (Ceylon) - 60 g - 0,72-1,62 EUR  [Halbjahr, pro Monat 0,12-0,27]
+Fenchelsamen - 60 g - 0,60-1,26 EUR  [Halbjahr, pro Monat 0,10-0,21]
+Senfkörner - 80 g - 0,48-1,20 EUR  [Halbjahr, pro Monat 0,08-0,20]
+Getrocknete Kräuter (Oregano, Thymian, Rosmarin, Lorbeer) - 200 g - 3,00-6,40 EUR  [Halbjahr, pro Monat 0,50-1,07]
+Chiliflocken - 50 g - 0,60-1,30 EUR  [Halbjahr, pro Monat 0,10-0,22]
+Sojasauce / Tamari - 500 ml - 2,00-4,25 EUR  [Quartal, pro Monat 0,67-1,42]  [every nutzt davon]
+Apfelessig - 750 ml - 1,12-2,40 EUR  [Quartal, pro Monat 0,38-0,80]  [every nutzt davon]
+Balsamico - 500 ml - 1,50-3,25 EUR  [Halbjahr, pro Monat 0,25-0,54]
+Senf - 200 g - 0,60-1,30 EUR  [Quartal, pro Monat 0,20-0,43]
+Hefeflocken - 200 g - 3,00-5,20 EUR  [Quartal, pro Monat 1,00-1,73]
+Noriblätter - 50 g - 3,00-6,00 EUR  [Quartal, pro Monat 1,00-2,00]
+Wakame getrocknet - 50 g - 3,00-6,00 EUR  [Halbjahr, pro Monat 0,50-1,00]
+Grüntee - 200 g - 6,00-17,00 EUR  [Quartal, pro Monat 2,00-5,67]
+Sprossensamen (Alfalfa, Brokkoli, Linsen) - 300 g - 3,60-6,30 EUR  [Quartal, pro Monat 1,20-2,10]

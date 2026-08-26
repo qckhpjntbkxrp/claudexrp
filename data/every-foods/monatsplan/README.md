@@ -78,13 +78,58 @@ schon in der Sammlung: **Smoky Lentil Stew** (Kohl, Kartoffeln, Hülsenfrüchte)
 **Brilliant Bolognese** (Wurzelgemüse, Dosentomaten), **Peas & Love** (Wirz,
 Romanesco). Sag Bescheid, dann rechne ich eine Winter-Achterauswahl.
 
-## Offene Frage: Schweiz oder Österreich?
+## Österreich
 
-Der Lagerplan rechnet mit **Schweizer** Saison, nennt Graubünden und Schweizer
-Produkte. Die Einkaufsliste und alle Preise stammen von **Lidl Österreich**. Die
-Saisonkalender beider Länder liegen nahe beieinander, die Sortimente nicht:
-Rohmilchkäse, Nüsslisalat und Federkohl heissen in Österreich anders oder fehlen.
-Bitte einmal klären, dann ziehe ich die Produktnamen nach.
+Eingekauft wird in Österreich, der Lagerplan ist in Schweizer Bezeichnungen
+geschrieben. `at-begriffe.yaml` übersetzt sie — ohne das ist die Liste im Markt
+unbrauchbar:
+
+| Plan (CH) | Österreich |
+|---|---|
+| Rüebli | Karotten |
+| Randen | Rote Rüben |
+| Nüsslisalat | Vogerlsalat |
+| Federkohl | Grünkohl |
+| Wirz | Wirsing |
+| Blumenkohl | Karfiol |
+| Rosenkohl | Kohlsprossen |
+| Weiss-/Rotkohl | Weiß-/Rotkraut |
+| Kartoffeln | Erdäpfel |
+| Sellerieknolle | Knollensellerie (Zeller) |
+| Kefen | Zuckererbsen |
+| Baumnüsse | Walnüsse |
+| Steinobst | Marillen, Zwetschken, Kirschen |
+
+**Saison:** Paprika wird ganzjährig gekauft — die Achterauswahl bleibt damit auch im
+Winter gültig. Das weicht bewusst von der Saisonlogik des Plans ab; ausserhalb
+Juli–Oktober ist Paprika Import- oder Gewächshausware.
+
+## Kosten
+
+Erwartet werden **388–732 € im Monat für zwei Personen**, Mittelwert rund **505 €** —
+das sind 6,50–12,20 € pro Person und Tag. Die Spanne ist breit, weil sie von
+Aktions-Eigenmarke bis Bio-Regalpreis reicht.
+
+Berechnung: `python3 data/every-foods/tools/kosten_monat.py 6`
+Preise stehen in `preise-at.yaml`, je Position eine Spanne.
+
+**Die Kostentreiber:**
+
+| Gruppe | Anteil |
+|---|---:|
+| D — Frischprotein (Tofu, Tempeh, Eier, Käse) | 17 % |
+| J — Früchte | 13 % |
+| E — Fermentiertes | 9 % |
+| F — Dunkelgrünes | 8 % |
+
+Einzelposten an der Spitze: **Algenöl 15–36 €**, **54 Eier 16–31 €**, **frische Beeren
+12–26 €**, **Bergkäse 12–21 €**. Die 15 teuersten Positionen machen 40 % der Kosten aus.
+
+Drei Hebel, falls das Budget drückt: frische Beeren durch TK ersetzen (spart 8–18 €,
+nährstofflich gleichwertig — steht so auch im Saisonkalender), Vogerlsalat im Winter
+durch Kraut ersetzen (8–15 €), und beim Frischprotein auf Tofu statt Tempeh und
+Halloumi verlagern. Beim **Algenöl** würde ich nicht sparen — es schliesst laut
+Nährstoff-Check eine der beiden echten Lücken.
 
 ## Dateien
 
