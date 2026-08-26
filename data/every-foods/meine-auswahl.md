@@ -110,14 +110,15 @@ Kocharbeit entspricht das einem impliziten Stundenlohn von 22–34 €.
 ## Erster Kochtag
 
 Kostenoptimierte Auswahl für **8 Gerichte × 4 Portionen = 32 Mahlzeiten**,
-Einkauf 89,19 € (2,79 € je Mahlzeit) — Liste in
-[rezepte/einkauf-8x4.md](rezepte/einkauf-8x4.md):
+Einkauf 87,39 € (2,73 € je Mahlzeit) — Liste in
+[rezepte/einkauf-8x4.md](rezepte/einkauf-8x4.md), als Text fürs iPhone in
+[rezepte/einkauf-8x4-ios.txt](rezepte/einkauf-8x4-ios.txt):
 
 Umami Rice · Bami Goreng · Nasi Goreng · Better Butter Chicken · Dal Delight ·
 Tikka Masala · Creamy Paprika Pasta · Edamame Zen
 
-Vorratsarme Variante ohne Dal Delight: **7 Gerichte × 4 Portionen**, Einkauf 78,52 €,
-Vorrat nur 30,37 € statt 37,13 € — [rezepte/einkauf-7x4.md](rezepte/einkauf-7x4.md).
+Bei Dal Delight ersetzen **Kidneybohnen die schwarzen Bohnen** — spart eine ganze
+500-g-Packung, Vorrat sinkt von 37,13 € auf 35,29 €.
 
 ---
 

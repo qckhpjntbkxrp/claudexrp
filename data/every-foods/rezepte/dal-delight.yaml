@@ -1,29 +1,29 @@
 dish: dal-delight
 # Portion 450 g. Kreuzkümmel und Koriander gestrichen (Personalisierung).
+# Schwarze Bohnen durch Kidneybohnen ersetzt: das Original nutzt beide zu je 10 %,
+# für den Restbedarf müsste man aber eine ganze 500-g-Packung kaufen. Nährwertlich
+# nahezu deckungsgleich (8,9 vs. 8,7 g Eiweiss je 100 g).
 # Deklarierte Prozentwerte von every Foods als Kommentar.
-levers: [linsen_gekocht, kokosmilch, kidneybohnen_gekocht, schwarze_bohnen_gekocht, suesskartoffel_frittiert, salz]
+levers: [kidneybohnen_gekocht, kokosmilch, suesskartoffel_frittiert, salz, karotten, blattspinat_tk, tomaten_stueckig]
 zutaten:
-  linsen_gekocht: 40      # deklariert 20 %, hier 16 %
+  kidneybohnen_gekocht: 100      # deklariert 10 % Kidney + 10 % schwarze Bohnen
+  linsen_gekocht: 92      # deklariert 20 %
   kokosmilch: 60      # deklariert 11 % = 50 g
-  kidneybohnen_gekocht: 133      # deklariert 10 %, hier 20 %
-  schwarze_bohnen_gekocht: 14      # deklariert 10 %, hier 6 %
-  blattspinat_tk: 35
-  tomaten_stueckig: 35
-  karotten: 30
-  suesskartoffel_frittiert: 48      # deklariert 6 %, hier 11 %
-  zwiebeln: 22
+  blattspinat_tk: 25
+  tomaten_stueckig: 56
+  karotten: 16
+  suesskartoffel_frittiert: 48      # deklariert 6 %
+  zwiebeln: 21
   tomatensaft: 12
   zitronensaft: 5
-  staerke: 3
-  knoblauch: 3
-  ingwer: 3
-  gewuerze: 2
+  staerke: 3.5
+  knoblauch: 3.5
+  ingwer: 3.5
   salz: 3
-  wasser: 2
+  gewuerze: 1.5
 
 # ABWEICHUNG (bewusst, strukturell): Eiweiss -12 %, Ballaststoffe +20 %.
 #   every deklariert 5,3 g Eiweiss und 3,6 g Ballaststoffe je 100 g — ein
 #   Verhältnis von 1,47. Gekochte Linsen und Bohnen liegen bei 1,1-1,2. Mehr
 #   Hülsenfrüchte heben zwar das Eiweiss, treiben die Ballaststoffe aber
 #   schneller nach oben; erreichbar ist nur eines von beiden.
-#   Dieses Rezept trifft kcal, KH, Zucker, Fett, ges. Fettsäuren und Salz.

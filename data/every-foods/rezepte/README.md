@@ -141,10 +141,33 @@ von 500 g gekauft** (1,72 € Rest). Wer bei Dal Delight bleiben will, ersetzt s
 einfachsten durch mehr Kidneybohnen — nährwertlich fast deckungsgleich, spart eine
 ganze Packung.
 
-Eine fertige Liste für dieses Szenario liegt in
-**[einkauf-8x4.md](einkauf-8x4.md)** — nach Ladenbereich sortiert, mit Packungszahlen.
-Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert (89,19 € statt 92,91 €
-bei rein gieriger Wahl) und kommt trotzdem auf **ø 24,2 g Protein je Portion**.
+Fertige Listen für dieses Szenario:
+
+| Datei | Zweck |
+|---|---|
+| [einkauf-8x4.md](einkauf-8x4.md) | 8 Gerichte × 4 Portionen, nach Ladenbereich, mit Preisen |
+| [einkauf-8x4-ios.txt](einkauf-8x4-ios.txt) | dieselbe Liste als reiner Text — eine Zeile je Position, für iOS Erinnerungen und Notizen |
+| [einkauf-7x4.md](einkauf-7x4.md) | vorratsarme Variante ohne Dal Delight |
+
+Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert und kommt auf
+**ø 24,2 g Protein je Portion**. Bei Dal Delight ersetzen Kidneybohnen die schwarzen
+Bohnen — nährwertlich fast deckungsgleich, spart eine ganze 500-g-Packung und senkt
+den Einkauf auf **87,39 €** (2,73 € je Mahlzeit, Vorrat 35,29 €).
+
+### Liste auf dem iPhone
+
+`einkauf-8x4-ios.txt` ist bewusst **ohne Aufzählungszeichen, Überschriften und
+Markdown** — eine Position je Zeile, sortiert nach Ladenbereich:
+
+- **Erinnerungen:** Text kopieren, in einer Liste ins Titelfeld einfügen. iOS fragt
+  *„Als mehrere Erinnerungen einfügen?"* — bestätigen, dann wird jede Zeile ein
+  eigener Eintrag mit Häkchen.
+- **Notizen:** Text in eine neue Notiz einfügen, alles markieren, dann
+  *Format → Checkliste*. Jede Zeile wird ein abhakbarer Punkt.
+
+Überschriften würden in Erinnerungen als eigene Einträge landen — deshalb sind keine
+drin. Die Reihenfolge folgt trotzdem dem Weg durch den Markt: Gemüse, Tiefkühl,
+Kühlregal, Trockenware, Öle, Würzen.
 
 Ab dem zweiten Durchgang zählen nur noch die verbrauchten Zutaten: **rund 1,60–1,75 €
 je Portion**, unabhängig vom Umfang.
