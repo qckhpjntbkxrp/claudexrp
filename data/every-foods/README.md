@@ -36,6 +36,7 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Green Forest Bowl](dishes/green-forest-bowl.md) | 450 g | **599** | 20,3 g | 44,1 g | **36,0 g** | 5,9 g | 9,5 g | 2,8 g | 13,5 % | Proteinquelle |
 | [Paprika Thai Ragout](dishes/paprika-thai-ragout.md) | 500 g | 510 | 25,0 g | 66,5 g | 13,0 g | 1,0 g | 13,0 g | 2,4 g | 19,6 % | Proteinquelle |
 | [Peanut Noodles](dishes/peanut-noodles.md) | 450 g | 491 | 20,3 g | 48,2 g | 23,4 g | 2,7 g | 8,1 g | 3,4 g | 16,5 % | Proteinquelle |
+| [Peas & Love](dishes/peas-and-love.md) | 500 g | 545 | 22,0 g | 67,0 g | 18,5 g | 3,0 g | 11,5 g | 2,8 g | 16,1 % | Proteinquelle |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -43,8 +44,57 @@ normalisieren.
 
 ## Status
 
-- **15** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
-- Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
+- **16** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
+- Offen: Preis pro Gericht, offizielle Bundle-Liste
+
+### Die Sammlung passt zum beworbenen Bundle-Profil
+
+Das Protein Bundle wirbt mit **ø 23 g Protein und ø 11 g Ballaststoffen pro Gericht**.
+Die 16 erfassten Gerichte ergeben:
+
+| Kennzahl | Sammlung (n = 16) | Bundle-Werbung |
+|---|---:|---:|
+| Protein pro Portion | **ø 23,5 g** (Median 23,9) | ø 23 g |
+| Ballaststoffe pro Portion | **ø 11,7 g** | ø 11 g |
+| Energie pro Portion | ø 484 kcal | „unter 500 kcal" |
+
+Beide beworbenen Mittelwerte werden getroffen, und die Anzahl stimmt exakt. Das ist
+**konsistent damit, dass dies die 16 Bundle-Gerichte sind** — ein Beweis ist es nicht,
+da ein ähnlicher Schnitt auch bei anderer Auswahl entstehen könnte. Belegt sind
+bislang zwei Einzelgerichte (Chili sin Carne, Tikka Masala) über Nährwertfragmente
+der Bundle-Seite.
+
+**Rangliste nach Protein pro Portion:**
+
+| # | Gericht | Protein | kcal | % Energie |
+|---:|---|---:|---:|---:|
+| 1 | Umami Rice | 27,9 g | 424 | 26,3 % |
+| 2 | Bami Goreng | 27,0 g | 468 | 23,1 % |
+| 2 | Teriyaki Wok | 27,0 g | 520 | 20,8 % |
+| 4 | Nasi Goreng | 25,7 g | 527 | 19,5 % |
+| 5 | Paprika Thai Ragout | 25,0 g | 510 | 19,6 % |
+| 6 | Chili sin Carne | 24,8 g | 446 | 22,2 % |
+| 7 | Better Butter Chicken | 24,0 g | 470 | 20,4 % |
+| 8 | Dal Delight | 23,9 g | 491 | 19,4 % |
+| 8 | Smoky Lentil Stew | 23,9 g | 374 | 25,5 % |
+| 10 | Tikka Masala | 23,4 g | 491 | 19,1 % |
+| 11 | Peas & Love | 22,0 g | 545 | 16,1 % |
+| 12 | Creamy Paprika Pasta | 21,2 g | 446 | 19,0 % |
+| 13 | Edamame Zen | 20,3 g | 423 | 19,1 % |
+| 13 | Green Forest Bowl | 20,3 g | 599 | 13,5 % |
+| 13 | Peanut Noodles | 20,3 g | 491 | 16,5 % |
+| 16 | Brilliant Bolognese | 20,0 g | 520 | 15,4 % |
+
+10 von 16 Gerichten erreichen die beworbenen 23 g; der Schnitt hält, weil die
+Spitzenreiter die schwächeren ausgleichen.
+
+**Bestes Protein pro Kalorie:** Umami Rice (6,6 g/100 kcal) und Smoky Lentil Stew
+(6,4 g/100 kcal bei nur 374 kcal). **Schwächstes:** Green Forest Bowl (3,4 g/100 kcal
+bei 599 kcal).
+
+**Salz ist die Schwachstelle der Reihe:** ø 3,1 g pro Portion, Spanne 2,25–3,92 g.
+Ein einziges Gericht deckt damit im Schnitt **61 % der WHO-Tagesempfehlung** (5 g);
+zwei Gerichte am Tag überschreiten sie zuverlässig.
 
 ### Hinweis zur Bundle-Zuordnung
 
