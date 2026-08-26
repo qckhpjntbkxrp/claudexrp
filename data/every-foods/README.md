@@ -34,6 +34,7 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Tikka Masala](dishes/tikka-masala.md) | 450 g | 491 | 23,4 g | 51,3 g | 19,4 g | 10,8 g | 8,6 g | 3,1 g | 19,1 % | Proteinquelle |
 | [Teriyaki Wok](dishes/teriyaki-wok.md) | 500 g | 520 | 27,0 g | 64,0 g | 16,5 g | 2,0 g | 10,0 g | 3,4 g | 20,8 % | High Protein |
 | [Green Forest Bowl](dishes/green-forest-bowl.md) | 450 g | **599** | 20,3 g | 44,1 g | **36,0 g** | 5,9 g | 9,5 g | 2,8 g | 13,5 % | Proteinquelle |
+| [Paprika Thai Ragout](dishes/paprika-thai-ragout.md) | 500 g | 510 | 25,0 g | 66,5 g | 13,0 g | 1,0 g | 13,0 g | 2,4 g | 19,6 % | Proteinquelle |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -41,7 +42,7 @@ normalisieren.
 
 ## Status
 
-- **13** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
+- **14** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
@@ -74,6 +75,34 @@ Beide Fragmente aus der Bundle-Seite sind damit zugeordnet; weitere liegen nicht
 (19,1 % Energie aus Protein) und ist trotzdem nachweislich im Bundle. Für die
 Zugehörigkeit zählt allein die **absolute Proteinmenge** — 23,4 g entsprechen exakt
 dem beworbenen Schnitt von ø 23 g.
+
+## Datenqualität: regulierte Claims vs. Marketing-Tags
+
+Die Tags auf den Produktseiten zerfallen in zwei Gruppen mit **gegensätzlicher
+Zuverlässigkeit**:
+
+**Regulierte Nährwertclaims — alle korrekt.** „Proteinquelle", „High Protein",
+„Source of Fiber", „Hoher Ballaststoffgehalt", „fettarm", „arm an gesättigten
+Fettsäuren", „zuckerarm" unterliegen VO (EG) Nr. 1924/2006. `tools/check_claims.py`
+prüft sie gegen die erfassten Nährwerte:
+
+```
+$ python3 data/every-foods/tools/check_claims.py
+62 Claims in 14 Gerichten geprüft.
+Alle regulierten Nährwertclaims erfüllen ihre Schwellenwerte.
+```
+
+Bemerkenswert: die Ballaststoff-Claims stützen sich durchweg auf die **Alternativ-
+schwelle pro 100 kcal** (≥ 1,5 bzw. ≥ 3 g/100 kcal), nicht auf die g/100-g-Schwelle —
+über 100 g allein würde kein einziges Gericht den Claim tragen dürfen. Zulässig, aber
+gut zu wissen, wenn man Ballaststoffe pro Portion vergleicht.
+
+**Nicht regulierte Filter-Tags — unzuverlässig.** „ohne Zwiebeln", „ohne Paprika",
+„nicht scharf", „ohne Zuckerzusatz" und „Wenig Kohlenhydrate" (letzteres kein
+zugelassener EU-Claim) widersprechen bei **5 von 14 Gerichten** der eigenen
+Zutatenliste. Siehe Konventionen unten.
+
+Kurz: was der Gesetzgeber prüft, stimmt. Was das Marketing selbst vergibt, nicht.
 
 ## Konventionen
 
