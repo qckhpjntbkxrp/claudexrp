@@ -1,46 +1,48 @@
-Paprika rot lose - 3x 500 g = 1,5 kg
-Karotten lose - 2x 1 kg
-Zwiebeln lose - 1x 1,5 kg
-Knoblauch lose - 1x 150 g
-Ingwer lose - 1x 200 g
-Lauch lose - 1x 500 g
-Frühlingszwiebeln Bund - 1x 100 g
-Pak Choi frisch - 2x 300 g
-Wirsing frisch - 1x 800 g
-Speisekartoffeln lose - 1x 2 kg
-Minze Topf - 1x 50 g
-Freshona Erbsen TK - 1x 1 kg
-Freshona Brokkoli TK - 1x 750 g
-Freshona Blumenkohl TK - 1x 750 g
-Freshona Blattspinat TK - 1x 450 g
-Vitasia Edamame TK - 1x 500 g
-Freshona Süsskartoffel-Würfel TK - 1x 600 g
-Vemondo Vegane Pulled Pieces - 8x 180 g = 1,4 kg
-Combino Bandnudeln - 2x 500 g = 1 kg
-Vitasia Basmati Reis - 1x 1 kg
-Golden Sun Wildreis-Mischung - 1x 500 g
-Golden Sun Linsen trocken - 1x 500 g
-Golden Sun Kidneybohnen trocken - 1x 500 g
-Baresa Tomaten stückig - 2x 400 g
-Baresa Tomatenmark 2-fach konzentriert - 1x 200 g
-Solevita Tomatensaft - 1x 1 kg
-Vitasia Wasserkastanien - 1x 140 g
-Vitasia Kokosmilch - 3x 400 g = 1,2 kg
-Vitasia Mu-Err Pilze getrocknet - 1x 50 g
-Belbake Speisestärke - 1x 400 g
-Vita D'Or Rapsöl - 1x 1 kg
-Vita D'Or Sonnenblumenöl - 1x 1 kg
-Alesto Kokosraspeln - 1x 200 g
-Vitasia Sojasauce - 2x 150 g
-Kania Branntweinessig - 1x 1 kg
-Alesto Ingwer kandiert - 1x 200 g
-Solevita Zitronensaft - 1x 200 g
-Vitasia Zitronengras - 1x 100 g
-Kania Meersalz - 1x 500 g
-Kania Gewürze - 2x 50 g
+Paprika rot lose - 3x 500 g = 1,5 kg - ca. 5,24
+Karotten lose - 2x 1 kg - ca. 2,38
+Zwiebeln lose - 1x 1,5 kg - ca. 1,94
+Knoblauch lose - 1x 150 g - ca. 1,19
+Ingwer lose - 1x 200 g - ca. 1,00
+Lauch lose - 1x 500 g - ca. 1,25
+Frühlingszwiebeln Bund - 1x 100 g - ca. 0,59
+Pak Choi frisch - 2x 300 g - ca. 2,39
+Wirsing frisch - 1x 800 g - ca. 1,59
+Speisekartoffeln lose - 1x 2 kg - ca. 2,38
+Minze Topf - 1x 50 g - ca. 1,20
+Freshona Erbsen TK - 1x 1 kg - ca. 1,49
+Freshona Brokkoli TK - 1x 750 g - ca. 1,49
+Freshona Blumenkohl TK - 1x 750 g - ca. 1,72
+Freshona Blattspinat TK - 1x 450 g - ca. 0,90
+Vitasia Edamame TK - 1x 500 g - ca. 2,99
+Freshona Süsskartoffel-Würfel TK - 1x 600 g - ca. 2,09
+Vemondo Vegane Pulled Pieces - 8x 180 g = 1,4 kg - ca. 18,72
+Combino Bandnudeln - 2x 500 g = 1 kg - ca. 1,98
+Vitasia Basmati Reis - 1x 1 kg - ca. 2,99
+Golden Sun Wildreis-Mischung - 1x 500 g - ca. 2,50
+Golden Sun Linsen trocken - 1x 500 g - ca. 1,79
+Golden Sun Kidneybohnen trocken - 1x 500 g - ca. 1,60
+Baresa Tomaten stückig - 2x 400 g - ca. 1,58
+Baresa Tomatenmark 2-fach konzentriert - 1x 200 g - ca. 0,60
+Solevita Tomatensaft - 1x 1 kg - ca. 1,20
+Vitasia Wasserkastanien - 1x 140 g - ca. 0,63
+Vitasia Kokosmilch - 3x 400 g = 1,2 kg - ca. 4,48
+Vitasia Mu-Err Pilze getrocknet - 1x 50 g - ca. 1,60
+Belbake Speisestärke - 1x 400 g - ca. 0,79
+Vita D'Or Rapsöl - 1x 1 kg - ca. 2,49
+Vita D'Or Sonnenblumenöl - 1x 1 kg - ca. 2,19
+Alesto Kokosraspeln - 1x 200 g - ca. 1,00
+Vitasia Sojasauce - 2x 150 g - ca. 2,58
+Kania Branntweinessig - 1x 1 kg - ca. 0,99
+Alesto Ingwer kandiert - 1x 200 g - ca. 1,98
+Solevita Zitronensaft - 1x 200 g - ca. 0,44
+Vitasia Zitronengras - 1x 100 g - ca. 1,20
+Kania Meersalz - 1x 500 g - ca. 0,25
+Kania Gewürze - 2x 50 g - ca. 2,00
 
 
-PREISE  (Schaetzwerte - beim Einkauf mit echten Preisen ueberschreiben)
+PREISE
+Die Werte unten sind Schaetzungen. Beim Einkauf mit dem echten Preis
+ueberschreiben - Summe, Differenz und Preis je Mahlzeit rechnen sich neu.
 
 Paprika = 5,24
 Karotten = 2,38
@@ -83,5 +85,10 @@ Zitronengras = 1,20
 Salz = 0,25
 Gewuerze = 2,00
 
-Summe = Paprika + Karotten + Zwiebeln + Knoblauch + Ingwer + Lauch + Fruehlingszwiebeln + PakChoi + Wirsing + Kartoffeln + Minze + Erbsen + Brokkoli + Blumenkohl + Spinat + Edamame + Suesskartoffel + Vemondo + Nudeln + Basmati + Wildreis + Linsen + Kidneybohnen + TomatenDose + Tomatenmark + Tomatensaft + Wasserkastanien + Kokosmilch + MuErrPilze + Staerke + Rapsoel + Sonnenblumenoel + Kokosraspeln + Sojasauce + Essig + IngwerKandiert + Zitronensaft + Zitronengras + Salz + Gewuerze
-ProMahlzeit = Summe / 32
+Ist = Paprika + Karotten + Zwiebeln + Knoblauch + Ingwer + Lauch + Fruehlingszwiebeln + PakChoi + Wirsing + Kartoffeln + Minze + Erbsen + Brokkoli + Blumenkohl + Spinat + Edamame + Suesskartoffel + Vemondo + Nudeln + Basmati + Wildreis + Linsen + Kidneybohnen + TomatenDose + Tomatenmark + Tomatensaft + Wasserkastanien + Kokosmilch + MuErrPilze + Staerke + Rapsoel + Sonnenblumenoel + Kokosraspeln + Sojasauce + Essig + IngwerKandiert + Zitronensaft + Zitronengras + Salz + Gewuerze
+Schaetzung = 87,39
+
+Differenz = Ist - Schaetzung
+ProMahlzeit = Ist / 32
+ProMahlzeitGeschaetzt = Schaetzung / 32
+ErsparnisGegenBundle = 320 - Ist

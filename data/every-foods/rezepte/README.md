@@ -147,7 +147,8 @@ Fertige Listen für dieses Szenario:
 |---|---|
 | [einkauf-8x4.md](einkauf-8x4.md) | 8 Gerichte × 4 Portionen, nach Ladenbereich, mit Preisen |
 | [einkauf-8x4-ios.txt](einkauf-8x4-ios.txt) | dieselbe Liste als reiner Text — eine Zeile je Position, für iOS Erinnerungen und Notizen |
-| [einkauf-8x4-notiz.txt](einkauf-8x4-notiz.txt) | für iOS Notizen: Checkliste **plus** Rechenblock mit Variablen und Summe |
+| [einkauf-8x4-notiz.txt](einkauf-8x4-notiz.txt) | für iOS Notizen: Checkliste **plus** Rechenblock, der Schätzung und Ist gegenüberstellt |
+| [einkauf-8x4-notiz-punkt.txt](einkauf-8x4-notiz-punkt.txt) | dasselbe mit Dezimalpunkt statt Komma, falls Math Notes das Komma nicht frisst |
 | [einkauf-7x4.md](einkauf-7x4.md) | vorratsarme Variante ohne Dal Delight |
 
 Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert und kommt auf
@@ -166,12 +167,31 @@ Markdown** — eine Position je Zeile, sortiert nach Ladenbereich:
 - **Notizen:** Text in eine neue Notiz einfügen, alles markieren, dann
   *Format → Checkliste*. Jede Zeile wird ein abhakbarer Punkt.
 
-**Mit Rechnen:** `einkauf-8x4-notiz.txt` hängt unter die Checkliste einen Block im
-Format `Paprika = 5,24`, eine `Summe = …`-Zeile über alle 40 Variablen und
-`ProMahlzeit = Summe / 32`. Math Notes (ab iOS 18) rechnet das automatisch neu, sobald
-ein Wert überschrieben wird. Die vorbelegten Zahlen sind die Schätzwerte — beim
-Einkauf durch echte ersetzen. Nur den oberen Teil als Checkliste formatieren; im
-Rechenblock würde die Checklisten-Formatierung das Rechnen stören.
+**Mit Rechnen:** `einkauf-8x4-notiz.txt` hängt unter die Checkliste einen Rechenblock,
+der Schätzung und Ist direkt gegenüberstellt:
+
+```
+Paprika = 5,24          ← überschreiben mit dem echten Preis
+Karotten = 2,38
+…
+Ist = Paprika + Karotten + …      ← Summe der eingetragenen Werte
+Schaetzung = 87,39                ← feste Referenz, nicht anfassen
+Differenz = Ist - Schaetzung
+ProMahlzeit = Ist / 32
+ProMahlzeitGeschaetzt = Schaetzung / 32
+ErsparnisGegenBundle = 320 - Ist
+```
+
+Math Notes (ab iOS 18) rechnet alles neu, sobald ein Wert überschrieben wird.
+`Differenz` zeigt sofort, wie weit die Schätzung danebenlag — solange nichts geändert
+wurde, steht dort 0. `Schaetzung` ist bewusst eine fertige Zahl statt einer
+Additionskette, damit die Referenz beim Korrigieren stehen bleibt.
+
+Die Checklisten-Zeilen tragen den Schätzwert als `ca. 5,24` mit, damit man im Markt
+sieht, ob der Regalpreis in der Grössenordnung liegt.
+
+Nur den oberen Teil als Checkliste formatieren — im Rechenblock würde die
+Checklisten-Formatierung das Rechnen stören.
 
 Überschriften würden in Erinnerungen als eigene Einträge landen — deshalb sind keine
 drin. Die Reihenfolge folgt trotzdem dem Weg durch den Markt: Gemüse, Tiefkühl,
