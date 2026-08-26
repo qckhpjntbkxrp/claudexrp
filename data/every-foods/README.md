@@ -19,12 +19,13 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 
 ## Vergleich
 
-| Gericht | Portion | kcal | Eiweiss | KH | Fett | ges. FS | Ballast. | Salz | g Protein/100 kcal |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| [Bami Goreng](dishes/bami-goreng.md) | 450 g | 468 | 27,0 g | 56,7 g | 12,2 g | 1,4 g | 10,8 g | 3,3 g | 5,8 |
-| [Better Butter Chicken](dishes/better-butter-chicken.md) | 500 g | 470 | 24,0 g | 50,0 g | 18,0 g | 11,0 g | 9,0 g | 3,5 g | 5,1 |
-| [Brilliant Bolognese](dishes/brilliant-bolognese.md) | 500 g | 520 | 20,0 g | 81,0 g | 10,5 g | 1,5 g | 10,0 g | 2,8 g | 3,9 |
-| [Chili sin Carne](dishes/chili-sin-carne.md) | 450 g | 446 | 24,8 g | 49,5 g | 13,1 g | 1,8 g | 15,3 g | 3,9 g | 5,6 |
+| Gericht | Portion | kcal | Eiweiss | KH | Fett | ges. FS | Ballast. | Salz | % Energie aus Protein | Label |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| [Bami Goreng](dishes/bami-goreng.md) | 450 g | 468 | 27,0 g | 56,7 g | 12,2 g | 1,4 g | 10,8 g | 3,3 g | 23,1 % | High Protein |
+| [Better Butter Chicken](dishes/better-butter-chicken.md) | 500 g | 470 | 24,0 g | 50,0 g | 18,0 g | 11,0 g | 9,0 g | 3,5 g | 20,4 % | High Protein |
+| [Brilliant Bolognese](dishes/brilliant-bolognese.md) | 500 g | 520 | 20,0 g | 81,0 g | 10,5 g | 1,5 g | 10,0 g | 2,8 g | 15,4 % | Proteinquelle |
+| [Chili sin Carne](dishes/chili-sin-carne.md) | 450 g | 446 | 24,8 g | 49,5 g | 13,1 g | 1,8 g | 15,3 g | 3,9 g | 22,2 % | High Protein |
+| [Nasi Goreng](dishes/nasi-goreng.md) | 450 g | 527 | 25,7 g | 57,2 g | 18,9 g | 5,0 g | 11,7 g | 3,4 g | 19,5 % | Proteinquelle |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -32,15 +33,26 @@ normalisieren.
 
 ## Status
 
-- **4** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
+- **5** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
 
-Das Protein Bundle wirbt mit **ø 23 g Protein pro Gericht**. Das Label auf der
-Produktseite ist ein guter Indikator: Gerichte mit **„High Protein"** liegen darüber,
-Gerichte mit **„Proteinquelle"** deutlich darunter (Brilliant Bolognese: 20 g bei
-520 kcal).
+Das Protein Bundle wirbt mit **ø 23 g Protein pro Gericht**.
+
+**Das Label taugt nicht als Filter.** „Proteinquelle" und „High Protein" sind
+EU-Nährwertclaims auf Basis des **Energieanteils**, nicht der absoluten Menge:
+
+| Claim | Bedingung |
+|---|---|
+| Proteinquelle | ≥ 12 % der Energie aus Protein |
+| High Protein | ≥ 20 % der Energie aus Protein |
+
+Die Rechnung (`Protein_g × 4 / kcal`) geht bei allen erfassten Gerichten exakt auf —
+siehe Spalte in der Vergleichstabelle. Deshalb trägt **Nasi Goreng mit 25,7 g Protein
+nur „Proteinquelle"** (19,5 %, knapp unter der Schwelle), während **Better Butter
+Chicken mit 24,0 g „High Protein"** trägt (20,4 %): das fettreichere Gericht hat mehr
+Gesamtenergie. Für die Bundle-Frage zählt die **absolute Proteinmenge**.
 
 **Bestätigte Bundle-Gerichte** (Nährwerte tauchen in den Suchergebnissen zur
 Bundle-Seite auf):
@@ -60,6 +72,11 @@ Gerichte gegenprüfen.
 - **Offensichtlich falsche Seiteninhalte** nicht übernehmen, sondern unter `## Notes`
   festhalten — bei Brilliant Bolognese listet die Seite Hauptzutaten, die in keiner
   Zutatenliste stehen und den Labels widersprechen.
+- **„ohne X"-Tags gegen die Zutatenliste prüfen.** Sie ignorieren offenbar die
+  Unterzutaten des planted.pulled (enthält Zwiebelpulver und gemahlene Paprika),
+  daher stehen „ohne Zwiebeln" und „ohne Paprika" bei mehreren Gerichten im
+  Widerspruch zur Deklaration.
+- **Spurenhinweise** in `allergen_traces` erfassen, getrennt von `allergens`.
 - **Portionsgrösse** in `portion_g` festhalten — sie variiert je Gericht (bisher
   450 g und 500 g) und verzerrt Portionsvergleiche.
 - **Abschnitts-Überschriften** normalisieren: `## Zutaten` = vollständige Deklaration,
