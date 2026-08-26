@@ -65,6 +65,7 @@ Faktor 0,40) und Putzverlust ein (Lauch 1,30).
 ```bash
 python3 data/every-foods/tools/kosten.py            # Kosten je Gericht
 python3 data/every-foods/tools/kosten.py --liste    # Einkaufsliste in Packungen
+python3 data/every-foods/tools/kosten.py --plan     # Umfang des Erstkaufs
 ```
 
 Stand der Schätzung: **ø 1,59 € Zutatenkosten je Portion**, Spanne 0,82 €
@@ -86,6 +87,33 @@ Annahme: 16er-Box zu **10,— je Gericht = 160,— je Box**.
 
 **Ersparnis 134,63 € je Box, Faktor 6,3.** Selbst der erste Einkauf in ganzen
 Packungen (152,98 €, inkl. 126 € Vorrat) liegt unter dem Preis einer einzigen Box.
+
+### Wie viele Gerichte lohnen sich beim Erstkauf?
+
+`--plan` beantwortet das. Der Erstkauf ist von Vorratsposten dominiert (Öl, Miso,
+Nüsse, Gewürze) — die zahlt man einmal, egal wie viel gekocht wird. Entscheidend ist
+deshalb **nicht die Anzahl der Gerichte, sondern die Portionen je Gericht**.
+
+| Szenario | Erstkauf | Portionen | €/Portion | vs. Bundle |
+|---|---:|---:|---:|---:|
+| 4 Gerichte × 1 Portion | 43,72 € | 4 | 10,93 € | **−3,72 €** |
+| 6 Gerichte × 1 Portion | 59,76 € | 6 | 9,96 € | ±0 |
+| 16 Gerichte × 1 Portion | 126,47 € | 16 | 7,90 € | +33,53 € |
+| **8 Gerichte × 4 Portionen** | **92,91 €** | **32** | **2,90 €** | **+227,09 €** |
+| 16 Gerichte × 4 Portionen | 182,37 € | 64 | 2,85 € | +457,63 € |
+
+**Unter 6 Gerichten lohnt sich der Erstkauf nicht** — da ist die Box billiger.
+Ab 4 Portionen je Gericht fällt der Portionspreis auf rund 2,90 € und bleibt dort;
+mehr Gerichtsvielfalt bringt dann kaum noch etwas, sie kostet nur zusätzliche
+Vorratsposten.
+
+**Sesame Fried Rice ist der teuerste Zugang: +26,51 €** allein für Pistazien, Mandeln,
+roten Reis, Sesamöl und Miso — Zutaten, die kein anderes Gericht nutzt. Als 17. Gericht
+hebt es den Portionspreis wieder an. Genau deshalb ist es der richtige Kandidat, wenn
+aus 17 Gerichten eine 16er-Box werden soll.
+
+Ab dem zweiten Durchgang zählen nur noch die verbrauchten Zutaten: **rund 1,60–1,75 €
+je Portion**, unabhängig vom Umfang.
 
 Fair bleibt der Vergleich nur mit dem Aufwand: 16 Gerichte kochen, portionieren und
 einfrieren dauert realistisch 4–6 Stunden. Die Ersparnis entspricht damit einem

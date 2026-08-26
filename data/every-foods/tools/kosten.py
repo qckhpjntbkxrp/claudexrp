@@ -5,6 +5,7 @@ Lidl-Österreich-Preise.
 Aufruf:
   python3 data/every-foods/tools/kosten.py                # Kosten je Gericht
   python3 data/every-foods/tools/kosten.py --liste <slug> ...   # Einkaufsliste
+  python3 data/every-foods/tools/kosten.py --plan               # wie viele Gerichte lohnen sich
 """
 import pathlib
 import sys
@@ -79,9 +80,65 @@ def liste(slugs):
     print(f"Rest bleibt im Vorrat:          {gesamt_packung - gesamt_netto:8.2f} €")
 
 
+
+
+
+# ---------------------------------------------------------------- Planung
+def pack_kosten(auswahl, portionen=1):
+    """Einkaufskosten in ganzen Packungen für `auswahl` (Slugs), je `portionen`
+    Portionen pro Gericht."""
+    bedarf = defaultdict(float)
+    for r in recipes():
+        if r["dish"] not in auswahl:
+            continue
+        for k, g in einkauf_gramm(r["zutaten"]).items():
+            bedarf[k] += g * portionen
+    total = 0.0
+    for k, g in bedarf.items():
+        if g < 0.5 or PREISE[k]["eur_kg"] == 0:
+            continue
+        pk = PREISE[k]["packung_g"]
+        stk = max(1, -(-g // pk))
+        total += stk * pk * PREISE[k]["eur_kg"] / 1000
+    return total
+
+
+def plan(portionen_liste=(1, 2, 3, 4), bundle_preis=10.0):
+    slugs = [r["dish"] for r in recipes()]
+    # Gierige Reihenfolge: als Nächstes das Gericht, das am wenigsten NEUE
+    # Packungen erfordert — so teilen sich früh gewählte Gerichte den Vorrat.
+    order, rest = [], set(slugs)
+    while rest:
+        nxt = min(rest, key=lambda s: pack_kosten(set(order) | {s}) - pack_kosten(set(order)))
+        order.append(nxt)
+        rest.discard(nxt)
+
+    print("Gierige Reihenfolge — jedes Gericht mit seinen Mehrkosten im Erstkauf:\n")
+    print(f"{'#':>2} {'Gericht':24} {'+Packungen':>11} {'Summe':>9} {'€/Portion':>10}")
+    prev = 0.0
+    for i, s in enumerate(order, 1):
+        c = pack_kosten(set(order[:i]))
+        print(f"{i:2} {dish_name(s)[0]:24} {c - prev:10.2f} € {c:8.2f} € {c / i:9.2f} €")
+        prev = c
+
+    print(f"\nErstkauf gesamt, je Gericht mehrere Portionen "
+          f"(Vergleich Bundle: {bundle_preis:.2f} €/Portion):\n")
+    head = "  ".join(f"{p} Port.".rjust(9) for p in portionen_liste)
+    print(f"{'Gerichte':>8}  {head}")
+    for n in (4, 6, 8, 10, 12, 14, 16, 17):
+        sel = set(order[:n])
+        cells = []
+        for p in portionen_liste:
+            c = pack_kosten(sel, p)
+            cells.append(f"{c / (n * p):8.2f} €")
+        print(f"{n:8}  " + "  ".join(cells))
+
+
 if __name__ == "__main__":
     if "--liste" in sys.argv:
         i = sys.argv.index("--liste")
         liste(set(sys.argv[i + 1:]))
+    elif "--plan" in sys.argv:
+        plan()
     else:
         tabelle()
