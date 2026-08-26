@@ -29,6 +29,7 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Umami Rice](dishes/umami-rice.md) | 450 g | 424 | **27,9 g** | 59,4 g | 5,9 g | 1,4 g | 10,8 g | 3,2 g | **26,3 %** | High Protein |
 | [Edamame Zen](dishes/edamame-zen.md) | 450 g | 423 | 20,3 g | 67,1 g | 5,4 g | 0,9 g | 11,3 g | 2,7 g | 19,1 % | Proteinquelle |
 | [Creamy Paprika Pasta](dishes/creamy-paprika-pasta.md) | 450 g | 446 | 21,2 g | 50,4 g | 15,8 g | 11,3 g | 8,6 g | 2,8 g | 19,0 % | Proteinquelle |
+| [Smoky Lentil Stew](dishes/smoky-lentil-stew.md) | 450 g | **374** | 23,9 g | 34,7 g | 10,4 g | 0,9 g | **22,1 g** | **2,3 g** | 25,5 % | High Protein |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -36,7 +37,7 @@ normalisieren.
 
 ## Status
 
-- **8** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
+- **9** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
@@ -82,9 +83,13 @@ Gerichte gegenprüfen.
   bei **Creamy Paprika Pasta** „nicht scharf" trotz Chili, Cayenne und einer
   Beschreibung, die mit „feiner Schärfe" wirbt. Nie als Allergen- oder
   Unverträglichkeitsfilter verwenden.
-- **`contains_planted_pulled`** mitführen: Gerichte **ohne** planted.pulled haben
-  bisher durchweg korrekte „ohne"-Tags (Edamame Zen). Das Muster stützt planted.pulled
-  als Fehlerquelle.
+- **`contains_planted_pulled`** und **`protein_source`** mitführen. Als Erklärung für
+  die Tag-Fehler reicht planted.pulled aber **nicht**: Smoky Lentil Stew enthält keines,
+  ist „ohne Zwiebeln" getaggt und führt **Zwiebelpulver direkt in der Zutatenliste**.
+  Die Filter-Logik ist generell fehlerhaft, nicht nur bei Unterzutaten.
+- **Nährwert-Badges gegen die Tabelle rechnen** (`100-g-Wert × Portion/100`). Bisher
+  zwei echte Fehler statt Rundung: Bami Goreng und Brilliant Bolognese beim Protein,
+  **Smoky Lentil Stew bei den Kalorien** (Badge 384, Tabelle 374).
 - **Spurenhinweise** in `allergen_traces` erfassen, getrennt von `allergens`.
 - **Portionsgrösse** in `portion_g` festhalten — sie variiert je Gericht (bisher
   450 g und 500 g) und verzerrt Portionsvergleiche.
