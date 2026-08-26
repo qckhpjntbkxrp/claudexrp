@@ -20,7 +20,7 @@ ZIEL_KCAL = 2155 * 60  # wie der Original-Lagerplan liefert
 BASIS = [
  ('Rote Linsen', 2500, 'g', 1, 'A', 'Hauptprotein, Eisen, Folat'),
  ('Kichererbsen trocken', 2500, 'g', 1, 'A', 'Protein, Folat'),
- ('Weisse Bohnen', 1000, 'g', 1, 'A', 'Rotation'),
+ ('Weisse Bohnen', 1300, 'g', 1, 'A', 'Rotation; ersetzt die Kidneybohnen in Dal Delight'),
  ('Kefen / Erbsen TK', 1000, 'g', 1, 'A', 'grüne Portion'),
  ('Haferflocken', 4000, 'g', 1, 'B', 'billigste Kalorie mit Beta-Glucan'),
  ('Vollkornmehl', 4000, 'g', 1, 'B', 'Brot selbst backen — günstigste Energie überhaupt'),
@@ -64,7 +64,7 @@ BASIS = [
  ('Jodiertes Salz', 500, 'g', 6, 'M', 'Jod — im Alpenraum nicht optional'),
  ('Schwarzer Pfeffer ganz', 100, 'g', 6, 'M', 'Piperin für Curcumin'),
  ('Kurkuma gemahlen', 100, 'g', 3, 'M', ''),
- ('Paprika edelsuess/geraeuchert', 100, 'g', 6, 'M', ''),
+ ('Paprika edelsuess/geraeuchert', 200, 'g', 3, 'M', 'Hauptgewürz der every-Gerichte'),
  ('Senfkoerner', 80, 'g', 6, 'M', 'Myrosinase zum Kohl'),
  ('Getrocknete Kraeuter (Oregano, Thymian, Rosmarin, Lorbeer)', 200, 'g', 6, 'M', ''),
  ('Chiliflocken', 50, 'g', 6, 'M', ''),
@@ -72,20 +72,21 @@ BASIS = [
  ('Fenchelsamen', 60, 'g', 6, 'M', 'gegen Blähungen'),
  ('Tomaten gehackt (Dose)', 6, 'Stk', 1, 'M', 'Lycopin'),
  ('Tomatenmark', 400, 'g', 1, 'M', ''),
- ('Sojasauce / Tamari', 500, 'ml', 3, 'M', ''),
+ ('Sojasauce / Tamari', 500, 'ml', 2, 'M', 'die every-Gerichte brauchen viel davon'),
  ('Apfelessig', 750, 'ml', 3, 'M', ''),
  ('Senf', 200, 'g', 3, 'M', 'Myrosinase'),
  ('Hefeflocken', 200, 'g', 3, 'M', 'B-Vitamine, Umami'),
  ('Nori-Blaetter', 50, 'g', 3, 'M', 'Jod-Zweitquelle'),
  ('Sprossensamen (Alfalfa, Broccoli, Linsen)', 300, 'g', 3, 'M', 'Wintergrün fast gratis'),
- ('Kokosmilch', 2, 'Stk', 1, 'M', 'für die every-Gerichte'),
+ ('Kokosmilch', 3, 'Stk', 1, 'M', 'für die every-Gerichte'),
  ('Algenoel (EPA/DHA)', 30, 'Kaps', 1, 'O', 'jeden 2. Tag — deckt die EPA/DHA-Lücke'),
  ('Vitamin D3 (vegan, Flechte)', 60, 'Kaps', 1, 'O', 'Okt–Mrz zwingend'),
 ]
 EXTRA = [('_extra_paprika_rot', 1500, 'X', 'Paprika für die every-Gerichte'),
+         ('_extra_sojagranulat', 360, 'X', 'Proteinträger der every-Gerichte, rehydriert 1:3'),
          ('_extra_staerke', 90, 'X', ''),
-         ('_extra_sojabohnenkerne', 470, 'X', 'Edamame TK')]
-EXTRA_KCAL = {'paprika_rot': 31, 'staerke': 350, 'sojabohnenkerne': 122}
+         ('_extra_sojabohnenkerne', 500, 'X', 'Edamame TK')]
+EXTRA_KCAL = {'paprika_rot': 31, 'staerke': 350, 'sojabohnenkerne': 122, 'sojagranulat': 345}
 # Was in der 150-EUR-Variante zusaetzlich wegfaellt
 CUT_150 = {'Algenoel (EPA/DHA)': 0, 'Eier': 24, 'Huettenkaese / Skyr': 500,
            'Tofu natur': 0, 'Beeren TK gemischt': 0, 'Champignons': 0,

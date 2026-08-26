@@ -2,10 +2,10 @@
 
 | | |
 |---|---|
-| **Monatseinkauf** | 133,13–254,75 € |
-| Vorratsposten (anteilig) | 8,61–17,11 € |
-| **Gesamt** | **141,74–271,87 €** |
-| Energie | 2015 kcal pro Person und Tag |
+| **Monatseinkauf** | 137,28–261,90 € |
+| Vorratsposten (anteilig) | 9,34–18,77 € |
+| **Gesamt** | **146,63–280,67 €** |
+| Energie | 2108 kcal pro Person und Tag |
 | davon aus den 8 every-Gerichten | 32 Mahlzeiten |
 
 Preise sind Schätzungen für Lidl Österreich, keine abgerufenen Werte. Reihenfolge folgt dem Weg durch die Filiale, Tiefkühl zuletzt.
@@ -52,12 +52,14 @@ Preise sind Schätzungen für Lidl Österreich, keine abgerufenen Werte. Reihenf
 - [ ] **Zitrusfrüchte** — 1 kg · 1,80–3,60 €  
       <sub>Vitamin C — trägt die Eisenaufnahme</sub>
 
-## Für die every-Gerichte  ·  6,98–12,53 €
+## Für die every-Gerichte  ·  8,93–16,03 €
 
 - [ ] **paprika rot** — 1,5 kg · 4,50–8,25 €  
       <sub>Paprika für die every-Gerichte</sub>
+- [ ] **sojagranulat** — 360 g · 1,80–3,24 €  
+      <sub>Proteinträger der every-Gerichte, rehydriert 1:3</sub>
 - [ ] **staerke** — 90 g · 0,14–0,29 €
-- [ ] **sojabohnenkerne** — 470 g · 2,35–3,99 €  
+- [ ] **sojabohnenkerne** — 500 g · 2,50–4,25 €  
       <sub>Edamame TK</sub>
 
 ## Kühlregal — Protein  ·  9,20–17,67 €
@@ -74,14 +76,14 @@ Preise sind Schätzungen für Lidl Österreich, keine abgerufenen Werte. Reihenf
 - [ ] **Naturjoghurt** — 1 kg · 1,80–3,20 €  
       <sub>Kulturen, Kalzium, B12</sub>
 
-## Trockenware — Hülsenfrüchte  ·  16,75–28,25 €
+## Trockenware — Hülsenfrüchte  ·  17,65–29,60 €
 
 - [ ] **Rote Linsen** — 2,5 kg · 7,50–12,50 €  
       <sub>Hauptprotein, Eisen, Folat</sub>
 - [ ] **Kichererbsen trocken** — 2,5 kg · 6,25–11,25 €  
       <sub>Protein, Folat</sub>
-- [ ] **Weiße Bohnen** — 1 kg · 3,00–4,50 €  
-      <sub>Rotation</sub>
+- [ ] **Weiße Bohnen** — 1,3 kg · 3,90–5,85 €  
+      <sub>Rotation; ersetzt die Kidneybohnen in Dal Delight</sub>
 
 ## Trockenware — Getreide  ·  22,40–41,50 €
 
@@ -105,12 +107,12 @@ Preise sind Schätzungen für Lidl Österreich, keine abgerufenen Werte. Reihenf
 - [ ] **Sesam / Tahini** — 300 g · 2,40–4,50 €  
       <sub>Kalzium, Eisen</sub>
 
-## Würze & Konserven  ·  8,00–14,30 €
+## Würze & Konserven  ·  9,30–16,60 €
 
 - [ ] **Tomaten gehackt (Dose)** — 6 Stk · 4,20–7,50 €  
       <sub>Lycopin</sub>
 - [ ] **Tomatenmark** — 400 g · 1,20–2,20 €
-- [ ] **Kokosmilch** — 2 Stk · 2,60–4,60 €  
+- [ ] **Kokosmilch** — 3 Stk · 3,90–6,90 €  
       <sub>für die every-Gerichte</sub>
 
 ## Öle & Fette  ·  9,00–16,50 €
@@ -149,13 +151,13 @@ Gebinde für Quartal oder Halbjahr — prüfen, ob noch vorhanden.
 - [ ] Jodsalz — 500 g · 0,20–0,60 € · reicht 6 Monate
 - [ ] Schwarzer Pfeffer ganz — 100 g · 1,50–3,20 € · reicht 6 Monate
 - [ ] Kurkuma gemahlen — 100 g · 0,80–2,10 € · reicht 3 Monate
-- [ ] Paprikapulver edelsüß/geräuchert — 100 g · 0,80–1,90 € · reicht 6 Monate
+- [ ] Paprikapulver edelsüß/geräuchert — 200 g · 1,60–3,80 € · reicht 3 Monate
 - [ ] Senfkörner — 80 g · 0,48–1,20 € · reicht 6 Monate
 - [ ] Getrocknete Kräuter (Oregano, Thymian, Rosmarin, Lorbeer) — 200 g · 3,00–6,40 € · reicht 6 Monate
 - [ ] Chiliflocken — 50 g · 0,60–1,30 € · reicht 6 Monate
 - [ ] Zimt (Ceylon) — 60 g · 0,72–1,62 € · reicht 6 Monate
 - [ ] Fenchelsamen — 60 g · 0,60–1,26 € · reicht 6 Monate
-- [ ] Sojasauce / Tamari — 500 ml · 2,00–4,25 € · reicht 3 Monate
+- [ ] Sojasauce / Tamari — 500 ml · 2,00–4,25 € · reicht 2 Monate
 - [ ] Apfelessig — 750 ml · 1,12–2,40 € · reicht 3 Monate
 - [ ] Senf — 200 g · 0,60–1,30 € · reicht 3 Monate
 - [ ] Hefeflocken — 200 g · 3,00–5,20 € · reicht 3 Monate

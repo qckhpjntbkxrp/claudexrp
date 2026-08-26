@@ -1,12 +1,12 @@
 SPAR-MONATSPLAN  2 PERSONEN  (Österreich)
-Variante: voll - 173,79-335,88 EUR pro Monat, Mitte 254,84 EUR
-Energie: 2135 kcal pro Person und Tag (99 % des Lagerplan-Solls)
-Kalorien je Euro: 503 kcal - Ausgangsplan lag bei 256
+Variante: voll - 178,68-344,69 EUR pro Monat, Mitte 261,68 EUR
+Energie: 2228 kcal pro Person und Tag (103 % des Lagerplan-Solls)
+Kalorien je Euro: 511 kcal - Ausgangsplan lag bei 256
 
 TROCKENWARE - HÜLSENFRÜCHTE
 Rote Linsen - 2,5 kg - 7,50-12,50 EUR  - Hauptprotein, Eisen, Folat
 Kichererbsen trocken - 2,5 kg - 6,25-11,25 EUR  - Protein, Folat
-Weiße Bohnen - 1 kg - 3,00-4,50 EUR  - Rotation
+Weiße Bohnen - 1,3 kg - 3,90-5,85 EUR  - Rotation; ersetzt die Kidneybohnen in Dal Delight
 Zuckererbsen/Erbsen TK - 1 kg - 1,50-2,80 EUR  - grüne Portion
 
 TROCKENWARE - GETREIDE
@@ -74,7 +74,7 @@ WÜRZE & KONSERVEN
 Jodsalz - 500 g - 0,03-0,10 EUR  [alle 6 Monate]  - Jod — im Alpenraum nicht optional
 Schwarzer Pfeffer ganz - 100 g - 0,25-0,53 EUR  [alle 6 Monate]  - Piperin für Curcumin
 Kurkuma gemahlen - 100 g - 0,27-0,70 EUR  [alle 3 Monate]
-Paprikapulver edelsüß/geräuchert - 100 g - 0,13-0,32 EUR  [alle 6 Monate]
+Paprikapulver edelsüß/geräuchert - 200 g - 0,53-1,27 EUR  [alle 3 Monate]  - Hauptgewürz der every-Gerichte
 Senfkörner - 80 g - 0,08-0,20 EUR  [alle 6 Monate]  - Myrosinase zum Kohl
 Getrocknete Kräuter (Oregano, Thymian, Rosmarin, Lorbeer) - 200 g - 0,50-1,07 EUR  [alle 6 Monate]
 Chiliflocken - 50 g - 0,10-0,22 EUR  [alle 6 Monate]
@@ -82,13 +82,13 @@ Zimt (Ceylon) - 60 g - 0,12-0,27 EUR  [alle 6 Monate]
 Fenchelsamen - 60 g - 0,10-0,21 EUR  [alle 6 Monate]  - gegen Blähungen
 Tomaten gehackt (Dose) - 6 Stk - 4,20-7,50 EUR  - Lycopin
 Tomatenmark - 400 g - 1,20-2,20 EUR
-Sojasauce / Tamari - 500 ml - 0,67-1,42 EUR  [alle 3 Monate]
+Sojasauce / Tamari - 500 ml - 1,00-2,12 EUR  [alle 2 Monate]  - die every-Gerichte brauchen viel davon
 Apfelessig - 750 ml - 0,38-0,80 EUR  [alle 3 Monate]
 Senf - 200 g - 0,20-0,43 EUR  [alle 3 Monate]  - Myrosinase
 Hefeflocken - 200 g - 1,00-1,73 EUR  [alle 3 Monate]  - B-Vitamine, Umami
 Noriblätter - 50 g - 1,00-2,00 EUR  [alle 3 Monate]  - Jod-Zweitquelle
 Sprossensamen (Alfalfa, Brokkoli, Linsen) - 300 g - 1,20-2,10 EUR  [alle 3 Monate]  - Wintergrün fast gratis
-Kokosmilch - 2 Stk - 2,60-4,60 EUR  - für die every-Gerichte
+Kokosmilch - 3 Stk - 3,90-6,90 EUR  - für die every-Gerichte
 
 DROGERIE / APOTHEKE
 Algenöl (EPA/DHA) - 30 Kaps - 7,50-18,00 EUR  - jeden 2. Tag — deckt die EPA/DHA-Lücke
@@ -96,5 +96,6 @@ Vitamin D3 (vegan, Flechte) - 60 Kaps - 3,00-9,60 EUR  - Okt–Mrz zwingend
 
 FÜR DIE every-GERICHTE
 paprika rot - 1,5 kg - 4,50-8,25 EUR  - Paprika für die every-Gerichte
+sojagranulat - 360 g - 1,80-3,24 EUR  - Proteinträger der every-Gerichte, rehydriert 1:3
 staerke - 90 g - 0,14-0,29 EUR
-sojabohnenkerne - 470 g - 2,35-3,99 EUR  - Edamame TK
+sojabohnenkerne - 500 g - 2,50-4,25 EUR  - Edamame TK
