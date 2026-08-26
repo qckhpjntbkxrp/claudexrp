@@ -112,6 +112,11 @@ roten Reis, Sesamöl und Miso — Zutaten, die kein anderes Gericht nutzt. Als 1
 hebt es den Portionspreis wieder an. Genau deshalb ist es der richtige Kandidat, wenn
 aus 17 Gerichten eine 16er-Box werden soll.
 
+Eine fertige Liste für dieses Szenario liegt in
+**[einkauf-8x4.md](einkauf-8x4.md)** — nach Ladenbereich sortiert, mit Packungszahlen.
+Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert (89,19 € statt 92,91 €
+bei rein gieriger Wahl) und kommt trotzdem auf **ø 24,2 g Protein je Portion**.
+
 Ab dem zweiten Durchgang zählen nur noch die verbrauchten Zutaten: **rund 1,60–1,75 €
 je Portion**, unabhängig vom Umfang.
 

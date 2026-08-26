@@ -107,6 +107,15 @@ Kocharbeit entspricht das einem impliziten Stundenlohn von 22–34 €.
 
 1. —
 
+## Erster Kochtag
+
+Kostenoptimierte Auswahl für **8 Gerichte × 4 Portionen = 32 Mahlzeiten**,
+Einkauf 89,19 € (2,79 € je Mahlzeit) — Liste in
+[rezepte/einkauf-8x4.md](rezepte/einkauf-8x4.md):
+
+Umami Rice · Bami Goreng · Nasi Goreng · Better Butter Chicken · Dal Delight ·
+Tikka Masala · Creamy Paprika Pasta · Edamame Zen
+
 ---
 
 Ab hier folgt unverändert der Inhalt von `README.md` als Referenz.
