@@ -26,6 +26,7 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Brilliant Bolognese](dishes/brilliant-bolognese.md) | 500 g | 520 | 20,0 g | 81,0 g | 10,5 g | 1,5 g | 10,0 g | 2,8 g | 15,4 % | Proteinquelle |
 | [Chili sin Carne](dishes/chili-sin-carne.md) | 450 g | 446 | 24,8 g | 49,5 g | 13,1 g | 1,8 g | 15,3 g | 3,9 g | 22,2 % | High Protein |
 | [Nasi Goreng](dishes/nasi-goreng.md) | 450 g | 527 | 25,7 g | 57,2 g | 18,9 g | 5,0 g | 11,7 g | 3,4 g | 19,5 % | Proteinquelle |
+| [Umami Rice](dishes/umami-rice.md) | 450 g | 424 | **27,9 g** | 59,4 g | 5,9 g | 1,4 g | 10,8 g | 3,2 g | **26,3 %** | High Protein |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -33,7 +34,7 @@ normalisieren.
 
 ## Status
 
-- **5** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
+- **6** Gerichte erfasst — davon **1 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
@@ -72,10 +73,11 @@ Gerichte gegenprüfen.
 - **Offensichtlich falsche Seiteninhalte** nicht übernehmen, sondern unter `## Notes`
   festhalten — bei Brilliant Bolognese listet die Seite Hauptzutaten, die in keiner
   Zutatenliste stehen und den Labels widersprechen.
-- **„ohne X"-Tags gegen die Zutatenliste prüfen.** Sie ignorieren offenbar die
-  Unterzutaten des planted.pulled (enthält Zwiebelpulver und gemahlene Paprika),
-  daher stehen „ohne Zwiebeln" und „ohne Paprika" bei mehreren Gerichten im
-  Widerspruch zur Deklaration.
+- **„ohne X"-Tags gegen die Zutatenliste prüfen — sie sind unzuverlässig.**
+  Bisher 3 von 6 Gerichten betroffen: „ohne Zwiebeln" bzw. „ohne Paprika" trotz
+  Zwiebelpulver und gemahlener Paprika im planted.pulled (Better Butter Chicken,
+  Nasi Goreng) — und bei **Umami Rice** sogar trotz **8 % roter Paprika als
+  deklarierter Hauptzutat**. Nie als Allergen-/Unverträglichkeitsfilter verwenden.
 - **Spurenhinweise** in `allergen_traces` erfassen, getrennt von `allergens`.
 - **Portionsgrösse** in `portion_g` festhalten — sie variiert je Gericht (bisher
   450 g und 500 g) und verzerrt Portionsvergleiche.
