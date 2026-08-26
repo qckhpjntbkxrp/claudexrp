@@ -112,6 +112,35 @@ roten Reis, Sesamöl und Miso — Zutaten, die kein anderes Gericht nutzt. Als 1
 hebt es den Portionspreis wieder an. Genau deshalb ist es der richtige Kandidat, wenn
 aus 17 Gerichten eine 16er-Box werden soll.
 
+### Vorrat gering halten
+
+Vollständig durchgerechnet über alle 24.310 Achterkombinationen: **die kostenminimale
+Auswahl ist zugleich die vorratsärmste** — es gibt keinen Zielkonflikt, dieselben acht
+Gerichte gewinnen bei beiden Zielen. Das Selektieren ist damit ausgereizt; die
+wirksamen Hebel sind zwei andere:
+
+**1. Mehr Portionen je Gericht.** Der Vorratsanteil fällt mit jeder zusätzlichen
+Portion, weil die Packungen dieselben bleiben:
+
+| Portionen | Mahlzeiten | Einkauf | Vorrat | Anteil | €/Mahlzeit |
+|---:|---:|---:|---:|---:|---:|
+| 2 | 16 | 70,13 € | 44,10 € | 63 % | 4,38 € |
+| 4 | 32 | 89,19 € | 37,13 € | 42 % | 2,79 € |
+| 6 | 48 | 112,52 € | 34,44 € | 31 % | 2,34 € |
+| 8 | 64 | 135,75 € | 31,64 € | 23 % | 2,12 € |
+
+**2. Ein Gericht weniger.** Dal Delight streichen senkt den Vorrat von 37,13 € auf
+**30,37 €** bei praktisch gleichem Preis je Mahlzeit (2,80 statt 2,79 €) — es bringt
+Linsen, Kidney- und schwarze Bohnen, Süsskartoffelwürfel und Spinat mit, die kein
+anderes der acht Gerichte nutzt. Liste dafür: **[einkauf-7x4.md](einkauf-7x4.md)**.
+
+Der grösste Einzelrest ist ohnehin kein Verlust: Rapsöl (2,46 €), Sonnenblumenöl
+(2,04 €), Kartoffeln, Zwiebeln, Basmatireis — Grundvorrat, den man weiterverwendet.
+Ärgerlich sind nur die Spezialposten, allen voran **schwarze Bohnen: 24 g gebraucht
+von 500 g gekauft** (1,72 € Rest). Wer bei Dal Delight bleiben will, ersetzt sie am
+einfachsten durch mehr Kidneybohnen — nährwertlich fast deckungsgleich, spart eine
+ganze Packung.
+
 Eine fertige Liste für dieses Szenario liegt in
 **[einkauf-8x4.md](einkauf-8x4.md)** — nach Ladenbereich sortiert, mit Packungszahlen.
 Die Auswahl der 8 Gerichte ist per Tauschsuche kostenoptimiert (89,19 € statt 92,91 €

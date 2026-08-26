@@ -116,6 +116,9 @@ Einkauf 89,19 € (2,79 € je Mahlzeit) — Liste in
 Umami Rice · Bami Goreng · Nasi Goreng · Better Butter Chicken · Dal Delight ·
 Tikka Masala · Creamy Paprika Pasta · Edamame Zen
 
+Vorratsarme Variante ohne Dal Delight: **7 Gerichte × 4 Portionen**, Einkauf 78,52 €,
+Vorrat nur 30,37 € statt 37,13 € — [rezepte/einkauf-7x4.md](rezepte/einkauf-7x4.md).
+
 ---
 
 Ab hier folgt unverändert der Inhalt von `README.md` als Referenz.
