@@ -19,15 +19,18 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 
 ## Vergleich
 
-| Gericht | kcal | Eiweiss | KH | Fett | Ballast. | Salz | g Protein/100 kcal |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| [Bami Goreng](dishes/bami-goreng.md) | 468 | 27,0 g | 56,7 g | 12,2 g | 10,8 g | 3,3 g | 5,8 |
+| Gericht | Portion | kcal | Eiweiss | KH | Fett | ges. FS | Ballast. | Salz | g Protein/100 kcal |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| [Bami Goreng](dishes/bami-goreng.md) | 450 g | 468 | 27,0 g | 56,7 g | 12,2 g | 1,4 g | 10,8 g | 3,3 g | 5,8 |
+| [Better Butter Chicken](dishes/better-butter-chicken.md) | 500 g | 470 | 24,0 g | 50,0 g | 18,0 g | 11,0 g | 9,0 g | 3,5 g | 5,1 |
 
-Alle Werte pro Portion (450 g Packung), aus der offiziellen Nährwerttabelle.
+Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
+Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
+normalisieren.
 
 ## Status
 
-- **1 / 16** Gerichte des Protein Bundles erfasst
+- **2 / 16** Gerichte des Protein Bundles erfasst
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ## Konventionen
@@ -35,7 +38,11 @@ Alle Werte pro Portion (450 g Packung), aus der offiziellen Nährwerttabelle.
 - **Nährwerte:** immer die offizielle Tabelle als Quelle, nicht die Badges oben auf
   der Produktseite — die weichen teils ab (siehe Bami Goreng). Abweichungen unter
   `## Notes` dokumentieren.
-- **Portionsgrösse** in `portion_g` festhalten; falls ≠ 450 g, beim Vergleichen beachten.
+- **Portionsgrösse** in `portion_g` festhalten — sie variiert je Gericht (bisher
+  450 g und 500 g) und verzerrt Portionsvergleiche.
+- **Abschnitts-Überschriften** normalisieren: `## Zutaten` = vollständige Deklaration,
+  `## Hauptzutaten` = die hervorgehobenen Komponenten. Auf den Produktseiten sind
+  diese beiden Labels nicht konsistent vergeben.
 - **Allergene** aus den GROSSGESCHRIEBENEN Zutaten ableiten.
 - **`in_protein_bundle`:** `ja` / `nein` / `unbekannt`.
 - **Slug** = Handle aus der Produkt-URL (`/products/<slug>`).
