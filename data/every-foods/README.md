@@ -32,6 +32,8 @@ Damit lässt sich später ohne Umbau eine Tabelle, ein Vergleich oder ein Export
 | [Smoky Lentil Stew](dishes/smoky-lentil-stew.md) | 450 g | **374** | 23,9 g | 34,7 g | 10,4 g | 0,9 g | **22,1 g** | **2,3 g** | 25,5 % | High Protein |
 | [Dal Delight](dishes/dal-delight.md) | 450 g | 491 | 23,9 g | 53,6 g | 16,7 g | **11,7 g** | 16,2 g | 3,4 g | 19,4 % | Proteinquelle |
 | [Tikka Masala](dishes/tikka-masala.md) | 450 g | 491 | 23,4 g | 51,3 g | 19,4 g | 10,8 g | 8,6 g | 3,1 g | 19,1 % | Proteinquelle |
+| [Teriyaki Wok](dishes/teriyaki-wok.md) | 500 g | 520 | 27,0 g | 64,0 g | 16,5 g | 2,0 g | 10,0 g | 3,4 g | 20,8 % | High Protein |
+| [Green Forest Bowl](dishes/green-forest-bowl.md) | 450 g | **599** | 20,3 g | 44,1 g | **36,0 g** | 5,9 g | 9,5 g | 2,8 g | 13,5 % | Proteinquelle |
 
 Alle Werte pro Portion aus der offiziellen Nährwerttabelle. **Achtung:** die
 Portionsgrösse variiert (450 g / 500 g) — für faire Vergleiche ggf. auf 100 g
@@ -39,7 +41,7 @@ normalisieren.
 
 ## Status
 
-- **11** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
+- **13** Gerichte erfasst — davon **2 bestätigt** im Protein Bundle
 - Offen: Preis pro Gericht, Zuordnung „ist im Protein Bundle enthalten"
 
 ### Hinweis zur Bundle-Zuordnung
@@ -93,10 +95,21 @@ dem beworbenen Schnitt von ø 23 g.
   die Tag-Fehler reicht planted.pulled aber **nicht**: Smoky Lentil Stew enthält keines,
   ist „ohne Zwiebeln" getaggt und führt **Zwiebelpulver direkt in der Zutatenliste**.
   Die Filter-Logik ist generell fehlerhaft, nicht nur bei Unterzutaten.
-- **Nährwert-Badges gegen die Tabelle rechnen** (`100-g-Wert × Portion/100`). Bisher
-  vier echte Fehler statt Rundung in 11 Gerichten: Bami Goreng und Brilliant Bolognese
-  beim Protein, Smoky Lentil Stew bei den Kalorien (384 statt 374), **Dal Delight beim
-  Fett** (18 statt 16,65 g).
+- **Nährwert-Badges gegen die Tabelle rechnen** (`100-g-Wert × Portion/100`).
+  **6 von 13 Gerichten** haben echte Badge-Fehler jenseits der Rundung:
+
+  | Gericht | betroffen | Badge | Tabelle |
+  |---|---|---:|---:|
+  | Bami Goreng | Protein | 25 g | 27,0 g |
+  | Brilliant Bolognese | Protein | 18 g | 20,0 g |
+  | Smoky Lentil Stew | Energie | 384 kcal | 374 kcal |
+  | Dal Delight | Fett | 18 g | 16,65 g |
+  | **Teriyaki Wok** | **alle vier** | 16,5 / 55 / 31 / 590 | 27,0 / 64,0 / 16,5 / 520 |
+  | **Green Forest Bowl** | **alle vier** (400-g-Basis) | 18 / 42,2 / 32 / 532 | 20,25 / 44,1 / 36,0 / 599 |
+
+  Bei Green Forest Bowl entstehen drei der vier Badge-Werte exakt aus
+  `100-g-Wert × 4`, die Tabelle rechnet aber mit 450 g. Bei Teriyaki Wok stützt der
+  Tag „High Protein" die Tabelle (20,8 % Energie) und schliesst die Badges aus (11,2 %).
 - **Kaputte Tags in `tags_broken`** ablegen, nicht in `tags`: Dal Delight zeigt im
   Filter-UI die unübersetzten Platzhalter „ohne Recipe without Gluten" und
   „ohne Recipe without Soy".
